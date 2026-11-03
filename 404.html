@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-gabarit="404" data-page="404" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable | BV Communications</title>
+<meta name="description" content="Cette page n’existe pas ou plus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bvcomm-maquette.vercel.app/404">
+<link rel="alternate" hreflang="fr" href="https://bvcomm-maquette.vercel.app/404">
+<link rel="alternate" hreflang="en" href="https://bvcomm-maquette.vercel.app/en/404">
+<link rel="alternate" hreflang="x-default" href="https://bvcomm-maquette.vercel.app/404">
+<style>:root{--fond:#f2f0eb;--texte:#0e1720;--voile-fond:#0e1720;--ouverture-fond:#0e1720;--menu-fond:#0e1720}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2f0eb">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BV Communications">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:title" content="Page introuvable | BV Communications">
+<meta property="og:description" content="Cette page n’existe pas ou plus.">
+<meta property="og:url" content="https://bvcomm-maquette.vercel.app/404">
+<meta property="og:image" content="https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BV Communications : un fournisseur, une facture, une équipe">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BV Communications","url":"https://bvcomm-maquette.vercel.app/","logo":"https://bvcomm-maquette.vercel.app/assets/images/logo.png","image":"https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg","telephone":"+1-514-800-8080","email":"info@bvcomm.com","foundingDate":"1994","areaServed":{"@type":"Country","name":"Canada"},"address":{"@type":"PostalAddress","streetAddress":"359, avenue Sainte-Croix, bureau 210","addressLocality":"Saint-Laurent","addressRegion":"QC","postalCode":"H4N 2L3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],"department":{"@type":"Organization","name":"STI Telecom"},"description":"Téléphonie IP, Internet affaires, câblage structuré et lignes traditionnelles pour les entreprises canadiennes, depuis 1994."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.webp" alt="" width="153" height="60"><span class="voile-fil" aria-hidden="true"></span><span data-voile-libelle>Page introuvable</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouv-fils" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <path class="ouv-fil ouv-cuivre" d="M-20 520 C 180 540, 300 380, 420 470 S 470 520, 500 500" pathLength="1000"/><path class="ouv-fil ouv-fibre" d="M470 -20 C 450 160, 600 260, 520 360 S 480 460, 500 500" pathLength="1000"/><path class="ouv-fil ouv-gris" d="M1020 450 C 820 430, 720 600, 600 520 S 530 490, 500 500" pathLength="1000"/><path class="ouv-fil ouv-ivoire" d="M540 1020 C 560 840, 400 760, 470 640 S 520 540, 500 500" pathLength="1000"/>
+</svg>
+<ul class="ouv-etiquettes" aria-hidden="true"><li class="ouv-etiquette ouv-etiquette--telephonie">Téléphonie</li><li class="ouv-etiquette ouv-etiquette--internet">Internet</li><li class="ouv-etiquette ouv-etiquette--cablage">Câblage</li><li class="ouv-etiquette ouv-etiquette--lignes">Lignes</li></ul>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.webp" alt="" width="153" height="60">
+  <p class="ouverture-ligne">Un fournisseur. Une facture. Une équipe.</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="BV Communications, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo.webp" alt="" width="102" height="40">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/telephonie" data-libelle="Téléphonie IP">Téléphonie IP</a></li><li><a href="/#internet" data-libelle="Accueil">Internet</a></li><li><a href="/#cablage" data-libelle="Accueil">Câblage</a></li><li><a href="/#lignes" data-libelle="Accueil">Lignes</a></li><li><a href="/#estimateur" data-libelle="Accueil">Estimer ma facture</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en/404" hreflang="en" lang="en" data-langue="en" aria-label="English version">EN</a>
+      <a class="bouton bouton--entete" href="/evaluation" data-libelle="Évaluation gratuite">Évaluation gratuite</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span class="menu-icone" aria-hidden="true"><i></i><i></i></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul class="menu-liens">
+      <li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li>
+      <li style="--i:1"><a href="/telephonie" class="menu-lien" data-libelle="Téléphonie IP">Téléphonie IP</a></li><li style="--i:2"><a href="/#internet" class="menu-lien" data-libelle="Accueil">Internet</a></li><li style="--i:3"><a href="/#cablage" class="menu-lien" data-libelle="Accueil">Câblage</a></li><li style="--i:4"><a href="/#lignes" class="menu-lien" data-libelle="Accueil">Lignes</a></li><li style="--i:5"><a href="/#estimateur" class="menu-lien" data-libelle="Accueil">Estimer ma facture</a></li>
+      <li style="--i:6"><a href="/evaluation" class="menu-lien" data-libelle="Évaluation gratuite">Évaluation gratuite</a></li>
+    </ul>
+    <div class="menu-contact">
+      <p><a class="bouton" href="tel:+15148008080">Appeler 514 800-8080</a></p>
+      <p>359, av. Sainte-Croix, bureau 210, Saint-Laurent (Québec)<br>Bureau : du lundi au vendredi, de 9 h à 17 h</p>
+      <p><a class="entete-langue" href="/en/404" hreflang="en" lang="en" data-langue="en">English version</a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-hero page-hero--sombre introuvable" id="debut">
+  <figure class="media page-hero-fond" data-grok style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/grok/page-404-1168.webp" srcset="/assets/images/grok/page-404-640.webp 640w, /assets/images/grok/page-404-1168.webp 1168w" sizes="100vw" alt="Câble réseau débranché qui pend dans le vide" width="1168" height="784" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur page-hero-texte">
+    <p class="surtitre surtitre--mono" data-anime="gsap">404</p>
+    <h1 class="page-hero-titre"><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">Ce numéro n’est pas en service.</span></span></h1>
+    <p class="hero-intro" data-anime="gsap">La page que vous avez composée n’existe pas ou plus. Vérifiez l’adresse, ou revenez à l’accueil.</p>
+    <svg class="oscillo" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true" data-oscillo data-audit-ignorer><path d="M0 30 H600"/></svg>
+    <p class="hero-actions" data-anime="gsap"><a href="/" class="bouton bouton--grand" data-libelle="Accueil" data-action-principale>Revenir à l’accueil <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a> <a href="/evaluation" class="bouton bouton--contour-clair" data-libelle="Évaluation gratuite">Demander l’évaluation gratuite</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <img src="/assets/images/logo-clair.webp" alt="BV Communications" width="153" height="60" loading="lazy" decoding="async">
+    <p class="pied-devise">Un fournisseur. Une facture. Une équipe.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p><a href="tel:+15148008080">514 800-8080</a><br>Sans frais : <a href="tel:+18779902919">1 877 990-2919</a><br><a href="mailto:info@bvcomm.com">info@bvcomm.com</a></p>
+      <p>359, avenue Sainte-Croix, bureau 210, Saint-Laurent (Québec) H4N 2L3</p>
+      <p>Bureau : du lundi au vendredi, de 9 h à 17 h<br>Soutien technique 24/7 (à confirmer)</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul>
+        <li><a href="/" data-libelle="Accueil">Accueil</a></li>
+        <li><a href="/telephonie" data-libelle="Téléphonie IP">Téléphonie IP</a></li><li><a href="/#internet" data-libelle="Accueil">Internet</a></li><li><a href="/#cablage" data-libelle="Accueil">Câblage</a></li><li><a href="/#lignes" data-libelle="Accueil">Lignes</a></li><li><a href="/#estimateur" data-libelle="Accueil">Estimer ma facture</a></li>
+        <li><a href="/evaluation" data-libelle="Évaluation gratuite">Évaluation gratuite</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Informations légales">
+      <p class="pied-titre">Informations légales</p>
+      <ul><li><a href="/mentions-legales" data-libelle="Mentions légales">Mentions légales</a></li><li><a href="/conditions" data-libelle="Conditions générales">Conditions générales</a></li><li><a href="/confidentialite" data-libelle="Confidentialité">Confidentialité</a></li><li><a href="/plaintes" data-libelle="Plaintes">Plaintes</a></li><li><a href="/avis-911" data-libelle="Avis 9-1-1">Avis 9-1-1</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort de lecture</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+        <li><a class="entete-langue" href="/en/404" hreflang="en" lang="en" data-langue="en">English version</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette : les informations marquées « à compléter » ou « à confirmer » seront fournies par BV Communications.</p><p>© BV Communications · Depuis 1994 au service des entreprises canadiennes</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+15148008080">Appeler</a>
+  <a class="bouton" href="/evaluation" data-libelle="Évaluation gratuite">Évaluation gratuite</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,493 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueCourte": "EN",
+    "langueAutre": "English version",
+    "actionEntete": "Évaluation gratuite",
+    "appeler": "Appeler",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+    "sommaire": "Sommaire",
+    "legal": "Informations légales",
+    "contact": "Nous joindre",
+    "confort": "Confort de lecture",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les informations marquées « à compléter » ou « à confirmer » seront fournies par BV Communications.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "logoAlt": "BV Communications, accueil",
+    "introLigne": "Un fournisseur. Une facture. Une équipe.",
+    "fils": {
+      "telephonie": "Téléphonie",
+      "internet": "Internet",
+      "cablage": "Câblage",
+      "lignes": "Lignes"
+    },
+    "nav": {
+      "internet": "Internet",
+      "cablage": "Câblage",
+      "lignes": "Lignes",
+      "estimateur": "Estimer ma facture"
+    },
+    "adresse": "359, avenue Sainte-Croix, bureau 210, Saint-Laurent (Québec) H4N 2L3",
+    "adresseCourte": "359, av. Sainte-Croix, bureau 210, Saint-Laurent (Québec)",
+    "bureau": "Bureau : du lundi au vendredi, de 9 h à 17 h",
+    "soutien": "Soutien technique 24/7 (à confirmer)",
+    "sansFrais": "Sans frais :",
+    "carte": "Voir l’adresse sur une carte",
+    "nouvelOnglet": "(s’ouvre dans un nouvel onglet)",
+    "depuis": "Depuis 1994 au service des entreprises canadiennes",
+    "division": "Câblage réalisé par notre division STI Telecom (RBQ 5602-7956-01).",
+    "parUtilisateur": "par utilisateur par mois",
+    "parMois": "par mois",
+    "surSoumission": "Sur soumission",
+    "temoignagesTraduits": "Témoignages traduits de l’anglais.",
+    "aCompleter": "à compléter"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "BV Communications : téléphonie IP et Internet d’affaires à Montréal",
+      "description": "Téléphonie IP, Internet affaires, câblage et lignes traditionnelles pour les entreprises canadiennes depuis 1994 : un fournisseur, une facture, une équipe.",
+      "nav": "Accueil",
+      "partageAlt": "BV Communications : un fournisseur, une facture, une équipe",
+      "accroche": "Un fournisseur. Une facture. Une équipe."
+    },
+    "telephonie": {
+      "titre": "Téléphonie IP : Voxfon, 3CX et lignes SIP | BV Communications",
+      "description": "Voxfon hébergé pour les PME, 3CX pour grandir, lignes SIP pour garder votre système : la téléphonie IP de BV Communications, prix et fonctions.",
+      "nav": "Téléphonie IP",
+      "partageAlt": "La téléphonie IP de BV Communications",
+      "accroche": "La bonne solution pour votre taille."
+    },
+    "evaluation": {
+      "titre": "Évaluation technique gratuite | BV Communications",
+      "description": "Vous déménagez ou vous vous agrandissez ? Demandez une évaluation technique gratuite, une soumission et un essai à BV Communications.",
+      "nav": "Évaluation gratuite",
+      "partageAlt": "Demander une évaluation technique gratuite à BV Communications",
+      "accroche": "Évaluation technique gratuite."
+    },
+    "mentions-legales": {
+      "titre": "Mentions légales | BV Communications",
+      "description": "Éditeur, hébergeur, crédits et informations à fournir pour le site de BV Communications.",
+      "nav": "Mentions légales",
+      "partageAlt": "Mentions légales de BV Communications",
+      "accroche": "Mentions légales"
+    },
+    "conditions": {
+      "titre": "Conditions générales | BV Communications",
+      "description": "Les conditions générales de service de BV Communications : durée, facturation, annulation, résiliation.",
+      "nav": "Conditions générales",
+      "partageAlt": "Conditions générales de BV Communications",
+      "accroche": "Conditions générales"
+    },
+    "confidentialite": {
+      "titre": "Politique de confidentialité | BV Communications",
+      "description": "Comment BV Communications traite les renseignements personnels recueillis par son site.",
+      "nav": "Confidentialité",
+      "partageAlt": "Politique de confidentialité de BV Communications",
+      "accroche": "Confidentialité"
+    },
+    "plaintes": {
+      "titre": "Plaintes | BV Communications",
+      "description": "Comment déposer une plainte auprès de BV Communications, et les recours auprès de la CPRST et du CRTC.",
+      "nav": "Plaintes",
+      "partageAlt": "Déposer une plainte auprès de BV Communications",
+      "accroche": "Plaintes"
+    },
+    "avis-911": {
+      "titre": "Avis 9-1-1 en téléphonie IP | BV Communications",
+      "description": "Les limites du service 9-1-1 et E9-1-1 en téléphonie IP : avis aux clients de BV Communications.",
+      "nav": "Avis 9-1-1",
+      "partageAlt": "Avis 9-1-1 en téléphonie IP",
+      "accroche": "Avis 9-1-1 en téléphonie IP"
+    },
+    "404": {
+      "titre": "Page introuvable | BV Communications",
+      "description": "Cette page n’existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Ce numéro n’est pas en service."
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Téléphonie et Internet d’affaires",
+      "titre1": "Un fournisseur.",
+      "titre2": "Une facture.",
+      "titre3": "Une équipe.",
+      "texte": "Téléphonie IP, Internet affaires, câblage structuré et lignes traditionnelles pour les entreprises canadiennes, réunis chez un seul interlocuteur depuis 1994.",
+      "action": "Demander l’évaluation gratuite",
+      "info": "Vous déménagez ou vous vous agrandissez ? L’évaluation technique est gratuite.",
+      "alt": "Fibres optiques et paires de cuivre réunies en un seul faisceau de lumière",
+      "un": "Le chiffre 1 tracé par quatre fils réunis"
+    },
+    "blame": {
+      "titre": "Plus personne ne se renvoie la balle.",
+      "texte": "Quand la téléphonie, Internet et le câblage viennent de fournisseurs différents, chacun renvoie le problème à l’autre. Avec un seul fournisseur : une mise en service plus rapide, moins d’erreurs et des prix parmi les plus compétitifs.",
+      "a": "Fournisseur de téléphonie",
+      "b": "Fournisseur Internet",
+      "c": "Entreprise de câblage",
+      "d": "Compagnie de lignes",
+      "question": "Qui règle le problème ?",
+      "reponse": "Un seul numéro à appeler",
+      "alt": "Technicien de dos devant une baie de brassage bien rangée",
+      "schema": "Schéma : quatre fournisseurs qui se renvoient un problème, remplacés par un seul, BV Communications"
+    },
+    "services": {
+      "titre": "Quatre services, un seul fil.",
+      "texte": "Tout ce qui relie votre entreprise au reste du monde, installé et suivi par la même équipe.",
+      "indicateur": "Les quatre services"
+    },
+    "comparateur": {
+      "titre": "Quelle solution pour vous ?",
+      "texte": "Deux questions, et la solution qui vous convient s’allume. Les prix sont ceux publiés ; votre conseiller les confirme.",
+      "q1": "Combien d’utilisateurs ?",
+      "t1": "1 à 9",
+      "t2": "10 à 24",
+      "t3": "25 et plus",
+      "q2": "Votre besoin",
+      "b1": "Un nouveau système, hébergé pour moi",
+      "b2": "Garder mon système téléphonique actuel",
+      "b3": "Teams, centre d’appels ou plusieurs sites",
+      "recommande": "Recommandé pour vous",
+      "voxfonTitre": "Voxfon hébergé",
+      "voxfonTexte": "Pour les PME : de grandes fonctions à petit prix, tout est hébergé pour vous.",
+      "voxfonNote": "1 à 9 utilisateurs : 24,99 $ · 10 à 24 : 19,99 $ · 25 et plus : 14,99 $",
+      "troiscxTitre": "3CX",
+      "troiscxTexte": "Pour grandir : riche en fonctions, évolutif et souple, sur place ou en nuage.",
+      "troiscxNote": "Licence selon le nombre d’appels simultanés",
+      "sipTitre": "Lignes SIP",
+      "sipTexte": "Pour garder votre système actuel : qualité d’appel supérieure et économies.",
+      "sipNote": "Mensuel : 29,99 $ · 1 an : 24,99 $ · 3 ans : 14,99 $",
+      "detail": "Voir le détail",
+      "note": "Recommandation indicative, fondée sur la description de chaque offre par BV Communications.",
+      "alt": "Salle de réunion vide, écran éteint"
+    },
+    "estimateur": {
+      "titre": "Une seule facture. Combien ?",
+      "texte": "Choisissez vos services : le total se calcule avec les prix publiés par BV Communications.",
+      "telephonie": "Téléphonie",
+      "aucune": "Aucune",
+      "voxfon": "Voxfon hébergé",
+      "sip": "Lignes SIP (je garde mon système)",
+      "troiscx": "3CX (sur soumission)",
+      "utilisateurs": "Nombre d’utilisateurs",
+      "duree": "Durée de l’engagement SIP",
+      "mensuel": "Mensuel",
+      "unAn": "1 an",
+      "troisAns": "3 ans",
+      "engagementVoxfon": "Palier Voxfon : engagement de {n} ans",
+      "internet": "Internet",
+      "aucun": "Aucun",
+      "fttn": "FTTN",
+      "cable": "Câble",
+      "sansfil": "Sans fil",
+      "fibre": "Fibre dédiée",
+      "lignes": "Lignes d’affaires",
+      "nbLignes": "Nombre de lignes",
+      "sansEngagement": "Sans engagement (+20 $ par ligne, à confirmer)",
+      "pri": "Ajouter un ISDN PRI (dès 399 $ par mois, contrat de 3 ans)",
+      "sansFrais": "Numéros sans frais (4,95 $ chacun, minutes en sus)",
+      "cablage": "Prévoir du câblage (sur soumission)",
+      "moins": "Retirer un",
+      "plus": "Ajouter un",
+      "facture": "Votre facture BV",
+      "factureSous": "Estimation mensuelle",
+      "vide": "Choisissez au moins un service.",
+      "total": "Total mensuel estimé",
+      "aPartirDe": "à partir de",
+      "ligneVoxfon": "Voxfon · {n} utilisateurs × {p}",
+      "ligneSip": "Lignes SIP · {n} × {p}",
+      "ligne3cx": "3CX",
+      "ligneInternet": "Internet · {nom}",
+      "ligneLignes": "Lignes d’affaires · {n} × {p}",
+      "ligneSansEngagement": "Sans engagement · {n} × 20 $",
+      "lignePri": "ISDN PRI",
+      "ligneSansFrais": "Sans frais · {n} × 4,95 $",
+      "ligneCablage": "Câblage",
+      "piedFacture": "Estimation indicative fondée sur les prix publiés. Devise et taxes à confirmer. Les services sur soumission ne sont pas comptés.",
+      "action": "Recevoir ma soumission",
+      "alt": "Fil de cuivre enroulé sur papier sombre"
+    },
+    "parcours": {
+      "titre": "Comment ça se passe",
+      "texte": "Quatre étapes, un seul interlocuteur du début à la fin.",
+      "region": "Les étapes, défilement horizontal",
+      "glisser": "Faites glisser"
+    },
+    "preuves": {
+      "titre": "Depuis 1994.",
+      "texte": "{annees} ans au service des entreprises canadiennes, avec des produits de télécommunication de qualité.",
+      "clients": "Ils nous font confiance",
+      "temoignages": "Ce qu’en disent nos clients",
+      "partenaire": "Partenaire intégrateur certifié Platinum de 3CX",
+      "badgeAlt": "Badge 3CX Platinum Partner",
+      "ruban": "Logos de clients de BV Communications",
+      "alt": "Bobine de câble téléphonique en cuivre"
+    },
+    "fin": {
+      "titre": "Vous déménagez ? Vous vous agrandissez ?",
+      "texte": "Obtenez une évaluation technique gratuite. Un seul interlocuteur s’occupe du reste.",
+      "action": "Demander l’évaluation gratuite",
+      "alt": "Bureau lumineux au crépuscule, vu de l’intérieur"
+    }
+  },
+  "telephonie": {
+    "hero": {
+      "surtitre": "Téléphonie IP",
+      "titre": "La bonne solution pour votre taille.",
+      "texte": "Voxfon hébergé pour les PME, 3CX pour les entreprises qui grandissent, lignes SIP pour garder votre système actuel : BV Communications vous propose la téléphonie IP qui vous correspond.",
+      "action": "Demander une soumission",
+      "comparer": "Comparer les solutions",
+      "info": "Dès 14,99 $ par utilisateur par mois",
+      "alt": "Personne de dos portant un casque, des ondes de lumière traversent la pièce"
+    },
+    "voip": {
+      "titre": "La VoIP, c’est quoi ?",
+      "texte": "VoIP désigne la voix sur IP : le service téléphonique passe par Internet. La technologie ne se contente plus de remplacer le téléphone traditionnel : elle ajoute la vidéo et la messagerie, grâce aux appareils connectés et à un coût bien plus bas que les lignes de cuivre.",
+      "pourquoi": "Pourquoi la VoIP ?",
+      "alt": "Voyageur d’affaires au téléphone dans un aéroport"
+    },
+    "sousnav": "Sur cette page",
+    "voxfon": {
+      "titre": "Voxfon hébergé : de grandes fonctions, un petit prix.",
+      "texte": "Voxfon retire la complexité de la téléphonie IP hébergée : pas de forfaits flous ni de frais en plus pour les fonctions dont vous avez besoin. Tous les forfaits sont complets : suivez-moi, messagerie vocale vers courriel, postes à distance et bien plus.",
+      "fonctions": "Les fonctions",
+      "tarifs": "Tarifs et économies",
+      "palier1": "1 à 9 utilisateurs",
+      "palier2": "10 à 24 utilisateurs",
+      "palier3": "25 utilisateurs et plus",
+      "engagement": "Engagement de {n} ans",
+      "remise": "Remise supplémentaire de {n} % (conditions à préciser)",
+      "action": "Demander une soumission Voxfon",
+      "logoAlt": "Logo Voxfon",
+      "alt": "Petite équipe dans un bureau lumineux, une personne en appel avec un casque",
+      "engagement1": "Engagement d’un an"
+    },
+    "troiscx": {
+      "titre": "3CX : la plateforme qui grandit avec vous.",
+      "texte": "3CX est un système téléphonique logiciel aux standards ouverts, avec les communications unifiées intégrées. Il s’installe sur vos serveurs ou en nuage, sous Windows ou Linux, s’intègre aux principaux CRM et à Microsoft Teams, et fonctionne avec un large choix de téléphones IP, de softphones et d’applications iOS et Android.",
+      "teams": "Intégration Microsoft Teams",
+      "fonctions": "Les fonctions de 3CX",
+      "usages": "Pour qui ?",
+      "partenaire": "BV Communications est partenaire intégrateur certifié Platinum de 3CX.",
+      "prix": "Licences selon le nombre d’appels simultanés : sur soumission.",
+      "essai": "Essayer 3CX gratuitement",
+      "action": "Demander une soumission 3CX",
+      "captureApp": "Application 3CX sur ordinateur, téléphone IP et cellulaire",
+      "captureChat": "Clavardage en direct dans l’application 3CX",
+      "alt": "Salle de vidéoconférence moderne, chaises vides"
+    },
+    "sip": {
+      "titre": "Lignes SIP : gardez votre système, changez de facture.",
+      "texte": "Les lignes SIP, ou lignes téléphoniques virtuelles, offrent une qualité d’appel supérieure et intègrent la téléphonie Internet à une grande variété de systèmes. Vous profitez des économies tout en protégeant l’investissement dans votre système actuel. Notre équipe évalue l’ajout de cartes de lignes IP à votre système, ou installe chez vous une passerelle vers le réseau SIP privé et sécurisé de BV Communications.",
+      "caracteristiques": "Caractéristiques",
+      "tarifs": "Tarifs",
+      "mensuel": "Sans engagement",
+      "unAn": "Engagement d’un an",
+      "troisAns": "Engagement de 3 ans",
+      "action": "Demander une soumission SIP",
+      "alt": "Allée de centre de données entre des baies de serveurs"
+    },
+    "appareils": {
+      "titre": "Téléphones et casques",
+      "texte": "Plusieurs marques et modèles, pour que vous ayez l’appareil qui vous convient.",
+      "voir": "Voir la gamme {marque}",
+      "photo": "Photo du fabricant à venir",
+      "alt": "Plan de travail en bois clair, lumière de fenêtre"
+    },
+    "faq": {
+      "titre": "Questions fréquentes",
+      "alt": "Connecteurs RJ45 branchés dans un commutateur réseau"
+    },
+    "fin": {
+      "titre": "Prêt à changer de téléphonie ?",
+      "texte": "Décrivez votre situation : un spécialiste vous rappelle avec une soumission et un essai gratuit.",
+      "action": "Demander une soumission"
+    }
+  },
+  "evaluation": {
+    "hero": {
+      "titre": "Évaluation technique gratuite.",
+      "texte": "Vous déménagez, vous vous agrandissez, ou votre système vous lâche ? Décrivez votre situation : un spécialiste vous rappelle avec une soumission et un essai gratuit.",
+      "action": "Commencer",
+      "info": "Ou appelez le {tel}, du lundi au vendredi, de 9 h à 17 h.",
+      "alt": "Bureau vide pendant un déménagement, cartons et câbles au sol"
+    },
+    "form": {
+      "titre": "Votre demande en 5 étapes",
+      "deroule": "Situation, services, entreprise, coordonnées, puis récapitulatif. Environ 2 minutes.",
+      "etape": "Étape {n} sur {total}",
+      "e1": "Votre situation",
+      "e2": "Vos services",
+      "e3": "Votre entreprise",
+      "e4": "Vos coordonnées",
+      "e5": "Récapitulatif",
+      "situation": "Quelle est votre situation ?",
+      "sDemenagement": "Déménagement",
+      "sAgrandissement": "Agrandissement",
+      "sProbleme": "Problème avec mon fournisseur actuel",
+      "sComparaison": "Renouvellement ou comparaison",
+      "sNouvelle": "Nouvelle entreprise",
+      "services": "Quels services vous intéressent ?",
+      "servicesAide": "Cochez tout ce qui s’applique.",
+      "servicesErreur": "Choisissez au moins un service.",
+      "solution": "Solution de téléphonie envisagée",
+      "solInconnue": "Je ne sais pas encore",
+      "solVoxfon": "Voxfon hébergé",
+      "sol3cx": "3CX",
+      "solSip": "Lignes SIP",
+      "utilisateurs": "Nombre d’utilisateurs",
+      "u1": "1 à 9",
+      "u2": "10 à 24",
+      "u3": "25 à 99",
+      "u4": "100 et plus",
+      "sites": "Nombre d’emplacements",
+      "si1": "1",
+      "si2": "2 à 5",
+      "si3": "6 et plus",
+      "ville": "Ville (facultatif)",
+      "delai": "Échéance",
+      "d1": "Dès que possible",
+      "d2": "D’ici 1 à 3 mois",
+      "d3": "Plus tard",
+      "nom": "Nom",
+      "entreprise": "Entreprise",
+      "email": "Courriel",
+      "tel": "Téléphone (facultatif)",
+      "message": "Parlez-nous de vos besoins (facultatif)",
+      "estimation": "Estimation de l’estimateur",
+      "estimationValeur": "{montant} par mois (indicatif, taxes à confirmer)",
+      "recap": "Votre demande",
+      "recapVide": "Vos réponses s’afficheront ici.",
+      "modifier": "Modifier",
+      "precedent": "Étape précédente",
+      "suivant": "Étape suivante",
+      "envoyer": "Envoyer ma demande",
+      "donnees": "Vos renseignements servent seulement à répondre à votre demande. <a href=\"/confidentialite\">Politique de confidentialité</a> (à compléter).",
+      "envoye": "Demande simulée : rien n’a été envoyé. Sur le site final, elle partira vers l’équipe de BV Communications.",
+      "requis": "obligatoire"
+    },
+    "coordonnees": {
+      "titre": "Nos coordonnées",
+      "telephone": "Téléphone",
+      "courriels": "Courriels",
+      "general": "Renseignements :",
+      "support": "Soutien :",
+      "adresse": "Adresse",
+      "horaires": "Horaires",
+      "alt": "Accueil de bureau lumineux, comptoir de bois clair et plante"
+    }
+  },
+  "legal": {
+    "mentions": {
+      "titre": "Mentions légales",
+      "intro": "Informations sur l’éditeur et l’hébergeur du site. Les éléments marqués « à compléter » sont à fournir par BV Communications.",
+      "fiche": {
+        "titre": "À fournir par BV Communications",
+        "items": "Courriel des plaintes : support@ ou info@bvcomm.com (les deux figurent sur la page actuelle) · Raison sociale exacte et forme juridique · Numéro d’entreprise du Québec (NEQ) · Adresse du siège · Responsable du site · Responsable de la protection des renseignements personnels (titre et coordonnées) · Horaires et soutien 24/7 à confirmer · Devise et taxes des prix · Tarification SIP (par utilisateur ou par canal) · Remises Voxfon · Statut de partenaire 3CX à jour · Autorisation d’afficher les logos clients · Nom complet de l’entreprise « Wi » · Logo en format vectoriel · Photos réelles de l’équipe, du bureau et des chantiers · Texte de l’avis 9-1-1 · Version française des conditions validée"
+      },
+      "editeur": {
+        "titre": "Éditeur",
+        "texte": "BV Communications (raison sociale exacte à compléter), 359, avenue Sainte-Croix, bureau 210, Saint-Laurent (Québec) H4N 2L3, Canada. Téléphone : 514 800-8080. Courriel : info@bvcomm.com. NEQ : à compléter."
+      },
+      "hebergeur": {
+        "titre": "Hébergeur",
+        "texte": "Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis."
+      },
+      "credits": {
+        "titre": "Crédits",
+        "texte": "Photos des téléphones et captures de l’application 3CX : fabricants respectifs. Logos des clients et des entreprises citées : propriété de leurs titulaires (autorisations à confirmer). Les images marquées « Illustration générée » ont été créées par intelligence artificielle ; cette mention est à garder sur le site final."
+      },
+      "marques": {
+        "titre": "Marques",
+        "texte": "3CX, Microsoft Teams, Microsoft 365, Yealink, Grandstream, Fanvil, Plantronics et Poly sont des marques de leurs propriétaires respectifs."
+      },
+      "langue": {
+        "titre": "Langue",
+        "texte": "Ce site est offert en français et en anglais, conformément à la Charte de la langue française."
+      }
+    },
+    "conditions": {
+      "titre": "Conditions générales",
+      "intro": "Conditions générales de service de BV Communications.",
+      "avertissement": "Traduction de travail des conditions générales en anglais du site actuel, à faire valider par un juriste avant la mise en ligne. L’article 14 (langue du contrat) est à revoir : depuis la loi 96, un contrat d’adhésion doit d’abord être remis en français.",
+      "article": "Article {n}"
+    },
+    "confidentialite": {
+      "titre": "Politique de confidentialité",
+      "intro": "Cette politique est à compléter par BV Communications avant la mise en ligne, notamment selon la Loi 25 du Québec.",
+      "responsable": {
+        "titre": "Responsable de la protection des renseignements personnels",
+        "texte": "Titre et coordonnées : à compléter."
+      },
+      "recueil": {
+        "titre": "Renseignements recueillis",
+        "texte": "Le formulaire d’évaluation recueille votre nom, votre entreprise, votre courriel, votre téléphone si vous le donnez, et la description de vos besoins."
+      },
+      "usage": {
+        "titre": "Utilisation",
+        "texte": "Ces renseignements servent seulement à répondre à votre demande d’évaluation ou de soumission."
+      },
+      "conservation": {
+        "titre": "Conservation et communication",
+        "texte": "Durée de conservation, lieu d’hébergement des données et éventuels tiers : à compléter."
+      },
+      "droits": {
+        "titre": "Vos droits",
+        "texte": "Accès, rectification, retrait du consentement et plainte : modalités à compléter."
+      },
+      "stockage": {
+        "titre": "Stockage dans votre navigateur",
+        "texte": "Le site ne dépose aucun témoin publicitaire. Il garde seulement dans votre navigateur votre choix de langue et votre préférence pour les animations réduites."
+      }
+    },
+    "plaintes": {
+      "titre": "Plaintes",
+      "intro": "BV Communications veut vous aider à résoudre toute plainte de façon satisfaisante.",
+      "deposer": {
+        "titre": "Déposer une plainte",
+        "texte": "Écrivez-nous à support@bvcomm.com ou appelez sans frais le 1 877 990-2919."
+      },
+      "cprst": {
+        "titre": "Commission des plaintes relatives aux services de télécom-télévision (CPRST)",
+        "texte": "La CPRST est un organisme indépendant qui règle gratuitement les plaintes des consommateurs au sujet de leurs services de télécommunication et de télévision, et celles des petites entreprises au sujet de leurs services de télécommunication. Vous devez d’abord tenter de régler votre plainte directement avec votre fournisseur ; si vous n’y parvenez pas, la CPRST peut vous aider. Téléphone sans frais : 1 888 221-1687.",
+        "lien": "Site de la CPRST"
+      },
+      "crtc": {
+        "titre": "Conseil de la radiodiffusion et des télécommunications canadiennes (CRTC)",
+        "texte": "Le CRTC est l’organisme public chargé de réglementer la radiodiffusion et les télécommunications au Canada. Il a pris en charge la réglementation des entreprises de télécommunication en 1976. Téléphone sans frais : 1 877 249-2782.",
+        "lien": "Site du CRTC"
+      },
+      "logoAlt": "Logo de la CPRST (version anglaise : CCTS)"
+    },
+    "avis911": {
+      "titre": "Avis 9-1-1 en téléphonie IP",
+      "intro": "Texte à fournir par BV Communications avant la mise en ligne.",
+      "pourquoi": {
+        "titre": "Pourquoi cet avis",
+        "texte": "Le CRTC exige des fournisseurs de services VoIP locaux qu’ils informent leurs clients, avant la mise en service, de la disponibilité, des caractéristiques et des limites de leur service 9-1-1 ou E9-1-1 (décisions de télécom 2005-21 et 2005-61), et qu’ils obtiennent leur consentement exprès lorsque des limites existent."
+      },
+      "contenu": {
+        "titre": "Ce que l’avis doit préciser",
+        "texte": "Le type de service 9-1-1 offert (de base ou évolué), ses limites propres à la téléphonie IP, ce que le client doit faire pour en tenir compte, et la façon dont il en informe les autres utilisateurs : à compléter par BV Communications."
+      },
+      "voxfon": {
+        "titre": "Voxfon",
+        "texte": "Les forfaits Voxfon incluent le service E911. Caractéristiques et limites : à compléter."
+      }
+    }
+  },
+  "introuvable": {
+    "titre": "Ce numéro n’est pas en service.",
+    "texte": "La page que vous avez composée n’existe pas ou plus. Vérifiez l’adresse, ou revenez à l’accueil.",
+    "retour": "Revenir à l’accueil",
+    "evaluation": "Demander l’évaluation gratuite",
+    "alt": "Câble réseau débranché qui pend dans le vide"
+  }
+}

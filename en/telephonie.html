@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" data-v="1" data-gabarit="telephonie" data-page="telephonie" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business VoIP: Voxfon, 3CX and SIP trunking | BV Communications</title>
+<meta name="description" content="Hosted Voxfon for SMBs, 3CX to grow, SIP trunking to keep your system: BV Communications business VoIP, prices and features.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bvcomm-maquette.vercel.app/en/telephonie">
+<link rel="alternate" hreflang="fr" href="https://bvcomm-maquette.vercel.app/telephonie">
+<link rel="alternate" hreflang="en" href="https://bvcomm-maquette.vercel.app/en/telephonie">
+<link rel="alternate" hreflang="x-default" href="https://bvcomm-maquette.vercel.app/telephonie">
+<style>:root{--fond:#f2f0eb;--texte:#0e1720;--voile-fond:#0e1720;--ouverture-fond:#0e1720;--menu-fond:#0e1720}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2f0eb">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BV Communications">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Business VoIP: Voxfon, 3CX and SIP trunking | BV Communications">
+<meta property="og:description" content="Hosted Voxfon for SMBs, 3CX to grow, SIP trunking to keep your system: BV Communications business VoIP, prices and features.">
+<meta property="og:url" content="https://bvcomm-maquette.vercel.app/en/telephonie">
+<meta property="og:image" content="https://bvcomm-maquette.vercel.app/assets/partage/telephonie-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Business VoIP by BV Communications">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BV Communications","url":"https://bvcomm-maquette.vercel.app/","logo":"https://bvcomm-maquette.vercel.app/assets/images/logo.png","image":"https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg","telephone":"+1-514-800-8080","email":"info@bvcomm.com","foundingDate":"1994","areaServed":{"@type":"Country","name":"Canada"},"address":{"@type":"PostalAddress","streetAddress":"359 Sainte-Croix Ave., Suite 210","addressLocality":"Saint-Laurent","addressRegion":"QC","postalCode":"H4N 2L3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],"department":{"@type":"Organization","name":"STI Telecom"},"description":"Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, since 1994."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.webp" alt="" width="153" height="60"><span class="voile-fil" aria-hidden="true"></span><span data-voile-libelle>Business VoIP</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouv-fils" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <path class="ouv-fil ouv-cuivre" d="M-20 520 C 180 540, 300 380, 420 470 S 470 520, 500 500" pathLength="1000"/><path class="ouv-fil ouv-fibre" d="M470 -20 C 450 160, 600 260, 520 360 S 480 460, 500 500" pathLength="1000"/><path class="ouv-fil ouv-gris" d="M1020 450 C 820 430, 720 600, 600 520 S 530 490, 500 500" pathLength="1000"/><path class="ouv-fil ouv-ivoire" d="M540 1020 C 560 840, 400 760, 470 640 S 520 540, 500 500" pathLength="1000"/>
+</svg>
+<ul class="ouv-etiquettes" aria-hidden="true"><li class="ouv-etiquette ouv-etiquette--telephonie">Phone</li><li class="ouv-etiquette ouv-etiquette--internet">Internet</li><li class="ouv-etiquette ouv-etiquette--cablage">Cabling</li><li class="ouv-etiquette ouv-etiquette--lignes">Lines</li></ul>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.webp" alt="" width="153" height="60">
+  <p class="ouverture-ligne">One provider. One bill. One team.</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" aria-label="BV Communications, home" data-libelle="Home">
+      <img src="/assets/images/logo.webp" alt="" width="102" height="40">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/telephonie" data-libelle="Business VoIP" aria-current="page">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/telephonie" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">FR</a>
+      <a class="bouton bouton--entete" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span class="menu-icone" aria-hidden="true"><i></i><i></i></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul class="menu-liens">
+      <li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home">Home</a></li>
+      <li style="--i:1"><a href="/en/telephonie" class="menu-lien" data-libelle="Business VoIP" aria-current="page">Business VoIP</a></li><li style="--i:2"><a href="/en#internet" class="menu-lien" data-libelle="Home">Internet</a></li><li style="--i:3"><a href="/en#cablage" class="menu-lien" data-libelle="Home">Cabling</a></li><li style="--i:4"><a href="/en#lignes" class="menu-lien" data-libelle="Home">Legacy voice</a></li><li style="--i:5"><a href="/en#estimateur" class="menu-lien" data-libelle="Home">Estimate my bill</a></li>
+      <li style="--i:6"><a href="/en/evaluation" class="menu-lien" data-libelle="Free assessment">Free assessment</a></li>
+    </ul>
+    <div class="menu-contact">
+      <p><a class="bouton" href="tel:+15148008080">Call 514 800-8080</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec<br>Office: Monday to Friday, 9 a.m. to 5 p.m.</p>
+      <p><a class="entete-langue" href="/telephonie" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-hero page-hero--sombre" id="debut">
+  <figure class="media page-hero-fond" data-grok style="--cadrage:80% 45%;--cadrage-mobile:62% 78%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/telephonie-ouverture-mobile-640.webp 640w, /assets/images/grok/telephonie-ouverture-mobile-784.webp 784w" sizes="100vw">
+    <img src="/assets/images/grok/telephonie-ouverture-1168.webp" srcset="/assets/images/grok/telephonie-ouverture-640.webp 640w, /assets/images/grok/telephonie-ouverture-1168.webp 1168w" sizes="100vw" alt="Person seen from behind wearing a headset, waves of light across the room" width="1168" height="784" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="conteneur page-hero-texte">
+    <p class="surtitre" data-anime="gsap">Business VoIP</p>
+    <h1 class="page-hero-titre"><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">The right solution for your size.</span></span></h1>
+    <p class="hero-intro" data-anime="gsap">Hosted Voxfon for SMBs, 3CX for growing businesses, SIP trunking to keep your current system: BV Communications gives your business the right VoIP solution for your needs.</p>
+    <p class="hero-actions" data-anime="gsap">
+      <a href="/en/evaluation?s_telephonie=oui" class="bouton bouton--grand" data-libelle="Free assessment" data-action-principale>Get a quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <a class="lien-fleche lien-fleche--clair" href="#voxfon">Compare solutions <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </p>
+    <p class="hero-info" data-info-cle data-anime="gsap"><strong data-prix>From $14.99 per user per month</strong></p>
+  </div>
+</section>
+<section class="voip conteneur" id="voip">
+  <div class="voip-texte">
+    <h2 class="titre-onde">What is VoIP?</h2>
+    <p data-anime>VoIP stands for Voice over Internet Protocol: phone service through the internet. The technology has moved past simply replacing traditional telephones to adding voice and video calling to messaging, driven by connected devices and a far lower cost than copper wire phone service.</p>
+    <h3 class="voip-pourquoi" data-anime>Why choose VoIP?</h3>
+    <ol class="raisons"><li data-anime><span class="raison-num" aria-hidden="true">01</span><span><strong>More than voice.</strong> You can communicate via video, text, or chat.</span></li><li data-anime><span class="raison-num" aria-hidden="true">02</span><span><strong>No longer tied to a desk.</strong> You can reach anyone within your organization anywhere in the world at any time.</span></li><li data-anime><span class="raison-num" aria-hidden="true">03</span><span><strong>No longer stuck with your phone company.</strong> Dynamic, flexible companies like BV Communications give your company the tools it needs to succeed.</span></li><li data-anime><span class="raison-num" aria-hidden="true">04</span><span><strong>Savings.</strong> Do much more for much less.</span></li></ol>
+  </div>
+  <figure class="media voip-media" data-grok style="--cadrage:40% 55%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-pourquoi-784.webp" srcset="/assets/images/grok/telephonie-pourquoi-640.webp 640w, /assets/images/grok/telephonie-pourquoi-784.webp 784w" sizes="(max-width: 760px) 100vw, 36vw" alt="Business traveler on the phone in an airport" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+</section>
+<nav class="sous-nav" aria-label="On this page" data-sous-nav>
+  <ul class="conteneur"><li><a href="#voxfon">Voxfon</a></li><li><a href="#plateforme-3cx">3CX</a></li><li><a href="#lignes-sip">SIP</a></li><li><a href="#appareils">Phones and headsets</a></li><li><a href="#questions">Frequently asked questions</a></li></ul>
+</nav>
+<section class="offre offre--voxfon" id="voxfon">
+  <div class="conteneur offre-grille">
+    <div class="offre-tete">
+      <img class="offre-logo" src="/assets/images/site/voxfon.webp" alt="Voxfon logo" width="153" height="51" loading="lazy" decoding="async">
+      <h2 class="titre-onde">Hosted Voxfon: big features, small price.</h2>
+      <p data-anime>Voxfon has taken the complexities out of hosted business VoIP: no more vague pricing plans and extra charges for features you need. All Voxfon plans come fully featured with options like find-me-follow-me, voicemail to email, remote extensions and much more.</p>
+    </div>
+    <figure class="media offre-media offre-media--paysage" data-grok style="--cadrage:50% 0%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-voxfon-784.webp" srcset="/assets/images/grok/telephonie-voxfon-640.webp 640w, /assets/images/grok/telephonie-voxfon-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Small team in a bright office, one person on a call with a headset" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+  <div class="conteneur">
+    <h3 class="sous-titre">Pricing and savings</h3>
+    <ol class="paliers"><li class="palier" data-anime>
+      <p class="palier-taille">1 to 9 users</p>
+      <p class="palier-prix" data-prix><strong>$24.99</strong> <span>per user per month</span></p>
+      <p class="palier-detail">1-year commitment<br>Additional 5% savings (terms to be specified)</p>
+    </li><li class="palier" data-anime>
+      <p class="palier-taille">10 to 24 users</p>
+      <p class="palier-prix" data-prix><strong>$19.99</strong> <span>per user per month</span></p>
+      <p class="palier-detail">3-year commitment<br>Additional 10% savings (terms to be specified)</p>
+    </li><li class="palier" data-anime>
+      <p class="palier-taille">25 users and up</p>
+      <p class="palier-prix" data-prix><strong>$14.99</strong> <span>per user per month</span></p>
+      <p class="palier-detail">5-year commitment<br>Additional 20% savings (terms to be specified)</p>
+    </li></ol>
+    <h3 class="sous-titre">Features</h3>
+    <div class="fonctions"><div class="fonctions-groupe" data-anime><h4>Included in every plan</h4><ul class="puces"><li>Unlimited local calling, in and out</li><li>Unlimited inbound voice channels</li><li>Canada/U.S. long distance (person-to-person)</li><li>Bilingual IVR with extensions menu (automated attendant)</li><li>Remote extensions</li><li>User portal</li></ul></div><div class="fonctions-groupe" data-anime><h4>Call handling</h4><ul class="puces"><li>Caller ID</li><li>Call hold</li><li>Call forward</li><li>Call transfer</li><li>Call park</li><li>HD voice</li><li>Voicemail</li><li>Voicemail to email</li><li>Fax to email</li><li>E911</li></ul></div><div class="fonctions-groupe" data-anime><h4>Team and reception</h4><ul class="puces"><li>Do not disturb</li><li>Find me</li><li>Follow me</li><li>Ring group</li><li>Call queue</li><li>Call view</li><li>Call reports</li><li>Music on hold</li><li>Message on hold</li><li>Paging</li></ul></div></div>
+    <p class="offre-action"><a href="/en/evaluation?s_telephonie=oui&amp;solution=voxfon" class="bouton" data-libelle="Free assessment">Get a Voxfon quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a> <a href="/en/avis-911" class="lien-discret" data-libelle="9-1-1 notice">9-1-1 notice</a></p>
+    <div class="temoins-grille temoins-grille--offre"><figure class="temoin " id="temoin-jordan-sauro">
+  <blockquote><p>BV Communication provides all the “level up” advanced features without all the headaches and at a competitive price point. Service is beyond compare. Thanks to BV, our company can grow easier and faster across the world.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-uniking.webp" alt="Logo Uniking" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Jordan Sauro, BBA</strong><br><span class="temoin-ent">Uniking</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-robert-karas">
+  <blockquote><p>We have been with BV Communications for several years now and we couldn’t be happier. It’s one thing to get sold a system, but it’s another thing to continue to provide amazing after sales service. BV has been there for us every step of the way. We’d happily recommend them to anyone.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-wi.webp" alt="Logo Wi (full name to be completed)" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Robert Karas</strong><br><span class="temoin-ent">Wi (full name to be completed)</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-chris-bucci">
+  <blockquote><p>BV Communications was able to resolve some major issues that we had from our previous supplier of IP telephony. They also were able to provide a solution for our mobile staff with the help of a cell phone app which made things so much easier to respond to incoming calls both internally and externally. We highly recommend BV Communications for your IP telephony needs.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-lipari.webp" alt="Logo Lipari" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Chris Bucci</strong><br><span class="temoin-ent">Lipari</span></span>
+  </figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="offre offre--3cx" id="plateforme-3cx">
+  <div class="conteneur offre-grille offre-grille--inverse">
+    <div class="offre-tete">
+      <p class="offre-badge"><img src="/assets/images/site/3cx-platinum.webp" alt="" width="72" height="72" loading="lazy" decoding="async"><span>BV Communications is a certified 3CX Platinum Partner Integrator.</span></p>
+      <h2 class="titre-onde">3CX: the platform that grows with you.</h2>
+      <p data-anime>3CX is a software-based, open-standards IP PBX with unified communications built in. It runs on your servers or in the cloud, on Windows or Linux, integrates with popular CRM systems and Microsoft Teams, and works with a wide range of IP phones, softphones and iOS and Android apps.</p>
+      <p class="offre-prix" data-prix data-anime>Licences based on simultaneous calls: quoted on request.</p>
+    </div>
+    <figure class="media offre-media" data-grok style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-3cx-784.webp" srcset="/assets/images/grok/telephonie-3cx-640.webp 640w, /assets/images/grok/telephonie-3cx-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Modern videoconference room, empty chairs" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+  <div class="conteneur">
+    <ul class="atouts"><li data-anime><h3>Complete freedom</h3><p>Install your PBX on a server on your premises or in the cloud, and choose your SIP trunk provider and IP phones, saving thousands per year on your business phone system.</p></li><li data-anime><h3>No borders</h3><p>Ideal for companies with offices in various locations: a complete PBX at a far lower cost, with calling that is cheaper than a traditional phone company.</p></li><li data-anime><h3>Enterprise-level</h3><p>A complete system, simple, affordable and flexible, without the cost and management headaches of traditional systems or the limits of shared cloud PBXs.</p></li><li data-anime><h3>Microsoft Teams integration</h3><p>A native bridge connects your Teams users with 3CX, so you save substantially on per-user monthly fees.</p></li></ul>
+    <div class="troiscx-captures">
+      <figure class="capture" data-anime><img src="/assets/images/site/3cx-application-475.webp" alt="3CX app on desktop, IP phone and mobile" width="475" height="283" loading="lazy" decoding="async"></figure>
+      <div class="teams" data-anime>
+        <h3>Microsoft Teams integration</h3>
+        <ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>3CX to Teams bridge: 3CX users call Teams users and vice versa</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Teams users can dial out through 3CX</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Microsoft-approved SSL certificate</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Dial scripts configured for you</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Microsoft 365 integration configured and working</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Requires Microsoft 365 E5 with Phone System, or Business Voice</li></ul>
+      </div>
+    </div>
+    <div class="troiscx-bas">
+      <div class="fonctions-groupe" data-anime><h3>3CX features</h3><ul class="puces puces--colonnes"><li>Voicemail</li><li>Call forwarding</li><li>Auto-attendant</li><li>Conferencing</li><li>Call recording</li><li>Call queues</li><li>Web conferencing</li><li>CRM integration</li><li>iOS and Android apps</li><li>Call center features</li><li>Wallboards</li><li>Disaster recovery</li><li>Live chat and SMS</li></ul></div>
+      <figure class="capture capture--chat" data-anime><img src="/assets/images/site/3cx-clavardage-499.webp" alt="Live chat in the 3CX app" width="499" height="400" loading="lazy" decoding="async"></figure>
+    </div>
+    <h3 class="sous-titre">Who is it for?</h3>
+    <ul class="usages"><li data-anime><h4>Small and medium businesses</h4><p>Replace a traditional phone system with a richer solution that is easy to manage and scale.</p></li><li data-anime><h4>Multiple locations</h4><p>One unified communications solution that connects every employee.</p></li><li data-anime><h4>Remote work</h4><p>The full range of PBX features, from home or on the road.</p></li><li data-anime><h4>Call centers</h4><p>Inbound and outbound calls, queues, wallboards and real-time reporting.</p></li></ul>
+    <p class="offre-action"><a href="/en/evaluation?s_telephonie=oui&amp;solution=3cx" class="bouton" data-libelle="Free assessment">Get a 3CX quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a> <a href="https://www.3cx.com/phone-system/download-phone-system/?resellerId=211077" target="_blank" rel="noopener noreferrer" class="lien-discret">Try 3CX for free<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+    <div class="temoins-grille temoins-grille--offre"><figure class="temoin " id="temoin-pat-de-michele">
+  <blockquote><p>We have been a client of BV for well over 20 years. That in itself should say how much we value our partnership with them. They have been nothing but supportive with all our phone needs and even with the migration to our new 3CX system which has changed our way of working thanks to the in-depth understanding they have of our company needs. I highly recommend BV not only for the quality service but because they truly understand the whole phone thing…</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-derme.webp" alt="Logo Derme &amp; Co" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Pat De Michele</strong><br><span class="temoin-ent">Derme &amp; Co</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-sean-craig">
+  <blockquote><p>BV Communications really saved us a lot of time and trouble when our traditional lines were down, in less than a day they converted our business to 3CX VOIP services, the switch was seamless, the software works great and we couldn’t be happier with the product as well as the great service we received. I highly recommend BV and the 3CX platform.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-tricots-liesse.webp" alt="Logo Tricots Liesse" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Sean Craig</strong><br><span class="temoin-ent">Tricots Liesse</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-fernando-pinzon">
+  <blockquote><p>We are very happy to have chosen BV Communications and 3CX as our VoIP and IP PBX solution. They were by far the best market offering in terms of our needs, features, value and expertise. 3CX is a versatile and user-friendly platform that allows our team to stay connected at all times, anywhere. BV Communications was the perfect implementation partner thanks to their know-how and exceptional support. We are extremely satisfied with a choice. Highly recommended!</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-sunforce.webp" alt="Logo Sunforce" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Fernando Pinzon</strong>, IT Administrator<br><span class="temoin-ent">Sunforce</span></span>
+  </figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="offre offre--sip" id="lignes-sip">
+  <div class="conteneur offre-grille">
+    <div class="offre-tete">
+      <h2 class="titre-onde">SIP trunking: keep your system, change your bill.</h2>
+      <p data-anime>SIP trunking, or virtual phone lines, delivers superior call quality and brings Internet telephony to a wide variety of phone systems. You get the savings while protecting the investment in your current system. Our implementation team assesses adding IP trunk line cards to your system, or installs a gateway at your location giving you access to BV Communications’ private and secure SIP network.</p>
+    </div>
+    <figure class="media offre-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-sip-784.webp" srcset="/assets/images/grok/telephonie-sip-640.webp 640w, /assets/images/grok/telephonie-sip-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Data center aisle between server racks" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+  <div class="conteneur">
+    <ul class="atouts atouts--trois"><li data-anime><h3>Reduced costs</h3><p>Save on your monthly line costs compared to traditional analog lines, with Canada/U.S. long distance included.</p></li><li data-anime><h3>Increased flexibility</h3><p>Pool your lines from multiple locations, share the capacity and get one simple monthly bill. Add lines on the fly.</p></li><li data-anime><h3>Fast support</h3><p>We own our solution, so support is quick and efficient.</p></li></ul>
+    <div class="sip-bas">
+      <div data-anime><h3 class="sous-titre">Features</h3><ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Dedicated SIP trunk servers in secured data centers</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Unlimited local calling</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Unlimited person-to-person long distance to Canada and the U.S.</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Reduced international long-distance rates</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Direct Inward Dial (DID)</li></ul></div>
+      <div><h3 class="sous-titre">Pricing</h3>
+        <ol class="paliers paliers--sip"><li class="palier" data-anime>
+          <p class="palier-taille">Monthly term</p>
+          <p class="palier-prix" data-prix><strong>$29.99</strong> <span>per user per month</span></p>
+        </li><li class="palier" data-anime>
+          <p class="palier-taille">1-year term</p>
+          <p class="palier-prix" data-prix><strong>$24.99</strong> <span>per user per month</span></p>
+        </li><li class="palier" data-anime>
+          <p class="palier-taille">3-year term</p>
+          <p class="palier-prix" data-prix><strong>$14.99</strong> <span>per user per month</span></p>
+        </li></ol>
+      </div>
+    </div>
+    <p class="offre-action"><a href="/en/evaluation?s_telephonie=oui&amp;solution=sip" class="bouton" data-libelle="Free assessment">Get a SIP quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></p>
+    <div class="temoins-grille temoins-grille--offre"><figure class="temoin " id="temoin-marben-acosta-teran">
+  <blockquote><p>We have been using BV Communications for more than 3 years now and we have had nothing but a great experience. In these years, our telephony needs have changed, due to the growth of our company and the new challenges of remote work. During this process, BV Communications has always had a solution that meets our needs. The work of our account representative, Tasso, has been exceptional. He is very responsive and thorough. I know that I can always count on him. I would definitely recommend their services.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-mexicom.webp" alt="Logo Mexicom Logistics" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Marben Acosta Terán</strong><br><span class="temoin-ent">Mexicom Logistics</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-kamel-eddine-fekir">
+  <blockquote><p>We’re a physiotherapy clinic with a very high volume of calls, employees who work from home, and I must encourage and congratulate our telephony supplier for its impeccable service. In addition to being able to manage absolutely everything from our computer, the after-sales service is extremely efficient.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-cpmsr.webp" alt="Logo Clinique de physiatrie et de médecine du sport Rockland" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Kamel Eddine Fekir</strong><br><span class="temoin-ent">Clinique de physiatrie et de médecine du sport Rockland</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-jennifer">
+  <blockquote><p>BV Communications has been so great to work with! They have taken care of the set up of our phone system with ease. Prior to switching to BV, our VOIP phone systems kept failing and we would be without service and contact with our customers. Since we have switched we have not had that problem at all! Any questions we have or changes we need made are responded to quickly. We are so happy to have made the switch!</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-kodiak.webp" alt="Logo Kodiak Snow Blowing" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Jennifer</strong><br><span class="temoin-ent">Kodiak Snow Blowing</span></span>
+  </figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="appareils" id="appareils">
+  <figure class="media appareils-fond" data-grok style="--cadrage:12% 15%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-appareils-fond-1168.webp" srcset="/assets/images/grok/telephonie-appareils-fond-640.webp 640w, /assets/images/grok/telephonie-appareils-fond-1168.webp 1168w" sizes="100vw" alt="Light oak desk, window light" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="conteneur appareils-contenu">
+    <h2 class="titre-onde">Phones and headsets</h2>
+    <p data-anime>A variety of makes and models, so you get the device that suits your needs.</p>
+    <ul class="appareils-liste"><li class="appareil" data-anime data-incline>
+      <img class="appareil-photo" src="/assets/images/site/yealink-t46u-640.webp" alt="Yealink IP phone on a desk" width="640" height="388" loading="lazy" decoding="async">
+      <h3>Yealink</h3>
+      <p>IP phones</p>
+      <a href="https://www.yealink.com/en/product-list/ip-phone" target="_blank" rel="noopener noreferrer" class="lien-fleche">See the Yealink range<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </li><li class="appareil" data-anime data-incline>
+      <img class="appareil-photo appareil-photo--detoure" src="/assets/images/site/grandstream-gxp1630-400.webp" alt="Grandstream GXP1630 IP phone" width="400" height="348" loading="lazy" decoding="async">
+      <h3>Grandstream</h3>
+      <p>IP phones</p>
+      <a href="https://www.grandstream.com/products/ip-voice-telephony" target="_blank" rel="noopener noreferrer" class="lien-fleche">See the Grandstream range<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </li><li class="appareil appareil--typo" data-anime data-incline>
+      <span class="appareil-dessin" data-visuel><svg viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect x="30" y="30" width="100" height="62" rx="6"/><rect x="62" y="38" width="58" height="22" rx="2"/><path d="M38 36 q-10 26 0 50"/><path d="M62 70 h6 M74 70 h6 M86 70 h6 M62 78 h6 M74 78 h6 M86 78 h6 M100 70 h14 M100 78 h14"/></svg><span>Manufacturer photo to come</span></span>
+      <h3>Fanvil</h3>
+      <p>IP phones</p>
+      <a href="https://www.fanvil.com/products/p1/index.html" target="_blank" rel="noopener noreferrer" class="lien-fleche">See the Fanvil range<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </li><li class="appareil appareil--typo" data-anime data-incline>
+      <span class="appareil-dessin" data-visuel><svg viewBox="0 0 160 120" aria-hidden="true" focusable="false"><path d="M50 74 V62 a30 30 0 0 1 60 0 V74"/><rect x="40" y="68" width="16" height="26" rx="6"/><rect x="104" y="68" width="16" height="26" rx="6"/><path d="M48 94 q4 14 26 14 h6"/><circle cx="84" cy="108" r="3"/></svg><span>Manufacturer photo to come</span></span>
+      <h3>Plantronics / Poly</h3>
+      <p>Headsets</p>
+      <a href="https://www.poly.com/us/en/products/headsets" target="_blank" rel="noopener noreferrer" class="lien-fleche">See the Plantronics range<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </li></ul>
+  </div>
+</section>
+<section class="faq conteneur" id="questions">
+  <div>
+    <h2 class="titre-onde">Frequently asked questions</h2>
+    <details class="faq-item" data-anime><summary>Can I keep my current phone system?</summary><div class="faq-reponse"><p>Yes. With SIP trunking you keep your system and get the savings of IP telephony: our team assesses adding IP trunk line cards or installs a gateway at your location.</p></div></details><details class="faq-item" data-anime><summary>Can remote staff answer calls?</summary><div class="faq-reponse"><p>Yes. Voxfon includes remote extensions, and 3CX offers iOS and Android apps plus a softphone to work from anywhere.</p></div></details><details class="faq-item" data-anime><summary>Does it work with Microsoft Teams?</summary><div class="faq-reponse"><p>3CX integrates natively with Teams: your Teams users call 3CX users and vice versa, and can dial out through 3CX. It requires Microsoft 365 E5 with Phone System, or Business Voice.</p></div></details><details class="faq-item" data-anime><summary>Which phones and headsets can I use?</summary><div class="faq-reponse"><p>We offer Yealink, Grandstream and Fanvil phones, and Plantronics/Poly headsets. With 3CX, you can also choose your own IP phones.</p></div></details><details class="faq-item" data-anime><summary>What about 9-1-1?</summary><div class="faq-reponse"><p>Voxfon includes E911 service. The limitations of 9-1-1 on VoIP will be set out in the 9-1-1 notice, to be completed by BV Communications.</p></div></details>
+    <div class="appel" id="soumission">
+      <h3 class="appel-titre">Ready to change your phone system?</h3>
+      <p data-anime>Tell us about your situation: a specialist calls you back with a quote and a free trial.</p>
+      <p data-anime><a href="/en/evaluation?s_telephonie=oui" class="bouton bouton--grand" data-libelle="Free assessment">Get a quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a> <a class="bouton bouton--contour" href="tel:+15148008080">Call 514 800-8080</a></p>
+    </div>
+  </div>
+  <figure class="media faq-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/telephonie-faq-784.webp" srcset="/assets/images/grok/telephonie-faq-640.webp 640w, /assets/images/grok/telephonie-faq-784.webp 784w" sizes="(max-width: 760px) 100vw, 32vw" alt="RJ45 connectors plugged into a network switch" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <img src="/assets/images/logo-clair.webp" alt="BV Communications" width="153" height="60" loading="lazy" decoding="async">
+    <p class="pied-devise">One provider. One bill. One team.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">Contact us</p>
+      <p><a href="tel:+15148008080">514 800-8080</a><br>Toll-free: <a href="tel:+18779902919">1 877 990-2919</a><br><a href="mailto:info@bvcomm.com">info@bvcomm.com</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3</p>
+      <p>Office: Monday to Friday, 9 a.m. to 5 p.m.<br>24/7 technical support (to be confirmed)</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul>
+        <li><a href="/en" data-libelle="Home">Home</a></li>
+        <li><a href="/en/telephonie" data-libelle="Business VoIP" aria-current="page">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li>
+        <li><a href="/en/evaluation" data-libelle="Free assessment">Free assessment</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal information">
+      <p class="pied-titre">Legal information</p>
+      <ul><li><a href="/en/mentions-legales" data-libelle="Legal notice">Legal notice</a></li><li><a href="/en/conditions" data-libelle="Terms and conditions">Terms and conditions</a></li><li><a href="/en/confidentialite" data-libelle="Privacy">Privacy</a></li><li><a href="/en/plaintes" data-libelle="Complaints">Complaints</a></li><li><a href="/en/avis-911" data-libelle="9-1-1 notice">9-1-1 notice</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Reading comfort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></li>
+        <li><a href="#haut" data-sans-transition>Back to top</a></li>
+        <li><a class="entete-langue" href="/telephonie" hreflang="fr" lang="fr" data-langue="fr">Version française</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mock-up: information marked “to be completed” or “to be confirmed” will be provided by BV Communications.</p><p>© BV Communications · Serving Canadian businesses since 1994</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+15148008080">Call</a>
+  <a class="bouton" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+</div>
+</body>
+</html>

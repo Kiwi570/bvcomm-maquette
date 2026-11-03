@@ -1,0 +1,22 @@
+{
+  "note": "Prix publiés sur le site actuel (novembre 2026). Devise et taxes non précisées : à confirmer.",
+  "voxfon": [
+    { "min": 1, "max": 9, "prix": 24.99, "engagement": 1, "remise": 5 },
+    { "min": 10, "max": 24, "prix": 19.99, "engagement": 3, "remise": 10 },
+    { "min": 25, "max": null, "prix": 14.99, "engagement": 5, "remise": 20 }
+  ],
+  "sip": [
+    { "cle": "mensuel", "prix": 29.99 },
+    { "cle": "1an", "prix": 24.99 },
+    { "cle": "3ans", "prix": 14.99 }
+  ],
+  "internet": [
+    { "cle": "fttn", "prix": 49.99 },
+    { "cle": "cable", "prix": 49.99 },
+    { "cle": "sansfil", "prix": 129.99 },
+    { "cle": "fibre", "prix": 399 }
+  ],
+  "lignes": { "moinsDe5": 79.99, "cinqEtPlus": 39.99, "sansEngagement": 20 },
+  "pri": 399,
+  "sansFrais": 4.95
+}

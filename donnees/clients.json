@@ -1,0 +1,52 @@
+[
+  {
+    "nom": "Les 3 Brasseurs",
+    "logo": "site/client-3-brasseurs",
+    "l": 96,
+    "h": 120,
+    "carre": true
+  },
+  {
+    "nom": "Specialized",
+    "logo": "site/client-specialized",
+    "l": 300,
+    "h": 76
+  },
+  {
+    "nom": "Jetset Aerospace",
+    "logo": "site/client-jetset-aerospace",
+    "l": 371,
+    "h": 82
+  },
+  {
+    "nom": "Kim Phat",
+    "logo": "site/client-kim-phat",
+    "l": 218,
+    "h": 32
+  },
+  {
+    "nom": "Thomson Reuters",
+    "logo": "site/client-thomson-reuters",
+    "l": 120,
+    "h": 120,
+    "carre": true
+  },
+  {
+    "nom": "Michael Kors",
+    "logo": "site/client-michael-kors",
+    "l": 411,
+    "h": 38
+  },
+  {
+    "nom": "Eurofins",
+    "logo": "site/client-eurofins",
+    "l": 328,
+    "h": 67
+  },
+  {
+    "nom": "Fontaine Santé",
+    "logo": "site/client-fontaine-sante",
+    "l": 200,
+    "h": 111
+  }
+]

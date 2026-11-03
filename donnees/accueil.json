@@ -1,0 +1,261 @@
+{
+  "services": [
+    {
+      "id": "telephonie-ip",
+      "matiere": "cuivre",
+      "image": "grok/service-telephonie",
+      "cadrage": "62% 32%",
+      "titre": {
+        "fr": "Téléphonie IP",
+        "en": "Business VoIP"
+      },
+      "texte": {
+        "fr": "Voxfon hébergé, plateforme 3CX, lignes SIP, téléphones et casques : abordable, fiable, riche en fonctions, mis en service rapidement, avec une facturation claire.",
+        "en": "Hosted Voxfon, the 3CX platform, SIP trunking, phones and headsets: affordable, reliable, feature-rich, quick to set up and activate, with clear billing."
+      },
+      "prix": {
+        "fr": "Dès 14,99 $ par utilisateur par mois",
+        "en": "From $14.99 per user per month"
+      },
+      "note": {
+        "fr": "Voxfon, 25 utilisateurs et plus, engagement de 5 ans",
+        "en": "Voxfon, 25 users and up, 5-year commitment"
+      },
+      "faits": [
+        {
+          "fr": "Voxfon pour les PME, dès 1 utilisateur",
+          "en": "Voxfon for SMBs, from 1 user"
+        },
+        {
+          "fr": "3CX : intégration Microsoft Teams",
+          "en": "3CX: Microsoft Teams integration"
+        },
+        {
+          "fr": "Lignes SIP pour garder votre système",
+          "en": "SIP trunking to keep your system"
+        }
+      ],
+      "lien": {
+        "page": "telephonie",
+        "texte": {
+          "fr": "Voir la téléphonie IP",
+          "en": "Explore business VoIP"
+        }
+      }
+    },
+    {
+      "id": "internet",
+      "matiere": "fibre",
+      "image": "grok/service-internet",
+      "cadrage": "50% 50%",
+      "titre": {
+        "fr": "Internet affaires",
+        "en": "Business Internet"
+      },
+      "texte": {
+        "fr": "De l’ADSL de base à la fibre dédiée de 10 Gbit/s et plus : FTTN, câble, fibre optique ou sans fil, à Montréal, à Toronto ou ailleurs au Canada.",
+        "en": "From basic ADSL to dedicated fiber at 10 Gbps and beyond: FTTN, cable, fiber-optic or wireless, in Montreal, Toronto or anywhere else in Canada."
+      },
+      "prix": {
+        "fr": "Dès 49,99 $ par mois",
+        "en": "From $49.99 per month"
+      },
+      "note": {
+        "fr": "FTTN ou câble ; fibre dédiée dès 399 $ par mois",
+        "en": "FTTN or cable; dedicated fiber from $399 per month"
+      },
+      "faits": [
+        {
+          "fr": "Fibre dédiée : usage illimité, plusieurs adresses IP fixes",
+          "en": "Dedicated fiber: unlimited usage, multiple fixed IPs"
+        },
+        {
+          "fr": "Sans fil dès 129,99 $, aussi en connexion de secours",
+          "en": "Wireless from $129.99, also as a backup link"
+        },
+        {
+          "fr": "Soutien 24/7 (à confirmer) sur des réseaux robustes",
+          "en": "24/7 support (to be confirmed) on robust networks"
+        }
+      ],
+      "lien": {
+        "page": "evaluation",
+        "params": "s_internet=oui",
+        "texte": {
+          "fr": "Demander une soumission Internet",
+          "en": "Get an Internet quote"
+        }
+      }
+    },
+    {
+      "id": "cablage",
+      "matiere": "gris",
+      "image": "grok/service-cablage",
+      "cadrage": "50% 55%",
+      "titre": {
+        "fr": "Câblage structuré",
+        "en": "Structured cabling"
+      },
+      "texte": {
+        "fr": "Câblage réseau, données, fibre optique, coaxial et audio-vidéo, réalisé par notre division STI Telecom. Chaque câble et chaque connecteur est vérifié avant la fin de l’installation.",
+        "en": "Network, data, fiber-optic, coaxial and audio-video cabling, done by our STI Telecom division. Every cable and connector is tested before the installation is complete."
+      },
+      "prix": {
+        "fr": "Sur soumission",
+        "en": "Quoted on request"
+      },
+      "note": {
+        "fr": "STI Telecom · licence RBQ 5602-7956-01",
+        "en": "STI Telecom · RBQ licence 5602-7956-01"
+      },
+      "faits": [
+        {
+          "fr": "Cat 6, Cat 5e, fibre, points d’accès Wi-Fi, caméras",
+          "en": "Cat 6, Cat 5e, fiber, Wi-Fi access points, cameras"
+        },
+        {
+          "fr": "Armoires murales, baies et panneaux de brassage",
+          "en": "Wall cabinets, racks and patch panels"
+        },
+        {
+          "fr": "Déménagements, agrandissements et réparations",
+          "en": "Moves, expansions and repairs"
+        }
+      ],
+      "lien": {
+        "page": "evaluation",
+        "params": "s_cablage=oui",
+        "texte": {
+          "fr": "Demander une soumission câblage",
+          "en": "Get a cabling quote"
+        }
+      }
+    },
+    {
+      "id": "lignes",
+      "matiere": "ivoire",
+      "image": "grok/service-lignes",
+      "cadrage": "50% 50%",
+      "titre": {
+        "fr": "Lignes traditionnelles",
+        "en": "Legacy voice"
+      },
+      "texte": {
+        "fr": "Lignes d’affaires, interurbain, numéros sans frais et ISDN PRI pour les besoins plus importants, avec le pouvoir d’achat de BV Communications.",
+        "en": "Business lines, long distance, toll-free numbers and ISDN PRI for larger applications, with BV Communications’ purchasing power."
+      },
+      "prix": {
+        "fr": "Dès 39,99 $ par ligne par mois",
+        "en": "From $39.99 per line per month"
+      },
+      "note": {
+        "fr": "5 lignes et plus, contrat d’un an ; 79,99 $ sous 5 lignes (à confirmer)",
+        "en": "5 lines and up, 1-year contract; $79.99 under 5 lines (to be confirmed)"
+      },
+      "faits": [
+        {
+          "fr": "ISDN PRI dès 399 $ par mois, réparation en 4 h (SLA)",
+          "en": "ISDN PRI from $399 per month, 4-hour repair SLA"
+        },
+        {
+          "fr": "Numéros sans frais : 4,95 $ par mois chacun",
+          "en": "Toll-free numbers: $4.95 per month each"
+        },
+        {
+          "fr": "Présence locale dans plus de 90 pays",
+          "en": "Local presence in over 90 countries"
+        }
+      ],
+      "lien": {
+        "page": "evaluation",
+        "params": "s_lignes=oui",
+        "texte": {
+          "fr": "Demander une soumission lignes",
+          "en": "Get a legacy voice quote"
+        }
+      }
+    }
+  ],
+  "parcours": [
+    {
+      "image": "grok/parcours-evaluation",
+      "cadrage": "50% 50%",
+      "titre": {
+        "fr": "Évaluation gratuite",
+        "en": "Free assessment"
+      },
+      "texte": {
+        "fr": "On commence par une évaluation technique gratuite de vos installations et de vos besoins.",
+        "en": "We start with a free technical assessment of your premises and your needs."
+      }
+    },
+    {
+      "image": "grok/parcours-plan",
+      "cadrage": "50% 50%",
+      "titre": {
+        "fr": "Un plan sur mesure",
+        "en": "A tailored plan"
+      },
+      "texte": {
+        "fr": "Notre équipe de mise en œuvre étudie votre système actuel et conçoit le plan : intégration à votre téléphonie, passerelle ou câblage structuré.",
+        "en": "Our implementation team reviews your current system and designs the plan: integration with your phone system, a gateway or structured cabling."
+      }
+    },
+    {
+      "image": "grok/parcours-installation",
+      "cadrage": "50% 40%",
+      "titre": {
+        "fr": "Installation et mise en service",
+        "en": "Installation and activation"
+      },
+      "texte": {
+        "fr": "Des techniciens certifiés posent et testent chaque câble et chaque connecteur ; la mise en service et l’activation sont rapides.",
+        "en": "Certified technicians install and test every cable and connector; set-up and activation are quick."
+      }
+    },
+    {
+      "image": "grok/parcours-soutien",
+      "cadrage": "50% 45%",
+      "titre": {
+        "fr": "Le soutien, au même numéro",
+        "en": "Support, same number"
+      },
+      "texte": {
+        "fr": "Un conseiller attitré et un soutien technique 24/7 (à confirmer). La solution nous appartient : le soutien est donc rapide et efficace.",
+        "en": "A dedicated account manager and 24/7 technical support (to be confirmed). We own our solution, so support is quick and efficient."
+      }
+    }
+  ],
+  "piliers": [
+    {
+      "titre": {
+        "fr": "Expérience",
+        "en": "Experience"
+      },
+      "texte": {
+        "fr": "Fondée en 1994, BV Communications est toujours là dans une industrie qui a connu ses hauts et ses bas.",
+        "en": "Founded in 1994, BV Communications is still here in an industry that has seen its share of ups and downs."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Fiabilité",
+        "en": "Reliability"
+      },
+      "texte": {
+        "fr": "Des produits et services parmi les meilleurs de leur catégorie, et un soutien 24 heures sur 24, 7 jours sur 7 (à confirmer).",
+        "en": "Best-in-class products and services, and support 24 hours a day, 7 days a week (to be confirmed)."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Le client d’abord",
+        "en": "Client focus"
+      },
+      "texte": {
+        "fr": "Chaque client obtient exactement ce dont il a besoin, ni plus ni moins.",
+        "en": "Each client gets exactly what they need, no more and no less."
+      }
+    }
+  ]
+}

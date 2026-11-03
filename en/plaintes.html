@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" data-v="1" data-gabarit="plaintes" data-page="plaintes" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Complaints | BV Communications</title>
+<meta name="description" content="How to file a complaint with BV Communications, and recourse with the CCTS and the CRTC.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bvcomm-maquette.vercel.app/en/plaintes">
+<link rel="alternate" hreflang="fr" href="https://bvcomm-maquette.vercel.app/plaintes">
+<link rel="alternate" hreflang="en" href="https://bvcomm-maquette.vercel.app/en/plaintes">
+<link rel="alternate" hreflang="x-default" href="https://bvcomm-maquette.vercel.app/plaintes">
+<style>:root{--fond:#f2f0eb;--texte:#0e1720;--voile-fond:#0e1720;--ouverture-fond:#0e1720;--menu-fond:#0e1720}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2f0eb">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BV Communications">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Complaints | BV Communications">
+<meta property="og:description" content="How to file a complaint with BV Communications, and recourse with the CCTS and the CRTC.">
+<meta property="og:url" content="https://bvcomm-maquette.vercel.app/en/plaintes">
+<meta property="og:image" content="https://bvcomm-maquette.vercel.app/assets/partage/plaintes-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="File a complaint with BV Communications">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BV Communications","url":"https://bvcomm-maquette.vercel.app/","logo":"https://bvcomm-maquette.vercel.app/assets/images/logo.png","image":"https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg","telephone":"+1-514-800-8080","email":"info@bvcomm.com","foundingDate":"1994","areaServed":{"@type":"Country","name":"Canada"},"address":{"@type":"PostalAddress","streetAddress":"359 Sainte-Croix Ave., Suite 210","addressLocality":"Saint-Laurent","addressRegion":"QC","postalCode":"H4N 2L3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],"department":{"@type":"Organization","name":"STI Telecom"},"description":"Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, since 1994."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.webp" alt="" width="153" height="60"><span class="voile-fil" aria-hidden="true"></span><span data-voile-libelle>Complaints</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouv-fils" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <path class="ouv-fil ouv-cuivre" d="M-20 520 C 180 540, 300 380, 420 470 S 470 520, 500 500" pathLength="1000"/><path class="ouv-fil ouv-fibre" d="M470 -20 C 450 160, 600 260, 520 360 S 480 460, 500 500" pathLength="1000"/><path class="ouv-fil ouv-gris" d="M1020 450 C 820 430, 720 600, 600 520 S 530 490, 500 500" pathLength="1000"/><path class="ouv-fil ouv-ivoire" d="M540 1020 C 560 840, 400 760, 470 640 S 520 540, 500 500" pathLength="1000"/>
+</svg>
+<ul class="ouv-etiquettes" aria-hidden="true"><li class="ouv-etiquette ouv-etiquette--telephonie">Phone</li><li class="ouv-etiquette ouv-etiquette--internet">Internet</li><li class="ouv-etiquette ouv-etiquette--cablage">Cabling</li><li class="ouv-etiquette ouv-etiquette--lignes">Lines</li></ul>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.webp" alt="" width="153" height="60">
+  <p class="ouverture-ligne">One provider. One bill. One team.</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" aria-label="BV Communications, home" data-libelle="Home">
+      <img src="/assets/images/logo.webp" alt="" width="102" height="40">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/plaintes" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">FR</a>
+      <a class="bouton bouton--entete" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span class="menu-icone" aria-hidden="true"><i></i><i></i></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul class="menu-liens">
+      <li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home">Home</a></li>
+      <li style="--i:1"><a href="/en/telephonie" class="menu-lien" data-libelle="Business VoIP">Business VoIP</a></li><li style="--i:2"><a href="/en#internet" class="menu-lien" data-libelle="Home">Internet</a></li><li style="--i:3"><a href="/en#cablage" class="menu-lien" data-libelle="Home">Cabling</a></li><li style="--i:4"><a href="/en#lignes" class="menu-lien" data-libelle="Home">Legacy voice</a></li><li style="--i:5"><a href="/en#estimateur" class="menu-lien" data-libelle="Home">Estimate my bill</a></li>
+      <li style="--i:6"><a href="/en/evaluation" class="menu-lien" data-libelle="Free assessment">Free assessment</a></li>
+    </ul>
+    <div class="menu-contact">
+      <p><a class="bouton" href="tel:+15148008080">Call 514 800-8080</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec<br>Office: Monday to Friday, 9 a.m. to 5 p.m.</p>
+      <p><a class="entete-langue" href="/plaintes" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1" data-sans-action>
+<div data-barre-lecture aria-hidden="true"></div>
+<section class="page-tete legal-tete conteneur" id="debut">
+  <div>
+    <h1>Complaints</h1>
+    <p class="legal-intro">BV Communications is here to help customers reach a satisfactory resolution to complaints.</p>
+    <nav data-sommaire aria-label="Site map"><ul><li><a href="#deposer">File a complaint</a></li><li><a href="#cprst">CCTS</a></li><li><a href="#crtc">CRTC</a></li></ul></nav>
+  </div>
+  <figure class="media page-tete-media" data-grok style="--cadrage:60% 55%">
+  <picture>
+    <img src="/assets/images/grok/legal-plaintes-1168.webp" srcset="/assets/images/grok/legal-plaintes-640.webp 640w, /assets/images/grok/legal-plaintes-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 40vw" alt="" width="1168" height="784" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+</section>
+<div class="texte-long conteneur" data-sans-visuel>
+  <section id="deposer" data-sans-visuel><h2>File a complaint</h2><p>Email us at support@bvcomm.com or call toll-free at 1 877 990-2919.</p></section><section id="cprst" data-sans-visuel><h2>Commission for Complaints for Telecom-television Services (CCTS)</h2><p class="legal-logo"><img src="/assets/images/site/ccts.webp" alt="CCTS logo" width="170" height="60" loading="lazy" decoding="async"></p><p>The CCTS is an independent agency that resolves, free of charge, consumer complaints about telecom and TV services, and small business complaints about telecom services. You must first try to resolve your complaint directly with your service provider; if you cannot reach a satisfactory resolution, the CCTS may be able to help. Toll-free: 1 888 221-1687.</p><p><a href="https://www.ccts-cprst.ca/" target="_blank" rel="noopener noreferrer" class="lien-fleche">CCTS website<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p></section><section id="crtc" data-sans-visuel><h2>Canadian Radio-television and Telecommunications Commission (CRTC)</h2><p>The CRTC is the public organization that regulates broadcasting and telecommunications in Canada. It took over responsibility for regulating telecommunication carriers in 1976. Toll-free: 1 877 249-2782.</p><p><a href="https://crtc.gc.ca/eng/home-accueil.htm" target="_blank" rel="noopener noreferrer" class="lien-fleche">CRTC website<span class="visuellement-cache"> (opens in a new tab)</span><svg class="icone-externe" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p></section>
+</div>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <img src="/assets/images/logo-clair.webp" alt="BV Communications" width="153" height="60" loading="lazy" decoding="async">
+    <p class="pied-devise">One provider. One bill. One team.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">Contact us</p>
+      <p><a href="tel:+15148008080">514 800-8080</a><br>Toll-free: <a href="tel:+18779902919">1 877 990-2919</a><br><a href="mailto:info@bvcomm.com">info@bvcomm.com</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3</p>
+      <p>Office: Monday to Friday, 9 a.m. to 5 p.m.<br>24/7 technical support (to be confirmed)</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul>
+        <li><a href="/en" data-libelle="Home">Home</a></li>
+        <li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li>
+        <li><a href="/en/evaluation" data-libelle="Free assessment">Free assessment</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal information">
+      <p class="pied-titre">Legal information</p>
+      <ul><li><a href="/en/mentions-legales" data-libelle="Legal notice">Legal notice</a></li><li><a href="/en/conditions" data-libelle="Terms and conditions">Terms and conditions</a></li><li><a href="/en/confidentialite" data-libelle="Privacy">Privacy</a></li><li><a href="/en/plaintes" data-libelle="Complaints" aria-current="page">Complaints</a></li><li><a href="/en/avis-911" data-libelle="9-1-1 notice">9-1-1 notice</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Reading comfort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></li>
+        <li><a href="#haut" data-sans-transition>Back to top</a></li>
+        <li><a class="entete-langue" href="/plaintes" hreflang="fr" lang="fr" data-langue="fr">Version française</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mock-up: information marked “to be completed” or “to be confirmed” will be provided by BV Communications.</p><p>© BV Communications · Serving Canadian businesses since 1994</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+15148008080">Call</a>
+  <a class="bouton" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+[
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "nom": "grok/accueil-ouverture",
+  "cadrage": [
+   70,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-ouverture-mobile.jpg",
+  "nom": "grok/accueil-ouverture-mobile",
+  "cadrage": [
+   50,
+   75
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-blame.jpg",
+  "nom": "grok/accueil-blame",
+  "cadrage": [
+   40,
+   45
+  ]
+ },
+ {
+  "source": "recu/grok/service-telephonie.jpg",
+  "nom": "grok/service-telephonie",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "source": "recu/grok/service-internet.jpg",
+  "nom": "grok/service-internet",
+  "cadrage": [
+   55,
+   65
+  ]
+ },
+ {
+  "source": "recu/grok/service-cablage.jpg",
+  "nom": "grok/service-cablage",
+  "cadrage": [
+   45,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/service-lignes.jpg",
+  "nom": "grok/service-lignes",
+  "cadrage": [
+   60,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/comparateur-fond.jpg",
+  "nom": "grok/comparateur-fond",
+  "cadrage": [
+   35,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/estimateur-matiere.jpg",
+  "nom": "grok/estimateur-matiere",
+  "cadrage": [
+   20,
+   40
+  ]
+ },
+ {
+  "source": "recu/grok/parcours-evaluation.jpg",
+  "nom": "grok/parcours-evaluation",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/parcours-plan.jpg",
+  "nom": "grok/parcours-plan",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/parcours-installation.jpg",
+  "nom": "grok/parcours-installation",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "source": "recu/grok/parcours-soutien.jpg",
+  "nom": "grok/parcours-soutien",
+  "cadrage": [
+   45,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/preuves-fond.jpg",
+  "nom": "grok/preuves-fond",
+  "cadrage": [
+   75,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/contact-final.jpg",
+  "nom": "grok/contact-final",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/contact-final-mobile.jpg",
+  "nom": "grok/contact-final-mobile",
+  "cadrage": [
+   60,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-ouverture.jpg",
+  "nom": "grok/telephonie-ouverture",
+  "cadrage": [
+   80,
+   45
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-ouverture-mobile.jpg",
+  "nom": "grok/telephonie-ouverture-mobile",
+  "cadrage": [
+   60,
+   75
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-pourquoi.jpg",
+  "nom": "grok/telephonie-pourquoi",
+  "cadrage": [
+   40,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-voxfon.jpg",
+  "nom": "grok/telephonie-voxfon",
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-3cx.jpg",
+  "nom": "grok/telephonie-3cx",
+  "cadrage": [
+   50,
+   40
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-sip.jpg",
+  "nom": "grok/telephonie-sip",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-appareils-fond.jpg",
+  "nom": "grok/telephonie-appareils-fond",
+  "cadrage": [
+   60,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/telephonie-faq.jpg",
+  "nom": "grok/telephonie-faq",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/evaluation-ouverture.jpg",
+  "nom": "grok/evaluation-ouverture",
+  "cadrage": [
+   65,
+   70
+  ]
+ },
+ {
+  "source": "recu/grok/evaluation-ouverture-mobile.jpg",
+  "nom": "grok/evaluation-ouverture-mobile",
+  "cadrage": [
+   65,
+   75
+  ]
+ },
+ {
+  "source": "recu/grok/evaluation-coordonnees.jpg",
+  "nom": "grok/evaluation-coordonnees",
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/legal-mentions.jpg",
+  "nom": "grok/legal-mentions",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/legal-conditions.jpg",
+  "nom": "grok/legal-conditions",
+  "cadrage": [
+   55,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/legal-confidentialite.jpg",
+  "nom": "grok/legal-confidentialite",
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/legal-plaintes.jpg",
+  "nom": "grok/legal-plaintes",
+  "cadrage": [
+   60,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/legal-avis-911.jpg",
+  "nom": "grok/legal-avis-911",
+  "cadrage": [
+   55,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/page-404.jpg",
+  "nom": "grok/page-404",
+  "cadrage": [
+   50,
+   45
+  ]
+ }
+]

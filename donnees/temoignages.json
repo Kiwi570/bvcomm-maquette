@@ -1,0 +1,114 @@
+[
+  {
+    "id": "jordan-sauro",
+    "solution": "voxfon",
+    "nom": "Jordan Sauro, BBA",
+    "entreprise": "Uniking",
+    "logo": "site/temoin-uniking",
+    "texte": {
+      "fr": "BV Communications offre toutes les fonctions avancées qui font passer au niveau supérieur, sans les maux de tête et à un prix compétitif. Le service est incomparable. Grâce à BV, notre entreprise peut grandir plus facilement et plus vite partout dans le monde.",
+      "en": "BV Communication provides all the “level up” advanced features without all the headaches and at a competitive price point. Service is beyond compare. Thanks to BV, our company can grow easier and faster across the world."
+    }
+  },
+  {
+    "id": "robert-karas",
+    "solution": "voxfon",
+    "nom": "Robert Karas",
+    "entreprise": {
+      "fr": "Wi (nom complet à compléter)",
+      "en": "Wi (full name to be completed)"
+    },
+    "logo": "site/temoin-wi",
+    "texte": {
+      "fr": "Nous faisons affaire avec BV Communications depuis plusieurs années et nous ne pourrions être plus satisfaits. Vendre un système est une chose ; continuer d’offrir un service après-vente exceptionnel en est une autre. BV a été là pour nous à chaque étape. Nous les recommanderions volontiers à n’importe qui.",
+      "en": "We have been with BV Communications for several years now and we couldn’t be happier. It’s one thing to get sold a system, but it’s another thing to continue to provide amazing after sales service. BV has been there for us every step of the way. We’d happily recommend them to anyone."
+    }
+  },
+  {
+    "id": "chris-bucci",
+    "solution": "voxfon",
+    "nom": "Chris Bucci",
+    "entreprise": "Lipari",
+    "logo": "site/temoin-lipari",
+    "texte": {
+      "fr": "BV Communications a su régler des problèmes majeurs hérités de notre ancien fournisseur de téléphonie IP. Ils ont aussi trouvé une solution pour notre personnel mobile grâce à une application pour cellulaire, qui facilite grandement la réponse aux appels entrants, à l’interne comme à l’externe. Nous recommandons vivement BV Communications pour vos besoins en téléphonie IP.",
+      "en": "BV Communications was able to resolve some major issues that we had from our previous supplier of IP telephony. They also were able to provide a solution for our mobile staff with the help of a cell phone app which made things so much easier to respond to incoming calls both internally and externally. We highly recommend BV Communications for your IP telephony needs."
+    }
+  },
+  {
+    "id": "pat-de-michele",
+    "solution": "3cx",
+    "accueil": true,
+    "nom": "Pat De Michele",
+    "entreprise": "Derme & Co",
+    "logo": "site/temoin-derme",
+    "texte": {
+      "fr": "Nous sommes clients de BV depuis bien plus de 20 ans. Cela dit déjà à quel point nous apprécions ce partenariat. Ils nous ont toujours soutenus pour tous nos besoins téléphoniques, y compris la migration vers notre nouveau système 3CX, qui a changé notre façon de travailler grâce à leur compréhension approfondie des besoins de notre entreprise. Je recommande vivement BV, non seulement pour la qualité du service, mais parce qu’ils comprennent vraiment tout ce qui touche au téléphone…",
+      "en": "We have been a client of BV for well over 20 years. That in itself should say how much we value our partnership with them. They have been nothing but supportive with all our phone needs and even with the migration to our new 3CX system which has changed our way of working thanks to the in-depth understanding they have of our company needs. I highly recommend BV not only for the quality service but because they truly understand the whole phone thing…"
+    }
+  },
+  {
+    "id": "sean-craig",
+    "solution": "3cx",
+    "accueil": true,
+    "nom": "Sean Craig",
+    "entreprise": "Tricots Liesse",
+    "logo": "site/temoin-tricots-liesse",
+    "texte": {
+      "fr": "BV Communications nous a fait gagner beaucoup de temps et évité bien des ennuis quand nos lignes traditionnelles sont tombées : en moins d’une journée, ils ont converti notre entreprise aux services VoIP 3CX. La transition s’est faite sans accroc, le logiciel fonctionne très bien, et nous ne pourrions être plus satisfaits du produit comme du service reçu. Je recommande vivement BV et la plateforme 3CX.",
+      "en": "BV Communications really saved us a lot of time and trouble when our traditional lines were down, in less than a day they converted our business to 3CX VOIP services, the switch was seamless, the software works great and we couldn’t be happier with the product as well as the great service we received. I highly recommend BV and the 3CX platform."
+    }
+  },
+  {
+    "id": "fernando-pinzon",
+    "solution": "3cx",
+    "nom": "Fernando Pinzon",
+    "role": {
+      "fr": "administrateur TI",
+      "en": "IT Administrator"
+    },
+    "entreprise": "Sunforce",
+    "logo": "site/temoin-sunforce",
+    "texte": {
+      "fr": "Nous sommes très heureux d’avoir choisi BV Communications et 3CX comme solution VoIP et PBX IP. C’était de loin la meilleure offre du marché pour nos besoins, les fonctions, le rapport qualité-prix et l’expertise. 3CX est une plateforme polyvalente et conviviale qui permet à notre équipe de rester connectée en tout temps, partout. BV Communications a été le partenaire de mise en œuvre idéal grâce à son savoir-faire et à son soutien exceptionnel. Nous sommes extrêmement satisfaits de ce choix. Je le recommande vivement !",
+      "en": "We are very happy to have chosen BV Communications and 3CX as our VoIP and IP PBX solution. They were by far the best market offering in terms of our needs, features, value and expertise. 3CX is a versatile and user-friendly platform that allows our team to stay connected at all times, anywhere. BV Communications was the perfect implementation partner thanks to their know-how and exceptional support. We are extremely satisfied with a choice. Highly recommended!"
+    }
+  },
+  {
+    "id": "marben-acosta-teran",
+    "solution": "sip",
+    "nom": "Marben Acosta Terán",
+    "entreprise": "Mexicom Logistics",
+    "logo": "site/temoin-mexicom",
+    "texte": {
+      "fr": "Nous utilisons BV Communications depuis plus de 3 ans et notre expérience n’a été que positive. Pendant ces années, nos besoins en téléphonie ont changé, avec la croissance de notre entreprise et les nouveaux défis du télétravail. Tout au long de ce parcours, BV Communications a toujours eu une solution adaptée à nos besoins. Le travail de notre représentant, Tasso, est exceptionnel : très réactif et rigoureux. Je sais que je peux toujours compter sur lui. Je recommande sans hésiter leurs services.",
+      "en": "We have been using BV Communications for more than 3 years now and we have had nothing but a great experience. In these years, our telephony needs have changed, due to the growth of our company and the new challenges of remote work. During this process, BV Communications has always had a solution that meets our needs. The work of our account representative, Tasso, has been exceptional. He is very responsive and thorough. I know that I can always count on him. I would definitely recommend their services."
+    }
+  },
+  {
+    "id": "kamel-eddine-fekir",
+    "solution": "sip",
+    "accueil": true,
+    "nom": "Kamel Eddine Fekir",
+    "entreprise": {
+      "fr": "Clinique de physiatrie et de médecine du sport Rockland",
+      "en": "Clinique de physiatrie et de médecine du sport Rockland"
+    },
+    "logo": "site/temoin-cpmsr",
+    "texte": {
+      "fr": "Nous sommes une clinique de physiothérapie qui reçoit un très grand volume d’appels, avec des employés en télétravail, et je tiens à saluer et à féliciter notre fournisseur de téléphonie pour son service impeccable. En plus de pouvoir tout gérer depuis notre ordinateur, le service après-vente est extrêmement efficace.",
+      "en": "We’re a physiotherapy clinic with a very high volume of calls, employees who work from home, and I must encourage and congratulate our telephony supplier for its impeccable service. In addition to being able to manage absolutely everything from our computer, the after-sales service is extremely efficient."
+    }
+  },
+  {
+    "id": "jennifer",
+    "solution": "sip",
+    "nom": "Jennifer",
+    "entreprise": "Kodiak Snow Blowing",
+    "logo": "site/temoin-kodiak",
+    "texte": {
+      "fr": "Travailler avec BV Communications a été formidable ! Ils se sont occupés de l’installation de notre système téléphonique en toute simplicité. Avant de passer chez BV, nos systèmes VoIP tombaient sans cesse en panne et nous perdions le service et le contact avec nos clients. Depuis le changement, ce problème a complètement disparu ! Toutes nos questions et demandes de modification sont traitées rapidement. Nous sommes ravis d’avoir changé !",
+      "en": "BV Communications has been so great to work with! They have taken care of the set up of our phone system with ease. Prior to switching to BV, our VOIP phone systems kept failing and we would be without service and contact with our customers. Since we have switched we have not had that problem at all! Any questions we have or changes we need made are responded to quickly. We are so happy to have made the switch!"
+    }
+  }
+]

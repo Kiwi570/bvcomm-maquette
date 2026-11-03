@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en" data-v="1" data-gabarit="accueil" data-page="accueil" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BV Communications: business VoIP and Internet in Montreal</title>
+<meta name="description" content="Business VoIP, business Internet, cabling and legacy voice for Canadian businesses since 1994: one provider, one bill, one team.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bvcomm-maquette.vercel.app/en">
+<link rel="alternate" hreflang="fr" href="https://bvcomm-maquette.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://bvcomm-maquette.vercel.app/en">
+<link rel="alternate" hreflang="x-default" href="https://bvcomm-maquette.vercel.app/">
+<style>:root{--fond:#f2f0eb;--texte:#0e1720;--voile-fond:#0e1720;--ouverture-fond:#0e1720;--menu-fond:#0e1720}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2f0eb">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BV Communications">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="BV Communications: business VoIP and Internet in Montreal">
+<meta property="og:description" content="Business VoIP, business Internet, cabling and legacy voice for Canadian businesses since 1994: one provider, one bill, one team.">
+<meta property="og:url" content="https://bvcomm-maquette.vercel.app/en">
+<meta property="og:image" content="https://bvcomm-maquette.vercel.app/assets/partage/accueil-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BV Communications: one provider, one bill, one team">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BV Communications","url":"https://bvcomm-maquette.vercel.app/","logo":"https://bvcomm-maquette.vercel.app/assets/images/logo.png","image":"https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg","telephone":"+1-514-800-8080","email":"info@bvcomm.com","foundingDate":"1994","areaServed":{"@type":"Country","name":"Canada"},"address":{"@type":"PostalAddress","streetAddress":"359 Sainte-Croix Ave., Suite 210","addressLocality":"Saint-Laurent","addressRegion":"QC","postalCode":"H4N 2L3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],"department":{"@type":"Organization","name":"STI Telecom"},"description":"Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, since 1994."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.webp" alt="" width="153" height="60"><span class="voile-fil" aria-hidden="true"></span><span data-voile-libelle>Home</span></div></div>
+<div class="ouverture-panneau ouverture--un" data-ouverture aria-hidden="true">
+  <svg class="ouv-fils" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <path class="ouv-fil ouv-cuivre" d="M-20 520 C 180 540, 300 380, 420 470 S 470 520, 500 500" pathLength="1000"/><path class="ouv-fil ouv-fibre" d="M470 -20 C 450 160, 600 260, 520 360 S 480 460, 500 500" pathLength="1000"/><path class="ouv-fil ouv-gris" d="M1020 450 C 820 430, 720 600, 600 520 S 530 490, 500 500" pathLength="1000"/><path class="ouv-fil ouv-ivoire" d="M540 1020 C 560 840, 400 760, 470 640 S 520 540, 500 500" pathLength="1000"/>
+</svg>
+<ul class="ouv-etiquettes" aria-hidden="true"><li class="ouv-etiquette ouv-etiquette--telephonie">Phone</li><li class="ouv-etiquette ouv-etiquette--internet">Internet</li><li class="ouv-etiquette ouv-etiquette--cablage">Cabling</li><li class="ouv-etiquette ouv-etiquette--lignes">Lines</li></ul>
+  <svg class="un ouv-un" viewBox="0 0 200 400" aria-hidden="true" focusable="false">
+  <path class="un-trace" d="M120 384L120 22L34 104"/>
+  <path class="un-brin un-cuivre" d="M120.0 384.0L126.2 380.0L131.4 376.0L135.3 372.1L137.7 368.1L138.5 364.1L137.8 360.1L136.0 356.2L133.2 352.2L129.8 348.2L126.1 344.2L122.6 340.2L119.6 336.3L117.1 332.3L115.5 328.3L114.7 324.3L113.8 320.4L113.1 316.4L113.0 312.4L113.4 308.4L114.2 304.4L115.4 300.5L117.0 296.5L118.7 292.5L120.6 288.5L122.4 284.5L124.0 280.6L125.4 276.6L126.4 272.6L126.9 268.6L127.0 264.7L126.5 260.7L125.6 256.7L124.4 252.7L122.8 248.7L121.0 244.8L119.1 240.8L117.4 236.8L115.7 232.8L114.4 228.9L113.5 224.9L113.1 220.9L113.1 216.9L113.6 212.9L114.5 209.0L115.9 205.0L117.5 201.0L119.3 197.0L121.1 193.1L122.9 189.1L124.5 185.1L125.7 181.1L126.6 177.1L127.0 173.2L126.9 169.2L126.3 165.2L125.3 161.2L123.9 157.3L122.2 153.3L120.4 149.3L118.6 145.3L116.8 141.3L115.3 137.4L114.1 133.4L113.3 129.4L113.0 125.4L113.2 121.5L113.8 117.5L114.9 113.5L116.3 109.5L118.0 105.5L119.9 101.6L121.7 97.6L123.4 93.6L124.9 89.6L126.0 85.6L126.8 81.7L127.0 77.7L126.8 73.7L126.0 69.7L124.9 65.8L123.4 61.8L121.7 57.8L119.9 53.8L118.0 49.8L116.3 45.9L114.9 41.9L113.8 37.9L113.2 33.9L113.0 30.0L113.3 26.0L124.1 26.3L120.4 28.1L116.5 29.8L112.4 31.2L108.3 32.6L104.1 34.1L100.1 35.6L96.3 37.3L92.7 39.3L89.5 41.6L86.5 44.3L83.9 47.3L81.6 50.6L79.6 54.2L77.8 58.1L76.1 62.1L74.5 66.2L72.9 70.2L71.2 74.1L69.2 77.8L67.1 81.3L64.6 84.4L61.7 87.2L58.6 89.6L55.1 91.7L51.4 93.5L47.4 95.1L43.3 96.6L39.2 98.0L35.1 99.4L31.1 101.0" pathLength="1000"/><path class="un-brin un-fibre" d="M145.0 384.0L143.0 380.0L139.5 376.0L135.0 372.1L129.9 368.1L124.6 364.1L119.6 360.1L115.3 356.2L111.9 352.2L109.6 348.2L108.5 344.2L108.4 340.2L109.3 336.3L111.0 332.3L113.0 328.3L115.2 324.3L116.8 320.4L118.6 316.4L120.4 312.4L122.2 308.4L123.9 304.4L125.3 300.5L126.3 296.5L126.9 292.5L127.0 288.5L126.6 284.5L125.7 280.6L124.5 276.6L122.9 272.6L121.1 268.6L119.3 264.7L117.5 260.7L115.9 256.7L114.5 252.7L113.6 248.7L113.1 244.8L113.1 240.8L113.5 236.8L114.4 232.8L115.7 228.9L117.4 224.9L119.1 220.9L121.0 216.9L122.8 212.9L124.4 209.0L125.6 205.0L126.5 201.0L127.0 197.0L126.9 193.1L126.4 189.1L125.4 185.1L124.0 181.1L122.4 177.1L120.6 173.2L118.7 169.2L117.0 165.2L115.4 161.2L114.2 157.3L113.4 153.3L113.0 149.3L113.1 145.3L113.8 141.3L114.8 137.4L116.2 133.4L117.9 129.4L119.7 125.4L121.6 121.5L123.3 117.5L124.8 113.5L126.0 109.5L126.7 105.5L127.0 101.6L126.8 97.6L126.1 93.6L125.0 89.6L123.5 85.6L121.8 81.7L120.0 77.7L118.2 73.7L116.5 69.7L115.0 65.8L113.9 61.8L113.2 57.8L113.0 53.8L113.3 49.8L114.0 45.9L115.2 41.9L116.7 37.9L118.4 33.9L120.3 30.0L122.1 26.0L117.4 19.3L113.6 21.0L110.0 23.0L106.7 25.2L103.7 27.9L101.1 30.9L98.8 34.2L96.7 37.8L94.9 41.6L93.3 45.6L91.7 49.7L90.1 53.7L88.3 57.7L86.4 61.4L84.2 64.8L81.8 68.0L78.9 70.8L75.8 73.2L72.4 75.3L68.6 77.2L64.7 78.8L60.6 80.2L56.5 81.6L52.4 83.1L48.4 84.6L44.6 86.4L41.1 88.4L37.8 90.8L34.9 93.5L32.4 96.6L30.1 99.9" pathLength="1000"/><path class="un-brin un-gris" d="M120.0 384.0L113.8 380.0L108.6 376.0L104.7 372.1L102.3 368.1L101.5 364.1L102.2 360.1L104.0 356.2L106.8 352.2L110.2 348.2L113.9 344.2L117.4 340.2L120.4 336.3L122.9 332.3L124.5 328.3L125.3 324.3L126.2 320.4L126.9 316.4L127.0 312.4L126.6 308.4L125.8 304.4L124.6 300.5L123.0 296.5L121.3 292.5L119.4 288.5L117.6 284.5L116.0 280.6L114.6 276.6L113.6 272.6L113.1 268.6L113.0 264.7L113.5 260.7L114.4 256.7L115.6 252.7L117.2 248.7L119.0 244.8L120.9 240.8L122.6 236.8L124.3 232.8L125.6 228.9L126.5 224.9L126.9 220.9L126.9 216.9L126.4 212.9L125.5 209.0L124.1 205.0L122.5 201.0L120.7 197.0L118.9 193.1L117.1 189.1L115.5 185.1L114.3 181.1L113.4 177.1L113.0 173.2L113.1 169.2L113.7 165.2L114.7 161.2L116.1 157.3L117.8 153.3L119.6 149.3L121.4 145.3L123.2 141.3L124.7 137.4L125.9 133.4L126.7 129.4L127.0 125.4L126.8 121.5L126.2 117.5L125.1 113.5L123.7 109.5L122.0 105.5L120.1 101.6L118.3 97.6L116.6 93.6L115.1 89.6L114.0 85.6L113.2 81.7L113.0 77.7L113.2 73.7L114.0 69.7L115.1 65.8L116.6 61.8L118.3 57.8L120.1 53.8L122.0 49.8L123.7 45.9L125.1 41.9L126.2 37.9L126.8 33.9L127.0 30.0L126.7 26.0L115.9 17.7L113.9 21.3L112.1 25.2L110.4 29.2L108.8 33.2L107.2 37.3L105.5 41.2L103.6 44.9L101.4 48.4L98.9 51.6L96.2 54.4L93.0 56.9L89.6 59.0L85.9 60.8L81.9 62.4L77.9 63.9L73.7 65.3L69.6 66.7L65.6 68.3L61.8 70.0L58.3 72.1L55.0 74.4L52.1 77.1L49.5 80.1L47.3 83.5L45.3 87.1L43.5 91.0L41.9 95.0L40.3 99.1L38.6 103.1L36.9 107.0" pathLength="1000"/><path class="un-brin un-ivoire" d="M95.0 384.0L97.0 380.0L100.5 376.0L105.0 372.1L110.1 368.1L115.4 364.1L120.4 360.1L124.7 356.2L128.1 352.2L130.4 348.2L131.5 344.2L131.6 340.2L130.7 336.3L129.0 332.3L127.0 328.3L124.8 324.3L123.2 320.4L121.4 316.4L119.6 312.4L117.8 308.4L116.1 304.4L114.7 300.5L113.7 296.5L113.1 292.5L113.0 288.5L113.4 284.5L114.3 280.6L115.5 276.6L117.1 272.6L118.9 268.6L120.7 264.7L122.5 260.7L124.1 256.7L125.5 252.7L126.4 248.7L126.9 244.8L126.9 240.8L126.5 236.8L125.6 232.8L124.3 228.9L122.6 224.9L120.9 220.9L119.0 216.9L117.2 212.9L115.6 209.0L114.4 205.0L113.5 201.0L113.0 197.0L113.1 193.1L113.6 189.1L114.6 185.1L116.0 181.1L117.6 177.1L119.4 173.2L121.3 169.2L123.0 165.2L124.6 161.2L125.8 157.3L126.6 153.3L127.0 149.3L126.9 145.3L126.2 141.3L125.2 137.4L123.8 133.4L122.1 129.4L120.3 125.4L118.4 121.5L116.7 117.5L115.2 113.5L114.0 109.5L113.3 105.5L113.0 101.6L113.2 97.6L113.9 93.6L115.0 89.6L116.5 85.6L118.2 81.7L120.0 77.7L121.8 73.7L123.5 69.7L125.0 65.8L126.1 61.8L126.8 57.8L127.0 53.8L126.7 49.8L126.0 45.9L124.8 41.9L123.3 37.9L121.6 33.9L119.7 30.0L117.9 26.0L122.6 24.7L120.7 28.5L118.6 32.0L116.1 35.2L113.4 38.0L110.3 40.5L106.8 42.6L103.1 44.5L99.2 46.1L95.1 47.6L91.0 49.0L86.9 50.4L82.9 51.9L79.1 53.7L75.5 55.7L72.2 58.0L69.3 60.7L66.7 63.7L64.4 67.1L62.4 70.7L60.7 74.6L59.0 78.6L57.4 82.6L55.8 86.7L54.0 90.6L52.1 94.3L49.9 97.7L47.4 100.8L44.5 103.6L41.4 106.0L37.9 108.1" pathLength="1000"/>
+  <path class="un-lumiere" d="M120 384L120 22L34 104" pathLength="1000"/>
+</svg>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.webp" alt="" width="153" height="60">
+  <p class="ouverture-ligne">One provider. One bill. One team.</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" aria-label="BV Communications, home" data-libelle="Home" aria-current="page">
+      <img src="/assets/images/logo.webp" alt="" width="102" height="40">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">FR</a>
+      <a class="bouton bouton--entete" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span class="menu-icone" aria-hidden="true"><i></i><i></i></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul class="menu-liens">
+      <li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home" aria-current="page">Home</a></li>
+      <li style="--i:1"><a href="/en/telephonie" class="menu-lien" data-libelle="Business VoIP">Business VoIP</a></li><li style="--i:2"><a href="/en#internet" class="menu-lien" data-libelle="Home">Internet</a></li><li style="--i:3"><a href="/en#cablage" class="menu-lien" data-libelle="Home">Cabling</a></li><li style="--i:4"><a href="/en#lignes" class="menu-lien" data-libelle="Home">Legacy voice</a></li><li style="--i:5"><a href="/en#estimateur" class="menu-lien" data-libelle="Home">Estimate my bill</a></li>
+      <li style="--i:6"><a href="/en/evaluation" class="menu-lien" data-libelle="Free assessment">Free assessment</a></li>
+    </ul>
+    <div class="menu-contact">
+      <p><a class="bouton" href="tel:+15148008080">Call 514 800-8080</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec<br>Office: Monday to Friday, 9 a.m. to 5 p.m.</p>
+      <p><a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <figure class="media hero-fond" data-grok style="--cadrage:72% 50%;--cadrage-mobile:50% 80%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-784.webp 784w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-ouverture-1168.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1168.webp 1168w" sizes="100vw" alt="Optical fibers and copper pairs joined into a single beam of light" width="1168" height="784" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <canvas class="hero-gl" width="16" height="9" aria-hidden="true" data-audit-ignorer></canvas>
+  <div class="hero-grille conteneur">
+    <div class="hero-texte">
+      <p class="surtitre" data-anime="gsap">Business phone and Internet</p>
+      <h1 class="hero-titre" data-superpose><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap"><span class="mot-un mot-un--1">One</span> provider.</span></span><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap"><span class="mot-un mot-un--2">One</span> bill.</span></span><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap"><span class="mot-un mot-un--3">One</span> team.</span></span></h1>
+      <p class="hero-intro" data-anime="gsap">Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, all with a single partner since 1994.</p>
+      <p class="hero-actions" data-anime="gsap">
+        <a href="/en/evaluation" class="bouton bouton--grand" data-libelle="Free assessment" data-action-principale>Get the free assessment <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        <a class="hero-tel" href="tel:+15148008080">514 800-8080</a>
+      </p>
+      <p class="hero-info" data-info-cle data-anime="gsap">Moving or expanding? The technical assessment is free.</p>
+    </div>
+    <div class="hero-un-zone"><svg class="un hero-un" data-boucle-css viewBox="0 0 200 400" role="img" aria-label="The number 1 drawn by four joined wires" focusable="false">
+  <path class="un-trace" d="M120 384L120 22L34 104"/>
+  <path class="un-brin un-cuivre" d="M120.0 384.0L126.2 380.0L131.4 376.0L135.3 372.1L137.7 368.1L138.5 364.1L137.8 360.1L136.0 356.2L133.2 352.2L129.8 348.2L126.1 344.2L122.6 340.2L119.6 336.3L117.1 332.3L115.5 328.3L114.7 324.3L113.8 320.4L113.1 316.4L113.0 312.4L113.4 308.4L114.2 304.4L115.4 300.5L117.0 296.5L118.7 292.5L120.6 288.5L122.4 284.5L124.0 280.6L125.4 276.6L126.4 272.6L126.9 268.6L127.0 264.7L126.5 260.7L125.6 256.7L124.4 252.7L122.8 248.7L121.0 244.8L119.1 240.8L117.4 236.8L115.7 232.8L114.4 228.9L113.5 224.9L113.1 220.9L113.1 216.9L113.6 212.9L114.5 209.0L115.9 205.0L117.5 201.0L119.3 197.0L121.1 193.1L122.9 189.1L124.5 185.1L125.7 181.1L126.6 177.1L127.0 173.2L126.9 169.2L126.3 165.2L125.3 161.2L123.9 157.3L122.2 153.3L120.4 149.3L118.6 145.3L116.8 141.3L115.3 137.4L114.1 133.4L113.3 129.4L113.0 125.4L113.2 121.5L113.8 117.5L114.9 113.5L116.3 109.5L118.0 105.5L119.9 101.6L121.7 97.6L123.4 93.6L124.9 89.6L126.0 85.6L126.8 81.7L127.0 77.7L126.8 73.7L126.0 69.7L124.9 65.8L123.4 61.8L121.7 57.8L119.9 53.8L118.0 49.8L116.3 45.9L114.9 41.9L113.8 37.9L113.2 33.9L113.0 30.0L113.3 26.0L124.1 26.3L120.4 28.1L116.5 29.8L112.4 31.2L108.3 32.6L104.1 34.1L100.1 35.6L96.3 37.3L92.7 39.3L89.5 41.6L86.5 44.3L83.9 47.3L81.6 50.6L79.6 54.2L77.8 58.1L76.1 62.1L74.5 66.2L72.9 70.2L71.2 74.1L69.2 77.8L67.1 81.3L64.6 84.4L61.7 87.2L58.6 89.6L55.1 91.7L51.4 93.5L47.4 95.1L43.3 96.6L39.2 98.0L35.1 99.4L31.1 101.0" pathLength="1000"/><path class="un-brin un-fibre" d="M145.0 384.0L143.0 380.0L139.5 376.0L135.0 372.1L129.9 368.1L124.6 364.1L119.6 360.1L115.3 356.2L111.9 352.2L109.6 348.2L108.5 344.2L108.4 340.2L109.3 336.3L111.0 332.3L113.0 328.3L115.2 324.3L116.8 320.4L118.6 316.4L120.4 312.4L122.2 308.4L123.9 304.4L125.3 300.5L126.3 296.5L126.9 292.5L127.0 288.5L126.6 284.5L125.7 280.6L124.5 276.6L122.9 272.6L121.1 268.6L119.3 264.7L117.5 260.7L115.9 256.7L114.5 252.7L113.6 248.7L113.1 244.8L113.1 240.8L113.5 236.8L114.4 232.8L115.7 228.9L117.4 224.9L119.1 220.9L121.0 216.9L122.8 212.9L124.4 209.0L125.6 205.0L126.5 201.0L127.0 197.0L126.9 193.1L126.4 189.1L125.4 185.1L124.0 181.1L122.4 177.1L120.6 173.2L118.7 169.2L117.0 165.2L115.4 161.2L114.2 157.3L113.4 153.3L113.0 149.3L113.1 145.3L113.8 141.3L114.8 137.4L116.2 133.4L117.9 129.4L119.7 125.4L121.6 121.5L123.3 117.5L124.8 113.5L126.0 109.5L126.7 105.5L127.0 101.6L126.8 97.6L126.1 93.6L125.0 89.6L123.5 85.6L121.8 81.7L120.0 77.7L118.2 73.7L116.5 69.7L115.0 65.8L113.9 61.8L113.2 57.8L113.0 53.8L113.3 49.8L114.0 45.9L115.2 41.9L116.7 37.9L118.4 33.9L120.3 30.0L122.1 26.0L117.4 19.3L113.6 21.0L110.0 23.0L106.7 25.2L103.7 27.9L101.1 30.9L98.8 34.2L96.7 37.8L94.9 41.6L93.3 45.6L91.7 49.7L90.1 53.7L88.3 57.7L86.4 61.4L84.2 64.8L81.8 68.0L78.9 70.8L75.8 73.2L72.4 75.3L68.6 77.2L64.7 78.8L60.6 80.2L56.5 81.6L52.4 83.1L48.4 84.6L44.6 86.4L41.1 88.4L37.8 90.8L34.9 93.5L32.4 96.6L30.1 99.9" pathLength="1000"/><path class="un-brin un-gris" d="M120.0 384.0L113.8 380.0L108.6 376.0L104.7 372.1L102.3 368.1L101.5 364.1L102.2 360.1L104.0 356.2L106.8 352.2L110.2 348.2L113.9 344.2L117.4 340.2L120.4 336.3L122.9 332.3L124.5 328.3L125.3 324.3L126.2 320.4L126.9 316.4L127.0 312.4L126.6 308.4L125.8 304.4L124.6 300.5L123.0 296.5L121.3 292.5L119.4 288.5L117.6 284.5L116.0 280.6L114.6 276.6L113.6 272.6L113.1 268.6L113.0 264.7L113.5 260.7L114.4 256.7L115.6 252.7L117.2 248.7L119.0 244.8L120.9 240.8L122.6 236.8L124.3 232.8L125.6 228.9L126.5 224.9L126.9 220.9L126.9 216.9L126.4 212.9L125.5 209.0L124.1 205.0L122.5 201.0L120.7 197.0L118.9 193.1L117.1 189.1L115.5 185.1L114.3 181.1L113.4 177.1L113.0 173.2L113.1 169.2L113.7 165.2L114.7 161.2L116.1 157.3L117.8 153.3L119.6 149.3L121.4 145.3L123.2 141.3L124.7 137.4L125.9 133.4L126.7 129.4L127.0 125.4L126.8 121.5L126.2 117.5L125.1 113.5L123.7 109.5L122.0 105.5L120.1 101.6L118.3 97.6L116.6 93.6L115.1 89.6L114.0 85.6L113.2 81.7L113.0 77.7L113.2 73.7L114.0 69.7L115.1 65.8L116.6 61.8L118.3 57.8L120.1 53.8L122.0 49.8L123.7 45.9L125.1 41.9L126.2 37.9L126.8 33.9L127.0 30.0L126.7 26.0L115.9 17.7L113.9 21.3L112.1 25.2L110.4 29.2L108.8 33.2L107.2 37.3L105.5 41.2L103.6 44.9L101.4 48.4L98.9 51.6L96.2 54.4L93.0 56.9L89.6 59.0L85.9 60.8L81.9 62.4L77.9 63.9L73.7 65.3L69.6 66.7L65.6 68.3L61.8 70.0L58.3 72.1L55.0 74.4L52.1 77.1L49.5 80.1L47.3 83.5L45.3 87.1L43.5 91.0L41.9 95.0L40.3 99.1L38.6 103.1L36.9 107.0" pathLength="1000"/><path class="un-brin un-ivoire" d="M95.0 384.0L97.0 380.0L100.5 376.0L105.0 372.1L110.1 368.1L115.4 364.1L120.4 360.1L124.7 356.2L128.1 352.2L130.4 348.2L131.5 344.2L131.6 340.2L130.7 336.3L129.0 332.3L127.0 328.3L124.8 324.3L123.2 320.4L121.4 316.4L119.6 312.4L117.8 308.4L116.1 304.4L114.7 300.5L113.7 296.5L113.1 292.5L113.0 288.5L113.4 284.5L114.3 280.6L115.5 276.6L117.1 272.6L118.9 268.6L120.7 264.7L122.5 260.7L124.1 256.7L125.5 252.7L126.4 248.7L126.9 244.8L126.9 240.8L126.5 236.8L125.6 232.8L124.3 228.9L122.6 224.9L120.9 220.9L119.0 216.9L117.2 212.9L115.6 209.0L114.4 205.0L113.5 201.0L113.0 197.0L113.1 193.1L113.6 189.1L114.6 185.1L116.0 181.1L117.6 177.1L119.4 173.2L121.3 169.2L123.0 165.2L124.6 161.2L125.8 157.3L126.6 153.3L127.0 149.3L126.9 145.3L126.2 141.3L125.2 137.4L123.8 133.4L122.1 129.4L120.3 125.4L118.4 121.5L116.7 117.5L115.2 113.5L114.0 109.5L113.3 105.5L113.0 101.6L113.2 97.6L113.9 93.6L115.0 89.6L116.5 85.6L118.2 81.7L120.0 77.7L121.8 73.7L123.5 69.7L125.0 65.8L126.1 61.8L126.8 57.8L127.0 53.8L126.7 49.8L126.0 45.9L124.8 41.9L123.3 37.9L121.6 33.9L119.7 30.0L117.9 26.0L122.6 24.7L120.7 28.5L118.6 32.0L116.1 35.2L113.4 38.0L110.3 40.5L106.8 42.6L103.1 44.5L99.2 46.1L95.1 47.6L91.0 49.0L86.9 50.4L82.9 51.9L79.1 53.7L75.5 55.7L72.2 58.0L69.3 60.7L66.7 63.7L64.4 67.1L62.4 70.7L60.7 74.6L59.0 78.6L57.4 82.6L55.8 86.7L54.0 90.6L52.1 94.3L49.9 97.7L47.4 100.8L44.5 103.6L41.4 106.0L37.9 108.1" pathLength="1000"/>
+  <path class="un-lumiere" d="M120 384L120 22L34 104" pathLength="1000"/>
+</svg></div>
+  </div>
+</section>
+<section class="blame conteneur" id="un-seul-fournisseur">
+  <figure class="media blame-media" data-grok style="--cadrage:40% 45%">
+  <picture>
+    <img src="/assets/images/grok/accueil-blame-784.webp" srcset="/assets/images/grok/accueil-blame-640.webp 640w, /assets/images/grok/accueil-blame-784.webp 784w" sizes="(max-width: 760px) 100vw, 34vw" alt="Technician seen from behind in front of a tidy patch rack" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="blame-texte">
+    <h2 class="titre-onde">No more blame game.</h2>
+    <p data-anime>When phone, Internet and cabling come from different providers, each one blames the other. With one provider: faster provisioning, fewer errors and some of the most competitive pricing.</p>
+    <div class="blame-schema" data-blame data-visuel role="img" aria-label="Diagram: four providers passing a problem around, replaced by one, BV Communications">
+      <svg class="blame-liens" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="blame-lien" d="M70 50 L200 150 M330 50 L200 150 M70 250 L200 150 M330 250 L200 150"/>
+        <path class="blame-renvoi" d="M70 50 L330 50 L330 250 L70 250 Z"/>
+        <circle class="blame-point" r="9" cx="70" cy="50"/>
+      </svg>
+      <span class="blame-noeud blame-noeud--a" aria-hidden="true">Phone provider</span>
+      <span class="blame-noeud blame-noeud--b" aria-hidden="true">Internet provider</span>
+      <span class="blame-noeud blame-noeud--c" aria-hidden="true">Cabling company</span>
+      <span class="blame-noeud blame-noeud--d" aria-hidden="true">Phone line company</span>
+      <span class="blame-question" aria-hidden="true">Who fixes the problem?</span>
+      <span class="blame-centre" aria-hidden="true"><img src="/assets/images/logo.webp" alt="" width="92" height="36"><span>One number to call</span></span>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="conteneur services-grille">
+    <div class="services-tete">
+      <div class="services-colle">
+        <h2 class="titre-onde">Four services, one wire.</h2>
+        <p data-anime>Everything that connects your business to the world, installed and supported by the same team.</p>
+        <ol class="services-index" aria-label="The four services">
+          <li data-index="telephonie-ip" class="matiere-cuivre"><a href="#telephonie-ip"><span class="index-num">01</span> Business VoIP</a></li><li data-index="internet" class="matiere-fibre"><a href="#internet"><span class="index-num">02</span> Business Internet</a></li><li data-index="cablage" class="matiere-gris"><a href="#cablage"><span class="index-num">03</span> Structured cabling</a></li><li data-index="lignes" class="matiere-ivoire"><a href="#lignes"><span class="index-num">04</span> Legacy voice</a></li>
+        </ol>
+        <p class="services-division"><img class="services-sti" src="/assets/images/site/sti-telecom.webp" alt="STI Telecom" width="166" height="45" loading="lazy" decoding="async"><span>Cabling by our STI Telecom division (RBQ 5602-7956-01).</span></p>
+      </div>
+    </div>
+    <div class="services-liste">
+      <article class="service matiere-cuivre" id="telephonie-ip" data-service>
+        <figure class="media service-media" data-grok style="--cadrage:62% 32%">
+  <picture>
+    <img src="/assets/images/grok/service-telephonie-784.webp" srcset="/assets/images/grok/service-telephonie-640.webp 640w, /assets/images/grok/service-telephonie-784.webp 784w" sizes="(max-width: 760px) 100vw, 26vw" alt="Business VoIP" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+        <div class="service-corps">
+          <p class="service-num" aria-hidden="true">01</p>
+          <h3>Business VoIP</h3>
+          <p>Hosted Voxfon, the 3CX platform, SIP trunking, phones and headsets: affordable, reliable, feature-rich, quick to set up and activate, with clear billing.</p>
+          <p class="service-prix"><strong data-prix>From $14.99 per user per month</strong><span>Voxfon, 25 users and up, 5-year commitment</span></p>
+          <ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Voxfon for SMBs, from 1 user</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>3CX: Microsoft Teams integration</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>SIP trunking to keep your system</li></ul>
+          <a href="/en/telephonie" class="bouton bouton--contour" data-libelle="Business VoIP">Explore business VoIP <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </article><article class="service matiere-fibre" id="internet" data-service>
+        <figure class="media service-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/service-internet-784.webp" srcset="/assets/images/grok/service-internet-640.webp 640w, /assets/images/grok/service-internet-784.webp 784w" sizes="(max-width: 760px) 100vw, 26vw" alt="Business Internet" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+        <div class="service-corps">
+          <p class="service-num" aria-hidden="true">02</p>
+          <h3>Business Internet</h3>
+          <p>From basic ADSL to dedicated fiber at 10 Gbps and beyond: FTTN, cable, fiber-optic or wireless, in Montreal, Toronto or anywhere else in Canada.</p>
+          <p class="service-prix"><strong data-prix>From $49.99 per month</strong><span>FTTN or cable; dedicated fiber from $399 per month</span></p>
+          <ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Dedicated fiber: unlimited usage, multiple fixed IPs</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Wireless from $129.99, also as a backup link</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>24/7 support (to be confirmed) on robust networks</li></ul>
+          <a href="/en/evaluation?s_internet=oui" class="bouton bouton--contour" data-libelle="Free assessment">Get an Internet quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </article><article class="service matiere-gris" id="cablage" data-service>
+        <figure class="media service-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/service-cablage-784.webp" srcset="/assets/images/grok/service-cablage-640.webp 640w, /assets/images/grok/service-cablage-784.webp 784w" sizes="(max-width: 760px) 100vw, 26vw" alt="Structured cabling" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+        <div class="service-corps">
+          <p class="service-num" aria-hidden="true">03</p>
+          <h3>Structured cabling</h3>
+          <p>Network, data, fiber-optic, coaxial and audio-video cabling, done by our STI Telecom division. Every cable and connector is tested before the installation is complete.</p>
+          <p class="service-prix"><strong data-prix>Quoted on request</strong><span>STI Telecom · RBQ licence 5602-7956-01</span></p>
+          <ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Cat 6, Cat 5e, fiber, Wi-Fi access points, cameras</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Wall cabinets, racks and patch panels</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Moves, expansions and repairs</li></ul>
+          <a href="/en/evaluation?s_cablage=oui" class="bouton bouton--contour" data-libelle="Free assessment">Get a cabling quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </article><article class="service matiere-ivoire" id="lignes" data-service>
+        <figure class="media service-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/service-lignes-784.webp" srcset="/assets/images/grok/service-lignes-640.webp 640w, /assets/images/grok/service-lignes-784.webp 784w" sizes="(max-width: 760px) 100vw, 26vw" alt="Legacy voice" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+        <div class="service-corps">
+          <p class="service-num" aria-hidden="true">04</p>
+          <h3>Legacy voice</h3>
+          <p>Business lines, long distance, toll-free numbers and ISDN PRI for larger applications, with BV Communications’ purchasing power.</p>
+          <p class="service-prix"><strong data-prix>From $39.99 per line per month</strong><span>5 lines and up, 1-year contract; $79.99 under 5 lines (to be confirmed)</span></p>
+          <ul class="liste-coche"><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>ISDN PRI from $399 per month, 4-hour repair SLA</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Toll-free numbers: $4.95 per month each</li><li><svg class="coche" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>Local presence in over 90 countries</li></ul>
+          <a href="/en/evaluation?s_lignes=oui" class="bouton bouton--contour" data-libelle="Free assessment">Get a legacy voice quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="comparateur conteneur" id="comparateur" data-comparateur>
+  <div class="comparateur-tete">
+    <div>
+      <h2 class="titre-onde">Which solution fits you?</h2>
+      <p data-anime>Two questions, and the phone solution that fits you lights up. Prices are as published; your account manager confirms them.</p>
+      <div class="comparateur-questions">
+        <fieldset class="segments"><legend>How many users?</legend>
+          <label class="choix"><input type="radio" name="taille" value="1"><span>1 to 9</span></label><label class="choix"><input type="radio" name="taille" value="2" checked><span>10 to 24</span></label><label class="choix"><input type="radio" name="taille" value="3"><span>25 and up</span></label>
+        </fieldset>
+        <fieldset class="segments segments--besoin"><legend>Your need</legend>
+          <label class="choix"><input type="radio" name="besoin" value="heberge" checked><span>A new system, hosted for me</span></label><label class="choix"><input type="radio" name="besoin" value="garder"><span>Keep my current phone system</span></label><label class="choix"><input type="radio" name="besoin" value="teams"><span>Teams, call center or multiple sites</span></label>
+        </fieldset>
+      </div>
+    </div>
+    <figure class="media comparateur-media" data-grok style="--cadrage:35% 50%">
+  <picture>
+    <img src="/assets/images/grok/comparateur-fond-1168.webp" srcset="/assets/images/grok/comparateur-fond-640.webp 640w, /assets/images/grok/comparateur-fond-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 40vw" alt="Empty meeting room, screen switched off" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+  <div class="solutions" aria-live="polite">
+    <article class="solution est-recommandee" data-solution="voxfon">
+      <p class="solution-voyant"><span class="voyant" aria-hidden="true"></span><span class="solution-reco">Recommended for you</span></p>
+      <h3>Hosted Voxfon</h3>
+      <p>For SMBs: big features at a small price, all hosted for you.</p>
+      <p class="solution-prix" data-prix><strong data-prix-solution>$19.99</strong> <span>per user per month</span></p>
+      <p class="solution-note">1 to 9 users: $24.99 · 10 to 24: $19.99 · 25 and up: $14.99</p>
+      <a href="/en/telephonie#voxfon" class="lien-fleche" data-libelle="Business VoIP">See details <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </article><article class="solution" data-solution="3cx">
+      <p class="solution-voyant"><span class="voyant" aria-hidden="true"></span><span class="solution-reco">Recommended for you</span></p>
+      <h3>3CX</h3>
+      <p>To grow: feature-rich, scalable and flexible, on premises or in the cloud.</p>
+      <p class="solution-prix" data-prix><strong>Quoted on request</strong></p>
+      <p class="solution-note">Licence based on simultaneous calls</p>
+      <a href="/en/telephonie#plateforme-3cx" class="lien-fleche" data-libelle="Business VoIP">See details <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </article><article class="solution" data-solution="sip">
+      <p class="solution-voyant"><span class="voyant" aria-hidden="true"></span><span class="solution-reco">Recommended for you</span></p>
+      <h3>SIP trunking</h3>
+      <p>To keep your current system: superior call quality and savings.</p>
+      <p class="solution-prix" data-prix><strong data-prix-solution>$24.99</strong> <span>per user per month</span></p>
+      <p class="solution-note">Monthly: $29.99 · 1 year: $24.99 · 3 years: $14.99</p>
+      <a href="/en/telephonie#lignes-sip" class="lien-fleche" data-libelle="Business VoIP">See details <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </article>
+  </div>
+  <p class="note">Indicative recommendation, based on how BV Communications describes each offer.</p>
+</section>
+<section class="estimateur" id="estimateur" data-estimateur>
+  <script type="application/json" id="tarifs-donnees">{"note":"Prix publiés sur le site actuel (novembre 2026). Devise et taxes non précisées : à confirmer.","voxfon":[{"min":1,"max":9,"prix":24.99,"engagement":1,"remise":5},{"min":10,"max":24,"prix":19.99,"engagement":3,"remise":10},{"min":25,"max":null,"prix":14.99,"engagement":5,"remise":20}],"sip":[{"cle":"mensuel","prix":29.99},{"cle":"1an","prix":24.99},{"cle":"3ans","prix":14.99}],"internet":[{"cle":"fttn","prix":49.99},{"cle":"cable","prix":49.99},{"cle":"sansfil","prix":129.99},{"cle":"fibre","prix":399}],"lignes":{"moinsDe5":79.99,"cinqEtPlus":39.99,"sansEngagement":20},"pri":399,"sansFrais":4.95}</script>
+  <div class="conteneur">
+    <div class="estimateur-tete">
+      <div>
+        <h2 class="titre-onde">One bill. How much?</h2>
+        <p data-anime>Pick your services: the total is calculated with the prices published by BV Communications.</p>
+      </div>
+      <figure class="media estimateur-media" data-grok style="--cadrage:22% 40%">
+  <picture>
+    <img src="/assets/images/grok/estimateur-matiere-1168.webp" srcset="/assets/images/grok/estimateur-matiere-640.webp 640w, /assets/images/grok/estimateur-matiere-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 30vw" alt="Coil of copper wire on dark paper" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    </div>
+    <div class="estimateur-grille">
+      <div class="estimateur-choix">
+        <fieldset><legend>Phone</legend>
+          <div class="segments segments--colonne">
+            <label class="choix"><input type="radio" name="tel" value="aucune"><span>None</span></label><label class="choix"><input type="radio" name="tel" value="voxfon" checked><span>Hosted Voxfon</span></label><label class="choix"><input type="radio" name="tel" value="sip"><span>SIP trunking (I keep my system)</span></label><label class="choix"><input type="radio" name="tel" value="3cx"><span>3CX (quoted on request)</span></label>
+          </div>
+          <div data-si="voxfon sip 3cx"><div class="pas" data-pas>
+  <span class="pas-libelle" id="est-utilisateurs-lib">Number of users</span>
+  <div class="pas-controle">
+    <button type="button" class="pas-bouton" data-pas-moins aria-label="Remove one" aria-controls="est-utilisateurs">−</button>
+    <input id="est-utilisateurs" name="utilisateurs" type="number" inputmode="numeric" min="1" max="500" value="10" aria-labelledby="est-utilisateurs-lib">
+    <button type="button" class="pas-bouton" data-pas-plus aria-label="Add one" aria-controls="est-utilisateurs">+</button>
+  </div>
+</div></div>
+          <p class="estimateur-palier" data-si="voxfon" data-palier aria-live="polite">Voxfon tier: 3-year commitment</p>
+          <fieldset class="segments" data-si="sip"><legend>SIP commitment</legend>
+            <label class="choix"><input type="radio" name="duree" value="mensuel"><span>Monthly</span></label><label class="choix"><input type="radio" name="duree" value="1an" checked><span>1 year</span></label><label class="choix"><input type="radio" name="duree" value="3ans"><span>3 years</span></label>
+          </fieldset>
+        </fieldset>
+        <fieldset><legend>Internet</legend>
+          <div class="segments">
+            <label class="choix"><input type="radio" name="net" value="aucun"><span>None</span></label><label class="choix"><input type="radio" name="net" value="fttn" checked><span>FTTN <small>$49.99</small></span></label><label class="choix"><input type="radio" name="net" value="cable"><span>Cable <small>$49.99</small></span></label><label class="choix"><input type="radio" name="net" value="sansfil"><span>Wireless <small>$129.99</small></span></label><label class="choix"><input type="radio" name="net" value="fibre"><span>Dedicated fiber <small>$399</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset><legend>Business lines</legend>
+          <div class="pas" data-pas>
+  <span class="pas-libelle" id="est-lignes-lib">Number of lines</span>
+  <div class="pas-controle">
+    <button type="button" class="pas-bouton" data-pas-moins aria-label="Remove one" aria-controls="est-lignes">−</button>
+    <input id="est-lignes" name="lignes" type="number" inputmode="numeric" min="0" max="100" value="0" aria-labelledby="est-lignes-lib">
+    <button type="button" class="pas-bouton" data-pas-plus aria-label="Add one" aria-controls="est-lignes">+</button>
+  </div>
+</div>
+          <label class="case" data-si-lignes><input type="checkbox" name="sansEngagement"><span>No term commitment (+$20 per line, to be confirmed)</span></label>
+          <label class="case"><input type="checkbox" name="pri"><span>Add an ISDN PRI (from $399 per month, 3-year contract)</span></label>
+          <div class="pas" data-pas>
+  <span class="pas-libelle" id="est-sansfrais-lib">Toll-free numbers ($4.95 each, minutes extra)</span>
+  <div class="pas-controle">
+    <button type="button" class="pas-bouton" data-pas-moins aria-label="Remove one" aria-controls="est-sansfrais">−</button>
+    <input id="est-sansfrais" name="sansFrais" type="number" inputmode="numeric" min="0" max="50" value="0" aria-labelledby="est-sansfrais-lib">
+    <button type="button" class="pas-bouton" data-pas-plus aria-label="Add one" aria-controls="est-sansfrais">+</button>
+  </div>
+</div>
+          <label class="case"><input type="checkbox" name="cablage"><span>Include cabling (quoted on request)</span></label>
+        </fieldset>
+        <p class="estimateur-total-mobile" aria-hidden="true"><span>Estimated monthly total</span><output data-total-mobile data-prix>$249.89</output></p>
+      </div>
+      <aside class="facture" aria-labelledby="facture-titre">
+        <div class="facture-papier">
+          <p class="facture-tete"><img src="/assets/images/logo.webp" alt="" width="77" height="30"><span><strong id="facture-titre">Your BV bill</strong><br>Monthly estimate</span></p>
+          <ul class="facture-lignes" data-facture-lignes aria-live="polite">
+            <li data-ligne-prix="199.90"><span>Voxfon · 10 users × $19.99</span><span>$199.90</span></li><li data-ligne-prix="49.99"><span>Internet · FTTN</span><span>$49.99</span></li>
+          </ul>
+          <p class="facture-total"><span>Estimated monthly total<br><small>from</small></span><output data-total="249.89" data-prix>$249.89</output></p>
+          <p class="facture-pied" id="facture-pied">Indicative estimate based on published prices. Currency and taxes to be confirmed. Services quoted on request are not counted.</p>
+          <a href="/en/evaluation?s_telephonie=oui&amp;s_internet=oui&amp;solution=voxfon&amp;utilisateurs=u2" class="bouton bouton--plein" data-libelle="Free assessment" data-estimateur-lien>Get my quote <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="parcours ecran epingle" id="parcours" data-entete-cache>
+  <div class="conteneur parcours-tete">
+    <h2>How it works</h2>
+    <p>Four steps, one partner from start to finish. <span class="glisser">Swipe</span></p>
+  </div>
+  <div class="piste parcours-piste" data-galerie tabindex="0" role="region" aria-label="The steps, horizontal scrolling">
+    <article class="etape" id="etape-1">
+      <figure class="media etape-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/parcours-evaluation-784.webp" srcset="/assets/images/grok/parcours-evaluation-640.webp 640w, /assets/images/grok/parcours-evaluation-784.webp 784w" sizes="(max-width: 760px) 80vw, 30vw" alt="Free assessment" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+      <p class="etape-num" aria-hidden="true">01</p>
+      <h3>Free assessment</h3>
+      <p>We start with a free technical assessment of your premises and your needs.</p>
+    </article><article class="etape" id="etape-2">
+      <figure class="media etape-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/parcours-plan-784.webp" srcset="/assets/images/grok/parcours-plan-640.webp 640w, /assets/images/grok/parcours-plan-784.webp 784w" sizes="(max-width: 760px) 80vw, 30vw" alt="A tailored plan" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+      <p class="etape-num" aria-hidden="true">02</p>
+      <h3>A tailored plan</h3>
+      <p>Our implementation team reviews your current system and designs the plan: integration with your phone system, a gateway or structured cabling.</p>
+    </article><article class="etape" id="etape-3">
+      <figure class="media etape-media" data-grok style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/grok/parcours-installation-784.webp" srcset="/assets/images/grok/parcours-installation-640.webp 640w, /assets/images/grok/parcours-installation-784.webp 784w" sizes="(max-width: 760px) 80vw, 30vw" alt="Installation and activation" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+      <p class="etape-num" aria-hidden="true">03</p>
+      <h3>Installation and activation</h3>
+      <p>Certified technicians install and test every cable and connector; set-up and activation are quick.</p>
+    </article><article class="etape" id="etape-4">
+      <figure class="media etape-media" data-grok style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/grok/parcours-soutien-784.webp" srcset="/assets/images/grok/parcours-soutien-640.webp 640w, /assets/images/grok/parcours-soutien-784.webp 784w" sizes="(max-width: 760px) 80vw, 30vw" alt="Support, same number" width="784" height="1168" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+      <p class="etape-num" aria-hidden="true">04</p>
+      <h3>Support, same number</h3>
+      <p>A dedicated account manager and 24/7 technical support (to be confirmed). We own our solution, so support is quick and efficient.</p>
+    </article>
+  </div>
+  <div class="parcours-fil" aria-hidden="true"><span></span></div>
+</section>
+<section class="preuves" id="preuves">
+  <div class="conteneur preuves-grille">
+    <div class="preuves-texte">
+      <h2 class="preuves-titre"><span class="palettes" data-palettes="1994">Since 1994.</span></h2>
+      <p data-anime data-annees="1994">32 years serving Canadian businesses with quality telecom products.</p>
+      <ul class="piliers"><li data-anime><h3>Experience</h3><p>Founded in 1994, BV Communications is still here in an industry that has seen its share of ups and downs.</p></li><li data-anime><h3>Reliability</h3><p>Best-in-class products and services, and support 24 hours a day, 7 days a week (to be confirmed).</p></li><li data-anime><h3>Client focus</h3><p>Each client gets exactly what they need, no more and no less.</p></li></ul>
+      <p class="partenaire" data-anime><img src="/assets/images/site/3cx-platinum.webp" alt="3CX Platinum Partner badge" width="96" height="96" loading="lazy" decoding="async"><span>Certified 3CX Platinum Partner Integrator</span></p>
+    </div>
+    <figure class="media preuves-media" data-grok style="--cadrage:72% 55%">
+  <picture>
+    <img src="/assets/images/grok/preuves-fond-1168.webp" srcset="/assets/images/grok/preuves-fond-640.webp 640w, /assets/images/grok/preuves-fond-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 45vw" alt="Spool of copper telephone cable" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+  <div class="clients">
+    <h3 class="conteneur clients-titre">Trusted by</h3>
+    <div class="ruban-section">
+      <div class="ruban" id="ruban-clients" data-boucle-css data-ruban role="region" tabindex="0" aria-label="Logos of BV Communications clients">
+        <ul class="ruban-piste"><li><img class="client-logo client-logo--carre" src="/assets/images/site/client-3-brasseurs.webp" alt="Les 3 Brasseurs" width="96" height="120" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-specialized.webp" alt="Specialized" width="300" height="76" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-jetset-aerospace.webp" alt="Jetset Aerospace" width="371" height="82" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-kim-phat.webp" alt="Kim Phat" width="218" height="32" loading="lazy" decoding="async"></li><li><img class="client-logo client-logo--carre" src="/assets/images/site/client-thomson-reuters.webp" alt="Thomson Reuters" width="120" height="120" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-michael-kors.webp" alt="Michael Kors" width="411" height="38" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-eurofins.webp" alt="Eurofins" width="328" height="67" loading="lazy" decoding="async"></li><li><img class="client-logo" src="/assets/images/site/client-fontaine-sante.webp" alt="Fontaine Santé" width="200" height="111" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo client-logo--carre" src="/assets/images/site/client-3-brasseurs.webp" alt="" width="96" height="120" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-specialized.webp" alt="" width="300" height="76" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-jetset-aerospace.webp" alt="" width="371" height="82" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-kim-phat.webp" alt="" width="218" height="32" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo client-logo--carre" src="/assets/images/site/client-thomson-reuters.webp" alt="" width="120" height="120" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-michael-kors.webp" alt="" width="411" height="38" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-eurofins.webp" alt="" width="328" height="67" loading="lazy" decoding="async"></li><li aria-hidden="true"><img class="client-logo" src="/assets/images/site/client-fontaine-sante.webp" alt="" width="200" height="111" loading="lazy" decoding="async"></li></ul>
+      </div>
+      <button type="button" class="ruban-pause" data-pause-pour="ruban-clients" data-libelle-pause="Pause" data-libelle-lecture="Play"><span data-libelle-bouton>Pause</span></button>
+    </div>
+  </div>
+  <div class="conteneur temoins">
+    <h3 class="temoins-titre">What our clients say</h3>
+    <div class="temoins-grille"><figure class="temoin " id="temoin-pat-de-michele">
+  <blockquote><p>We have been a client of BV for well over 20 years. That in itself should say how much we value our partnership with them. They have been nothing but supportive with all our phone needs and even with the migration to our new 3CX system which has changed our way of working thanks to the in-depth understanding they have of our company needs. I highly recommend BV not only for the quality service but because they truly understand the whole phone thing…</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-derme.webp" alt="Logo Derme &amp; Co" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Pat De Michele</strong><br><span class="temoin-ent">Derme &amp; Co</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-sean-craig">
+  <blockquote><p>BV Communications really saved us a lot of time and trouble when our traditional lines were down, in less than a day they converted our business to 3CX VOIP services, the switch was seamless, the software works great and we couldn’t be happier with the product as well as the great service we received. I highly recommend BV and the 3CX platform.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-tricots-liesse.webp" alt="Logo Tricots Liesse" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Sean Craig</strong><br><span class="temoin-ent">Tricots Liesse</span></span>
+  </figcaption>
+</figure><figure class="temoin " id="temoin-kamel-eddine-fekir">
+  <blockquote><p>We’re a physiotherapy clinic with a very high volume of calls, employees who work from home, and I must encourage and congratulate our telephony supplier for its impeccable service. In addition to being able to manage absolutely everything from our computer, the after-sales service is extremely efficient.</p></blockquote>
+  <figcaption>
+    <img src="/assets/images/site/temoin-cpmsr.webp" alt="Logo Clinique de physiatrie et de médecine du sport Rockland" width="56" height="56" loading="lazy" decoding="async">
+    <span><strong>Kamel Eddine Fekir</strong><br><span class="temoin-ent">Clinique de physiatrie et de médecine du sport Rockland</span></span>
+  </figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="fin" id="contact">
+  <figure class="media fin-fond" data-grok style="--cadrage:50% 50%;--cadrage-mobile:60% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/contact-final-mobile-640.webp 640w, /assets/images/grok/contact-final-mobile-784.webp 784w" sizes="100vw">
+    <img src="/assets/images/grok/contact-final-1168.webp" srcset="/assets/images/grok/contact-final-640.webp 640w, /assets/images/grok/contact-final-1168.webp 1168w" sizes="100vw" alt="Bright office at dusk, seen from inside" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="conteneur fin-grille">
+    <div class="fin-texte">
+      <h2 class="titre-onde">Moving? Expanding?</h2>
+      <p data-anime>Get a free technical assessment. One partner takes care of the rest.</p>
+      <p class="fin-actions" data-anime>
+        <a href="/en/evaluation" class="bouton bouton--grand" data-libelle="Free assessment" data-fil-prise>Get the free assessment <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        <a class="bouton bouton--contour-clair" href="tel:+15148008080">Call 514 800-8080</a>
+      </p>
+    </div>
+    <p class="fin-infos" data-anime>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec<br>Office: Monday to Friday, 9 a.m. to 5 p.m.<br><a href="https://www.google.com/maps/search/?api=1&amp;query=359+avenue+Sainte-Croix+Saint-Laurent+QC+H4N+2L3" target="_blank" rel="noopener noreferrer">See the address on a map<span class="visuellement-cache"> (opens in a new tab)</span></a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <img src="/assets/images/logo-clair.webp" alt="BV Communications" width="153" height="60" loading="lazy" decoding="async">
+    <p class="pied-devise">One provider. One bill. One team.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">Contact us</p>
+      <p><a href="tel:+15148008080">514 800-8080</a><br>Toll-free: <a href="tel:+18779902919">1 877 990-2919</a><br><a href="mailto:info@bvcomm.com">info@bvcomm.com</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3</p>
+      <p>Office: Monday to Friday, 9 a.m. to 5 p.m.<br>24/7 technical support (to be confirmed)</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul>
+        <li><a href="/en" data-libelle="Home" aria-current="page">Home</a></li>
+        <li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li>
+        <li><a href="/en/evaluation" data-libelle="Free assessment">Free assessment</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal information">
+      <p class="pied-titre">Legal information</p>
+      <ul><li><a href="/en/mentions-legales" data-libelle="Legal notice">Legal notice</a></li><li><a href="/en/conditions" data-libelle="Terms and conditions">Terms and conditions</a></li><li><a href="/en/confidentialite" data-libelle="Privacy">Privacy</a></li><li><a href="/en/plaintes" data-libelle="Complaints">Complaints</a></li><li><a href="/en/avis-911" data-libelle="9-1-1 notice">9-1-1 notice</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Reading comfort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></li>
+        <li><a href="#haut" data-sans-transition>Back to top</a></li>
+        <li><a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr">Version française</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mock-up: information marked “to be completed” or “to be confirmed” will be provided by BV Communications.</p><p>© BV Communications · Serving Canadian businesses since 1994</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+15148008080">Call</a>
+  <a class="bouton" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+</div>
+</body>
+</html>

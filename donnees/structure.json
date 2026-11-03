@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BV Communications",
+  "url": "https://bvcomm-maquette.vercel.app/",
+  "logo": "https://bvcomm-maquette.vercel.app/assets/images/logo.png",
+  "image": "https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg",
+  "telephone": "+1-514-800-8080",
+  "email": "info@bvcomm.com",
+  "foundingDate": "1994",
+  "areaServed": { "@type": "Country", "name": "Canada" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": { "fr": "359, avenue Sainte-Croix, bureau 210", "en": "359 Sainte-Croix Ave., Suite 210" },
+    "addressLocality": "Saint-Laurent",
+    "addressRegion": "QC",
+    "postalCode": "H4N 2L3",
+    "addressCountry": "CA"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
+  ],
+  "department": { "@type": "Organization", "name": "STI Telecom" },
+  "description": {
+    "fr": "Téléphonie IP, Internet affaires, câblage structuré et lignes traditionnelles pour les entreprises canadiennes, depuis 1994.",
+    "en": "Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, since 1994."
+  }
+}

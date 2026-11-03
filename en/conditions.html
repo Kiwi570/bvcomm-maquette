@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-v="1" data-gabarit="conditions" data-page="conditions" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terms and conditions | BV Communications</title>
+<meta name="description" content="BV Communications general terms of service: term, billing, cancellation, termination.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bvcomm-maquette.vercel.app/en/conditions">
+<link rel="alternate" hreflang="fr" href="https://bvcomm-maquette.vercel.app/conditions">
+<link rel="alternate" hreflang="en" href="https://bvcomm-maquette.vercel.app/en/conditions">
+<link rel="alternate" hreflang="x-default" href="https://bvcomm-maquette.vercel.app/conditions">
+<style>:root{--fond:#f2f0eb;--texte:#0e1720;--voile-fond:#0e1720;--ouverture-fond:#0e1720;--menu-fond:#0e1720}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2f0eb">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BV Communications">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Terms and conditions | BV Communications">
+<meta property="og:description" content="BV Communications general terms of service: term, billing, cancellation, termination.">
+<meta property="og:url" content="https://bvcomm-maquette.vercel.app/en/conditions">
+<meta property="og:image" content="https://bvcomm-maquette.vercel.app/assets/partage/conditions-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BV Communications terms and conditions">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BV Communications","url":"https://bvcomm-maquette.vercel.app/","logo":"https://bvcomm-maquette.vercel.app/assets/images/logo.png","image":"https://bvcomm-maquette.vercel.app/assets/partage/accueil-fr.jpg","telephone":"+1-514-800-8080","email":"info@bvcomm.com","foundingDate":"1994","areaServed":{"@type":"Country","name":"Canada"},"address":{"@type":"PostalAddress","streetAddress":"359 Sainte-Croix Ave., Suite 210","addressLocality":"Saint-Laurent","addressRegion":"QC","postalCode":"H4N 2L3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],"department":{"@type":"Organization","name":"STI Telecom"},"description":"Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, since 1994."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.webp" alt="" width="153" height="60"><span class="voile-fil" aria-hidden="true"></span><span data-voile-libelle>Terms and conditions</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouv-fils" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <path class="ouv-fil ouv-cuivre" d="M-20 520 C 180 540, 300 380, 420 470 S 470 520, 500 500" pathLength="1000"/><path class="ouv-fil ouv-fibre" d="M470 -20 C 450 160, 600 260, 520 360 S 480 460, 500 500" pathLength="1000"/><path class="ouv-fil ouv-gris" d="M1020 450 C 820 430, 720 600, 600 520 S 530 490, 500 500" pathLength="1000"/><path class="ouv-fil ouv-ivoire" d="M540 1020 C 560 840, 400 760, 470 640 S 520 540, 500 500" pathLength="1000"/>
+</svg>
+<ul class="ouv-etiquettes" aria-hidden="true"><li class="ouv-etiquette ouv-etiquette--telephonie">Phone</li><li class="ouv-etiquette ouv-etiquette--internet">Internet</li><li class="ouv-etiquette ouv-etiquette--cablage">Cabling</li><li class="ouv-etiquette ouv-etiquette--lignes">Lines</li></ul>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.webp" alt="" width="153" height="60">
+  <p class="ouverture-ligne">One provider. One bill. One team.</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" aria-label="BV Communications, home" data-libelle="Home">
+      <img src="/assets/images/logo.webp" alt="" width="102" height="40">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/conditions" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">FR</a>
+      <a class="bouton bouton--entete" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span class="menu-icone" aria-hidden="true"><i></i><i></i></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul class="menu-liens">
+      <li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home">Home</a></li>
+      <li style="--i:1"><a href="/en/telephonie" class="menu-lien" data-libelle="Business VoIP">Business VoIP</a></li><li style="--i:2"><a href="/en#internet" class="menu-lien" data-libelle="Home">Internet</a></li><li style="--i:3"><a href="/en#cablage" class="menu-lien" data-libelle="Home">Cabling</a></li><li style="--i:4"><a href="/en#lignes" class="menu-lien" data-libelle="Home">Legacy voice</a></li><li style="--i:5"><a href="/en#estimateur" class="menu-lien" data-libelle="Home">Estimate my bill</a></li>
+      <li style="--i:6"><a href="/en/evaluation" class="menu-lien" data-libelle="Free assessment">Free assessment</a></li>
+    </ul>
+    <div class="menu-contact">
+      <p><a class="bouton" href="tel:+15148008080">Call 514 800-8080</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec<br>Office: Monday to Friday, 9 a.m. to 5 p.m.</p>
+      <p><a class="entete-langue" href="/conditions" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1" data-sans-action>
+<div data-barre-lecture aria-hidden="true"></div>
+<section class="page-tete legal-tete conteneur" id="debut">
+  <div>
+    <h1>Terms and conditions</h1>
+    <p class="legal-intro">BV Communications general terms and conditions.</p>
+    <p class="legal-avertissement">Text as published on the current site. Article 14 (contract language) should be reviewed by a lawyer before launch (Quebec Bill 96).</p>
+    <nav data-sommaire aria-label="Site map"><ul><li><a href="#article-1">1</a></li><li><a href="#article-2">2</a></li><li><a href="#article-3">3</a></li><li><a href="#article-4">4</a></li><li><a href="#article-5">5</a></li><li><a href="#article-6">6</a></li><li><a href="#article-7">7</a></li><li><a href="#article-8">8</a></li><li><a href="#article-9">9</a></li><li><a href="#article-10">10</a></li><li><a href="#article-11">11</a></li><li><a href="#article-12">12</a></li><li><a href="#article-13">13</a></li><li><a href="#article-14">14</a></li><li><a href="#article-15">15</a></li><li><a href="#article-16">16</a></li></ul></nav>
+  </div>
+  <figure class="media page-tete-media" data-grok style="--cadrage:55% 60%">
+  <picture>
+    <img src="/assets/images/grok/legal-conditions-1168.webp" srcset="/assets/images/grok/legal-conditions-640.webp 640w, /assets/images/grok/legal-conditions-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 40vw" alt="" width="1168" height="784" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+</section>
+<div class="texte-long conteneur" data-sans-visuel>
+  <section id="article-1" data-sans-visuel><h2>Article 1</h2><p>All term agreements automatically renew at the expiry of the initial period on a similar term as the initial agreement, unless BV Communications is notified in writing 30 days prior to the termination of the Agreement. The initial service period for each service will begin on the date when that service becomes operational.</p></section><section id="article-2" data-sans-visuel><h2>Article 2</h2><p>The Customer agrees to pay for the services provided by BV Communications as indicated on the front page of the monthly invoices when due and payable. The Customer agrees that BV Communications may from time to time modify the price of the services so long as BV Communications notifies the Customer in writing a minimum of thirty (30) days prior to the change. BV Communications releases the client of its term commitment if the client cancels the services in writing within the initial 30 day period of being notified of the change in pricing.</p></section><section id="article-3" data-sans-visuel><h2>Article 3</h2><p>Customers have a 24-hour grace period to cancel contracts after signing with no penalty. In the event a client cancels a contract after the initial 24-hour period and prior to installation or activation of the services the client agrees that it is responsible for all charges in relation to the installation of the services including construction charges, technical survey charges and administration charges.</p></section><section id="article-4" data-sans-visuel><h2>Article 4</h2><p>The Customer shall pay for all calls originating from, charged to or accepted at the telephone number(s) indicated on the front page of the agreement, regardless of who made or charged or accepted such calls. The Customer agrees to use, and to make sure others use this service in accordance with this Agreement.</p></section><section id="article-5" data-sans-visuel><h2>Article 5</h2><p>The Customer agrees to pay for the services provided by BV Communications no later than 30 days after billing. The Customer will pay late payment charges of 2% per month (24% per year) on any unpaid overdue balance owing to BV Communications. The Customer agrees to pay for any collection charges. An administration charge will be applied to the Customer account on any Returned cheques.</p></section><section id="article-6" data-sans-visuel><h2>Article 6</h2><p>BV Communications reserves the right to terminate the Customer’s service immediately without any notice, if the Customer does not pay amounts owed to BV Communications, if the Customer misuses or abuses the services provided by BV Communications, or if BV Communications must preserve the integrity of the network or comply with laws and other tariffs. BV Communications complies with a fair use policy and may terminate any services rendered to the client at anytime due to abuse.</p></section><section id="article-7" data-sans-visuel><h2>Article 7</h2><p>The Customer may terminate services at any time during the term, without further obligation to BV Communications, provided that the Customer pays upon notice of termination to BV Communications the monthly commitment stated on the Customer Service Agreement multiplied by the number of months remaining in the Agreement.</p></section><section id="article-8" data-sans-visuel><h2>Article 8</h2><p>The Customer fully understands that BV Communications cannot guarantee installation dates for any services rendered. BV Communications cannot guarantee uninterrupted working of services or other telecommunications equipment used, rented, or sold to the Customer in connection with providing the Customer with telephone or internet services. BV Communications is not in any way liable to the Customer or third parties, either directly or consequently as a result of such failure.</p></section><section id="article-9" data-sans-visuel><h2>Article 9</h2><p>BV Communications will bill the Customer one month in advance for telephone line, SIP trunk/channel, ISDN PRI, High-Speed Internet and Hosted VoIP services. A monthly Network fee applies to all customers, as well as a toll-free access charge for each active toll-free number.</p></section><section id="article-10" data-sans-visuel><h2>Article 10</h2><p>If the Customer misuses or otherwise improperly uses the services provided by BV Communications, the Customer agrees to reimburse BV Communications for any loss or damage that they may suffer.</p></section><section id="article-11" data-sans-visuel><h2>Article 11</h2><p>The Customer understands that until approval of credit, BV Communications may ask the Customer to provide BV Communications with a security deposit on an amount agreed to between the parties. Any customer purchased equipment provided by BV Communications remains the property of BV Communications, until paid in full by customer. BV Communications reserves the right to retrieve any equipment that is not paid for in full.</p></section><section id="article-12" data-sans-visuel><h2>Article 12</h2><p>The Customer cannot transfer or assign their Agreement and the services provided them to any other person or company unless BV Communications agrees in writing prior to the transfer.</p></section><section id="article-13" data-sans-visuel><h2>Article 13</h2><p>The Customer understands this is the entire Agreement between the parties, and that BV Communications has not made any other representations or guarantees regarding the service to be provided to the Customer.</p></section><section id="article-14" data-sans-visuel><h2>Article 14</h2><p>The Customer confirms that it is our wish that this Agreement and all other related documents, be drawn up in English only. <span lang="fr" data-typo-ignorer>Les parties aux présentes confirment leur volonté que la présente convention, de même que tous les documents s’y rattachant, y compris tout avis, soient rédigés en anglais seulement. La version française de la présente convention est disponible sur demande.</span></p></section><section id="article-15" data-sans-visuel><h2>Article 15</h2><p>The Customer accepts this Agreement as notice in writing of and consent to the receipt and exchange of credit information by BV Communications from time to time, including the exchange of credit information with any credit reporting agency, credit bureau or any person or entity with whom the Customer has or proposes to have financial relations.</p></section><section id="article-16" data-sans-visuel><h2>Article 16</h2><p>BV Communications reserves the right to request a customer provide a separate/dedicated private internet access, specific network equipment and recommended internal network changes in order for BV Communications’ telephone services to perform at optimal levels.</p></section>
+</div>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <img src="/assets/images/logo-clair.webp" alt="BV Communications" width="153" height="60" loading="lazy" decoding="async">
+    <p class="pied-devise">One provider. One bill. One team.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">Contact us</p>
+      <p><a href="tel:+15148008080">514 800-8080</a><br>Toll-free: <a href="tel:+18779902919">1 877 990-2919</a><br><a href="mailto:info@bvcomm.com">info@bvcomm.com</a></p>
+      <p>359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3</p>
+      <p>Office: Monday to Friday, 9 a.m. to 5 p.m.<br>24/7 technical support (to be confirmed)</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul>
+        <li><a href="/en" data-libelle="Home">Home</a></li>
+        <li><a href="/en/telephonie" data-libelle="Business VoIP">Business VoIP</a></li><li><a href="/en#internet" data-libelle="Home">Internet</a></li><li><a href="/en#cablage" data-libelle="Home">Cabling</a></li><li><a href="/en#lignes" data-libelle="Home">Legacy voice</a></li><li><a href="/en#estimateur" data-libelle="Home">Estimate my bill</a></li>
+        <li><a href="/en/evaluation" data-libelle="Free assessment">Free assessment</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal information">
+      <p class="pied-titre">Legal information</p>
+      <ul><li><a href="/en/mentions-legales" data-libelle="Legal notice">Legal notice</a></li><li><a href="/en/conditions" data-libelle="Terms and conditions" aria-current="page">Terms and conditions</a></li><li><a href="/en/confidentialite" data-libelle="Privacy">Privacy</a></li><li><a href="/en/plaintes" data-libelle="Complaints">Complaints</a></li><li><a href="/en/avis-911" data-libelle="9-1-1 notice">9-1-1 notice</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Reading comfort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Reduce motion" data-libelle-retablir="Restore motion" data-libelle-systeme="Motion reduced by your device setting"><span data-libelle-bouton>Reduce motion</span></button></li>
+        <li><a href="#haut" data-sans-transition>Back to top</a></li>
+        <li><a class="entete-langue" href="/conditions" hreflang="fr" lang="fr" data-langue="fr">Version française</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mock-up: information marked “to be completed” or “to be confirmed” will be provided by BV Communications.</p><p>© BV Communications · Serving Canadian businesses since 1994</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+15148008080">Call</a>
+  <a class="bouton" href="/en/evaluation" data-libelle="Free assessment">Free assessment</a>
+</div>
+</body>
+</html>

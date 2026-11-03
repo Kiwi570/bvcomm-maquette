@@ -1,0 +1,493 @@
+{
+  "commun": {
+    "navigation": "Main navigation",
+    "menu": "Menu",
+    "fermer": "Close",
+    "langueCourte": "FR",
+    "langueAutre": "Version française",
+    "actionEntete": "Free assessment",
+    "appeler": "Call",
+    "calmeReduire": "Reduce motion",
+    "calmeRetablir": "Restore motion",
+    "calmeSysteme": "Motion reduced by your device setting",
+    "sommaire": "Site map",
+    "legal": "Legal information",
+    "contact": "Contact us",
+    "confort": "Reading comfort",
+    "retourHaut": "Back to top",
+    "maquette": "Mock-up: information marked “to be completed” or “to be confirmed” will be provided by BV Communications.",
+    "evitement": "Skip to content",
+    "mentionIa": "AI-generated illustration",
+    "pause": "Pause",
+    "lecture": "Play",
+    "logoAlt": "BV Communications, home",
+    "introLigne": "One provider. One bill. One team.",
+    "fils": {
+      "telephonie": "Phone",
+      "internet": "Internet",
+      "cablage": "Cabling",
+      "lignes": "Lines"
+    },
+    "nav": {
+      "internet": "Internet",
+      "cablage": "Cabling",
+      "lignes": "Legacy voice",
+      "estimateur": "Estimate my bill"
+    },
+    "adresse": "359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3",
+    "adresseCourte": "359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec",
+    "bureau": "Office: Monday to Friday, 9 a.m. to 5 p.m.",
+    "soutien": "24/7 technical support (to be confirmed)",
+    "sansFrais": "Toll-free:",
+    "carte": "See the address on a map",
+    "nouvelOnglet": "(opens in a new tab)",
+    "depuis": "Serving Canadian businesses since 1994",
+    "division": "Cabling by our STI Telecom division (RBQ 5602-7956-01).",
+    "parUtilisateur": "per user per month",
+    "parMois": "per month",
+    "surSoumission": "Quoted on request",
+    "temoignagesTraduits": "Testimonials as written by our clients.",
+    "aCompleter": "to be completed"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "BV Communications: business VoIP and Internet in Montreal",
+      "description": "Business VoIP, business Internet, cabling and legacy voice for Canadian businesses since 1994: one provider, one bill, one team.",
+      "nav": "Home",
+      "partageAlt": "BV Communications: one provider, one bill, one team",
+      "accroche": "One provider. One bill. One team."
+    },
+    "telephonie": {
+      "titre": "Business VoIP: Voxfon, 3CX and SIP trunking | BV Communications",
+      "description": "Hosted Voxfon for SMBs, 3CX to grow, SIP trunking to keep your system: BV Communications business VoIP, prices and features.",
+      "nav": "Business VoIP",
+      "partageAlt": "Business VoIP by BV Communications",
+      "accroche": "The right solution for your size."
+    },
+    "evaluation": {
+      "titre": "Free technical assessment | BV Communications",
+      "description": "Moving or expanding? Ask BV Communications for a free technical assessment, a quote and a free trial.",
+      "nav": "Free assessment",
+      "partageAlt": "Ask BV Communications for a free technical assessment",
+      "accroche": "Free technical assessment."
+    },
+    "mentions-legales": {
+      "titre": "Legal notice | BV Communications",
+      "description": "Publisher, host, credits and information to be provided for the BV Communications website.",
+      "nav": "Legal notice",
+      "partageAlt": "BV Communications legal notice",
+      "accroche": "Legal notice"
+    },
+    "conditions": {
+      "titre": "Terms and conditions | BV Communications",
+      "description": "BV Communications general terms of service: term, billing, cancellation, termination.",
+      "nav": "Terms and conditions",
+      "partageAlt": "BV Communications terms and conditions",
+      "accroche": "Terms and conditions"
+    },
+    "confidentialite": {
+      "titre": "Privacy policy | BV Communications",
+      "description": "How BV Communications handles the personal information collected through its website.",
+      "nav": "Privacy",
+      "partageAlt": "BV Communications privacy policy",
+      "accroche": "Privacy"
+    },
+    "plaintes": {
+      "titre": "Complaints | BV Communications",
+      "description": "How to file a complaint with BV Communications, and recourse with the CCTS and the CRTC.",
+      "nav": "Complaints",
+      "partageAlt": "File a complaint with BV Communications",
+      "accroche": "Complaints"
+    },
+    "avis-911": {
+      "titre": "9-1-1 notice for VoIP | BV Communications",
+      "description": "The limitations of 9-1-1 and E9-1-1 service on VoIP: notice to BV Communications customers.",
+      "nav": "9-1-1 notice",
+      "partageAlt": "9-1-1 notice for VoIP",
+      "accroche": "9-1-1 notice for VoIP"
+    },
+    "404": {
+      "titre": "Page not found | BV Communications",
+      "description": "This page does not exist or no longer exists.",
+      "nav": "Page not found",
+      "partageAlt": "Page not found",
+      "accroche": "This number is not in service."
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Business phone and Internet",
+      "titre1": "One provider.",
+      "titre2": "One bill.",
+      "titre3": "One team.",
+      "texte": "Business VoIP, business Internet, structured cabling and legacy voice for Canadian businesses, all with a single partner since 1994.",
+      "action": "Get the free assessment",
+      "info": "Moving or expanding? The technical assessment is free.",
+      "alt": "Optical fibers and copper pairs joined into a single beam of light",
+      "un": "The number 1 drawn by four joined wires"
+    },
+    "blame": {
+      "titre": "No more blame game.",
+      "texte": "When phone, Internet and cabling come from different providers, each one blames the other. With one provider: faster provisioning, fewer errors and some of the most competitive pricing.",
+      "a": "Phone provider",
+      "b": "Internet provider",
+      "c": "Cabling company",
+      "d": "Phone line company",
+      "question": "Who fixes the problem?",
+      "reponse": "One number to call",
+      "alt": "Technician seen from behind in front of a tidy patch rack",
+      "schema": "Diagram: four providers passing a problem around, replaced by one, BV Communications"
+    },
+    "services": {
+      "titre": "Four services, one wire.",
+      "texte": "Everything that connects your business to the world, installed and supported by the same team.",
+      "indicateur": "The four services"
+    },
+    "comparateur": {
+      "titre": "Which solution fits you?",
+      "texte": "Two questions, and the phone solution that fits you lights up. Prices are as published; your account manager confirms them.",
+      "q1": "How many users?",
+      "t1": "1 to 9",
+      "t2": "10 to 24",
+      "t3": "25 and up",
+      "q2": "Your need",
+      "b1": "A new system, hosted for me",
+      "b2": "Keep my current phone system",
+      "b3": "Teams, call center or multiple sites",
+      "recommande": "Recommended for you",
+      "voxfonTitre": "Hosted Voxfon",
+      "voxfonTexte": "For SMBs: big features at a small price, all hosted for you.",
+      "voxfonNote": "1 to 9 users: $24.99 · 10 to 24: $19.99 · 25 and up: $14.99",
+      "troiscxTitre": "3CX",
+      "troiscxTexte": "To grow: feature-rich, scalable and flexible, on premises or in the cloud.",
+      "troiscxNote": "Licence based on simultaneous calls",
+      "sipTitre": "SIP trunking",
+      "sipTexte": "To keep your current system: superior call quality and savings.",
+      "sipNote": "Monthly: $29.99 · 1 year: $24.99 · 3 years: $14.99",
+      "detail": "See details",
+      "note": "Indicative recommendation, based on how BV Communications describes each offer.",
+      "alt": "Empty meeting room, screen switched off"
+    },
+    "estimateur": {
+      "titre": "One bill. How much?",
+      "texte": "Pick your services: the total is calculated with the prices published by BV Communications.",
+      "telephonie": "Phone",
+      "aucune": "None",
+      "voxfon": "Hosted Voxfon",
+      "sip": "SIP trunking (I keep my system)",
+      "troiscx": "3CX (quoted on request)",
+      "utilisateurs": "Number of users",
+      "duree": "SIP commitment",
+      "mensuel": "Monthly",
+      "unAn": "1 year",
+      "troisAns": "3 years",
+      "engagementVoxfon": "Voxfon tier: {n}-year commitment",
+      "internet": "Internet",
+      "aucun": "None",
+      "fttn": "FTTN",
+      "cable": "Cable",
+      "sansfil": "Wireless",
+      "fibre": "Dedicated fiber",
+      "lignes": "Business lines",
+      "nbLignes": "Number of lines",
+      "sansEngagement": "No term commitment (+$20 per line, to be confirmed)",
+      "pri": "Add an ISDN PRI (from $399 per month, 3-year contract)",
+      "sansFrais": "Toll-free numbers ($4.95 each, minutes extra)",
+      "cablage": "Include cabling (quoted on request)",
+      "moins": "Remove one",
+      "plus": "Add one",
+      "facture": "Your BV bill",
+      "factureSous": "Monthly estimate",
+      "vide": "Pick at least one service.",
+      "total": "Estimated monthly total",
+      "aPartirDe": "from",
+      "ligneVoxfon": "Voxfon · {n} users × {p}",
+      "ligneSip": "SIP trunking · {n} × {p}",
+      "ligne3cx": "3CX",
+      "ligneInternet": "Internet · {nom}",
+      "ligneLignes": "Business lines · {n} × {p}",
+      "ligneSansEngagement": "No commitment · {n} × $20",
+      "lignePri": "ISDN PRI",
+      "ligneSansFrais": "Toll-free · {n} × $4.95",
+      "ligneCablage": "Cabling",
+      "piedFacture": "Indicative estimate based on published prices. Currency and taxes to be confirmed. Services quoted on request are not counted.",
+      "action": "Get my quote",
+      "alt": "Coil of copper wire on dark paper"
+    },
+    "parcours": {
+      "titre": "How it works",
+      "texte": "Four steps, one partner from start to finish.",
+      "region": "The steps, horizontal scrolling",
+      "glisser": "Swipe"
+    },
+    "preuves": {
+      "titre": "Since 1994.",
+      "texte": "{annees} years serving Canadian businesses with quality telecom products.",
+      "clients": "Trusted by",
+      "temoignages": "What our clients say",
+      "partenaire": "Certified 3CX Platinum Partner Integrator",
+      "badgeAlt": "3CX Platinum Partner badge",
+      "ruban": "Logos of BV Communications clients",
+      "alt": "Spool of copper telephone cable"
+    },
+    "fin": {
+      "titre": "Moving? Expanding?",
+      "texte": "Get a free technical assessment. One partner takes care of the rest.",
+      "action": "Get the free assessment",
+      "alt": "Bright office at dusk, seen from inside"
+    }
+  },
+  "telephonie": {
+    "hero": {
+      "surtitre": "Business VoIP",
+      "titre": "The right solution for your size.",
+      "texte": "Hosted Voxfon for SMBs, 3CX for growing businesses, SIP trunking to keep your current system: BV Communications gives your business the right VoIP solution for your needs.",
+      "action": "Get a quote",
+      "comparer": "Compare solutions",
+      "info": "From $14.99 per user per month",
+      "alt": "Person seen from behind wearing a headset, waves of light across the room"
+    },
+    "voip": {
+      "titre": "What is VoIP?",
+      "texte": "VoIP stands for Voice over Internet Protocol: phone service through the internet. The technology has moved past simply replacing traditional telephones to adding voice and video calling to messaging, driven by connected devices and a far lower cost than copper wire phone service.",
+      "pourquoi": "Why choose VoIP?",
+      "alt": "Business traveler on the phone in an airport"
+    },
+    "sousnav": "On this page",
+    "voxfon": {
+      "titre": "Hosted Voxfon: big features, small price.",
+      "texte": "Voxfon has taken the complexities out of hosted business VoIP: no more vague pricing plans and extra charges for features you need. All Voxfon plans come fully featured with options like find-me-follow-me, voicemail to email, remote extensions and much more.",
+      "fonctions": "Features",
+      "tarifs": "Pricing and savings",
+      "palier1": "1 to 9 users",
+      "palier2": "10 to 24 users",
+      "palier3": "25 users and up",
+      "engagement": "{n}-year commitment",
+      "remise": "Additional {n}% savings (terms to be specified)",
+      "action": "Get a Voxfon quote",
+      "logoAlt": "Voxfon logo",
+      "alt": "Small team in a bright office, one person on a call with a headset",
+      "engagement1": "1-year commitment"
+    },
+    "troiscx": {
+      "titre": "3CX: the platform that grows with you.",
+      "texte": "3CX is a software-based, open-standards IP PBX with unified communications built in. It runs on your servers or in the cloud, on Windows or Linux, integrates with popular CRM systems and Microsoft Teams, and works with a wide range of IP phones, softphones and iOS and Android apps.",
+      "teams": "Microsoft Teams integration",
+      "fonctions": "3CX features",
+      "usages": "Who is it for?",
+      "partenaire": "BV Communications is a certified 3CX Platinum Partner Integrator.",
+      "prix": "Licences based on simultaneous calls: quoted on request.",
+      "essai": "Try 3CX for free",
+      "action": "Get a 3CX quote",
+      "captureApp": "3CX app on desktop, IP phone and mobile",
+      "captureChat": "Live chat in the 3CX app",
+      "alt": "Modern videoconference room, empty chairs"
+    },
+    "sip": {
+      "titre": "SIP trunking: keep your system, change your bill.",
+      "texte": "SIP trunking, or virtual phone lines, delivers superior call quality and brings Internet telephony to a wide variety of phone systems. You get the savings while protecting the investment in your current system. Our implementation team assesses adding IP trunk line cards to your system, or installs a gateway at your location giving you access to BV Communications’ private and secure SIP network.",
+      "caracteristiques": "Features",
+      "tarifs": "Pricing",
+      "mensuel": "Monthly term",
+      "unAn": "1-year term",
+      "troisAns": "3-year term",
+      "action": "Get a SIP quote",
+      "alt": "Data center aisle between server racks"
+    },
+    "appareils": {
+      "titre": "Phones and headsets",
+      "texte": "A variety of makes and models, so you get the device that suits your needs.",
+      "voir": "See the {marque} range",
+      "photo": "Manufacturer photo to come",
+      "alt": "Light oak desk, window light"
+    },
+    "faq": {
+      "titre": "Frequently asked questions",
+      "alt": "RJ45 connectors plugged into a network switch"
+    },
+    "fin": {
+      "titre": "Ready to change your phone system?",
+      "texte": "Tell us about your situation: a specialist calls you back with a quote and a free trial.",
+      "action": "Get a quote"
+    }
+  },
+  "evaluation": {
+    "hero": {
+      "titre": "Free technical assessment.",
+      "texte": "Moving, expanding, or is your system letting you down? Tell us about your situation: a specialist calls you back with a quote and a free trial.",
+      "action": "Start",
+      "info": "Or call {tel}, Monday to Friday, 9 a.m. to 5 p.m.",
+      "alt": "Empty office during a move, boxes and cables on the floor"
+    },
+    "form": {
+      "titre": "Your request in 5 steps",
+      "deroule": "Situation, services, business, contact details, then summary. About 2 minutes.",
+      "etape": "Step {n} of {total}",
+      "e1": "Your situation",
+      "e2": "Your services",
+      "e3": "Your business",
+      "e4": "Your contact details",
+      "e5": "Summary",
+      "situation": "What is your situation?",
+      "sDemenagement": "Moving",
+      "sAgrandissement": "Expanding",
+      "sProbleme": "Problem with my current provider",
+      "sComparaison": "Renewal or comparison",
+      "sNouvelle": "New business",
+      "services": "Which services are you interested in?",
+      "servicesAide": "Check all that apply.",
+      "servicesErreur": "Please choose at least one service.",
+      "solution": "Phone solution you have in mind",
+      "solInconnue": "Not sure yet",
+      "solVoxfon": "Hosted Voxfon",
+      "sol3cx": "3CX",
+      "solSip": "SIP trunking",
+      "utilisateurs": "Number of users",
+      "u1": "1 to 9",
+      "u2": "10 to 24",
+      "u3": "25 to 99",
+      "u4": "100 and up",
+      "sites": "Number of locations",
+      "si1": "1",
+      "si2": "2 to 5",
+      "si3": "6 and up",
+      "ville": "City (optional)",
+      "delai": "Timing",
+      "d1": "As soon as possible",
+      "d2": "Within 1 to 3 months",
+      "d3": "Later",
+      "nom": "Name",
+      "entreprise": "Company",
+      "email": "Email",
+      "tel": "Phone (optional)",
+      "message": "Tell us about your needs (optional)",
+      "estimation": "Estimator result",
+      "estimationValeur": "{montant} per month (indicative, taxes to be confirmed)",
+      "recap": "Your request",
+      "recapVide": "Your answers will appear here.",
+      "modifier": "Edit",
+      "precedent": "Previous step",
+      "suivant": "Next step",
+      "envoyer": "Send my request",
+      "donnees": "Your information is only used to answer your request. <a href=\"/en/confidentialite\">Privacy policy</a> (to be completed).",
+      "envoye": "Simulated request: nothing has been sent. On the final site, it will go to the BV Communications team.",
+      "requis": "required"
+    },
+    "coordonnees": {
+      "titre": "Contact details",
+      "telephone": "Phone",
+      "courriels": "Email",
+      "general": "Information:",
+      "support": "Support:",
+      "adresse": "Address",
+      "horaires": "Hours",
+      "alt": "Bright office reception, light wood counter and a plant"
+    }
+  },
+  "legal": {
+    "mentions": {
+      "titre": "Legal notice",
+      "intro": "Information about the publisher and host of this site. Items marked “to be completed” are to be provided by BV Communications.",
+      "fiche": {
+        "titre": "To be provided by BV Communications",
+        "items": "Complaints email: support@ or info@bvcomm.com (both appear on the current page) · Exact legal name and form · Quebec enterprise number (NEQ) · Head office address · Site manager · Person in charge of personal information protection (title and contact details) · Office hours and 24/7 support to be confirmed · Currency and taxes on prices · SIP pricing (per user or per channel) · Voxfon discounts · Current 3CX partner status · Permission to display client logos · Full name of the company “Wi” · Vector logo · Real photos of the team, office and job sites · 9-1-1 notice text · Validated French version of the terms"
+      },
+      "editeur": {
+        "titre": "Publisher",
+        "texte": "BV Communications (exact legal name to be completed), 359 Sainte-Croix Ave., Suite 210, Saint-Laurent, Quebec H4N 2L3, Canada. Phone: 514 800-8080. Email: info@bvcomm.com. NEQ: to be completed."
+      },
+      "hebergeur": {
+        "titre": "Host",
+        "texte": "Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States."
+      },
+      "credits": {
+        "titre": "Credits",
+        "texte": "Phone photos and 3CX app screenshots: their respective manufacturers. Logos of clients and quoted companies: property of their owners (permissions to be confirmed). Images marked “AI-generated illustration” were created with artificial intelligence; keep this notice on the final site."
+      },
+      "marques": {
+        "titre": "Trademarks",
+        "texte": "3CX, Microsoft Teams, Microsoft 365, Yealink, Grandstream, Fanvil, Plantronics and Poly are trademarks of their respective owners."
+      },
+      "langue": {
+        "titre": "Language",
+        "texte": "This site is available in French and English, in accordance with the Charter of the French language."
+      }
+    },
+    "conditions": {
+      "titre": "Terms and conditions",
+      "intro": "BV Communications general terms and conditions.",
+      "avertissement": "Text as published on the current site. Article 14 (contract language) should be reviewed by a lawyer before launch (Quebec Bill 96).",
+      "article": "Article {n}"
+    },
+    "confidentialite": {
+      "titre": "Privacy policy",
+      "intro": "This policy is to be completed by BV Communications before launch, in particular under Quebec’s Law 25.",
+      "responsable": {
+        "titre": "Person in charge of personal information protection",
+        "texte": "Title and contact details: to be completed."
+      },
+      "recueil": {
+        "titre": "Information collected",
+        "texte": "The assessment form collects your name, company, email, phone number if you provide it, and the description of your needs."
+      },
+      "usage": {
+        "titre": "Use",
+        "texte": "This information is only used to answer your assessment or quote request."
+      },
+      "conservation": {
+        "titre": "Retention and disclosure",
+        "texte": "Retention period, where data is hosted and any third parties: to be completed."
+      },
+      "droits": {
+        "titre": "Your rights",
+        "texte": "Access, correction, withdrawal of consent and complaints: procedures to be completed."
+      },
+      "stockage": {
+        "titre": "Storage in your browser",
+        "texte": "The site sets no advertising cookies. It only keeps your language choice and your reduced-motion preference in your browser."
+      }
+    },
+    "plaintes": {
+      "titre": "Complaints",
+      "intro": "BV Communications is here to help customers reach a satisfactory resolution to complaints.",
+      "deposer": {
+        "titre": "File a complaint",
+        "texte": "Email us at support@bvcomm.com or call toll-free at 1 877 990-2919."
+      },
+      "cprst": {
+        "titre": "Commission for Complaints for Telecom-television Services (CCTS)",
+        "texte": "The CCTS is an independent agency that resolves, free of charge, consumer complaints about telecom and TV services, and small business complaints about telecom services. You must first try to resolve your complaint directly with your service provider; if you cannot reach a satisfactory resolution, the CCTS may be able to help. Toll-free: 1 888 221-1687.",
+        "lien": "CCTS website"
+      },
+      "crtc": {
+        "titre": "Canadian Radio-television and Telecommunications Commission (CRTC)",
+        "texte": "The CRTC is the public organization that regulates broadcasting and telecommunications in Canada. It took over responsibility for regulating telecommunication carriers in 1976. Toll-free: 1 877 249-2782.",
+        "lien": "CRTC website"
+      },
+      "logoAlt": "CCTS logo"
+    },
+    "avis911": {
+      "titre": "9-1-1 notice for VoIP",
+      "intro": "Text to be provided by BV Communications before launch.",
+      "pourquoi": {
+        "titre": "Why this notice",
+        "texte": "The CRTC requires local VoIP service providers to inform their customers, before service starts, of the availability, characteristics and limitations of their 9-1-1 or E9-1-1 service (Telecom Decisions 2005-21 and 2005-61), and to obtain their express consent where limitations exist."
+      },
+      "contenu": {
+        "titre": "What the notice must cover",
+        "texte": "The type of 9-1-1 service offered (basic or enhanced), its VoIP-specific limitations, what customers must do to account for them, and how they inform other users: to be completed by BV Communications."
+      },
+      "voxfon": {
+        "titre": "Voxfon",
+        "texte": "Voxfon plans include E911 service. Characteristics and limitations: to be completed."
+      }
+    }
+  },
+  "introuvable": {
+    "titre": "This number is not in service.",
+    "texte": "The page you dialed does not exist or no longer exists. Check the address, or go back to the home page.",
+    "retour": "Back to home",
+    "evaluation": "Get the free assessment",
+    "alt": "Unplugged network cable hanging in the air"
+  }
+}

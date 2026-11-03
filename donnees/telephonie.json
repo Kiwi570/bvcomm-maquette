@@ -1,0 +1,489 @@
+{
+  "raisons": [
+    {
+      "titre": {
+        "fr": "Plus seulement la voix",
+        "en": "More than voice"
+      },
+      "texte": {
+        "fr": "Vous communiquez aussi par vidéo, par texto et par clavardage.",
+        "en": "You can communicate via video, text, or chat."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Plus attaché à un bureau",
+        "en": "No longer tied to a desk"
+      },
+      "texte": {
+        "fr": "Joignez n’importe qui dans votre organisation, partout dans le monde, à toute heure.",
+        "en": "You can reach anyone within your organization anywhere in the world at any time."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Plus prisonnier de la compagnie de téléphone",
+        "en": "No longer stuck with your phone company"
+      },
+      "texte": {
+        "fr": "Des entreprises souples comme BV Communications vous donnent les outils pour réussir.",
+        "en": "Dynamic, flexible companies like BV Communications give your company the tools it needs to succeed."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Des économies",
+        "en": "Savings"
+      },
+      "texte": {
+        "fr": "Faites beaucoup plus pour beaucoup moins.",
+        "en": "Do much more for much less."
+      }
+    }
+  ],
+  "voxfonFonctions": [
+    {
+      "groupe": {
+        "fr": "Inclus dans chaque forfait",
+        "en": "Included in every plan"
+      },
+      "items": [
+        {
+          "fr": "Appels locaux illimités, entrants et sortants",
+          "en": "Unlimited local calling, in and out"
+        },
+        {
+          "fr": "Canaux vocaux entrants illimités",
+          "en": "Unlimited inbound voice channels"
+        },
+        {
+          "fr": "Interurbain Canada–États-Unis (personne à personne)",
+          "en": "Canada/U.S. long distance (person-to-person)"
+        },
+        {
+          "fr": "Réception vocale bilingue avec menu des postes (standard automatique)",
+          "en": "Bilingual IVR with extensions menu (automated attendant)"
+        },
+        {
+          "fr": "Postes à distance",
+          "en": "Remote extensions"
+        },
+        {
+          "fr": "Portail utilisateur",
+          "en": "User portal"
+        }
+      ]
+    },
+    {
+      "groupe": {
+        "fr": "Gestion des appels",
+        "en": "Call handling"
+      },
+      "items": [
+        {
+          "fr": "Afficheur",
+          "en": "Caller ID"
+        },
+        {
+          "fr": "Mise en attente",
+          "en": "Call hold"
+        },
+        {
+          "fr": "Renvoi d’appel",
+          "en": "Call forward"
+        },
+        {
+          "fr": "Transfert d’appel",
+          "en": "Call transfer"
+        },
+        {
+          "fr": "Parcage d’appel",
+          "en": "Call park"
+        },
+        {
+          "fr": "Voix HD",
+          "en": "HD voice"
+        },
+        {
+          "fr": "Messagerie vocale",
+          "en": "Voicemail"
+        },
+        {
+          "fr": "Messagerie vocale vers courriel",
+          "en": "Voicemail to email"
+        },
+        {
+          "fr": "Télécopie vers courriel",
+          "en": "Fax to email"
+        },
+        {
+          "fr": "E911",
+          "en": "E911"
+        }
+      ]
+    },
+    {
+      "groupe": {
+        "fr": "Équipe et accueil",
+        "en": "Team and reception"
+      },
+      "items": [
+        {
+          "fr": "Ne pas déranger",
+          "en": "Do not disturb"
+        },
+        {
+          "fr": "Trouvez-moi",
+          "en": "Find me"
+        },
+        {
+          "fr": "Suivez-moi",
+          "en": "Follow me"
+        },
+        {
+          "fr": "Groupe de sonnerie",
+          "en": "Ring group"
+        },
+        {
+          "fr": "File d’attente",
+          "en": "Call queue"
+        },
+        {
+          "fr": "Vue des appels",
+          "en": "Call view"
+        },
+        {
+          "fr": "Rapports d’appels",
+          "en": "Call reports"
+        },
+        {
+          "fr": "Musique d’attente",
+          "en": "Music on hold"
+        },
+        {
+          "fr": "Message d’attente",
+          "en": "Message on hold"
+        },
+        {
+          "fr": "Appel général",
+          "en": "Paging"
+        }
+      ]
+    }
+  ],
+  "atouts3cx": [
+    {
+      "titre": {
+        "fr": "Liberté totale",
+        "en": "Complete freedom"
+      },
+      "texte": {
+        "fr": "Installez votre PBX sur un serveur chez vous ou en nuage, choisissez votre fournisseur SIP et vos téléphones IP : de quoi économiser des milliers de dollars par année.",
+        "en": "Install your PBX on a server on your premises or in the cloud, and choose your SIP trunk provider and IP phones, saving thousands per year on your business phone system."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Sans frontières",
+        "en": "No borders"
+      },
+      "texte": {
+        "fr": "Idéal pour les entreprises qui ont des bureaux à plusieurs endroits : un PBX complet, à un coût bien moindre, avec des appels moins chers qu’avec une compagnie de téléphone traditionnelle.",
+        "en": "Ideal for companies with offices in various locations: a complete PBX at a far lower cost, with calling that is cheaper than a traditional phone company."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Niveau entreprise",
+        "en": "Enterprise-level"
+      },
+      "texte": {
+        "fr": "Un système complet, simple, abordable et souple, sans les coûts ni la gestion des systèmes traditionnels, ni les limites des PBX partagés en nuage.",
+        "en": "A complete system, simple, affordable and flexible, without the cost and management headaches of traditional systems or the limits of shared cloud PBXs."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Intégration Microsoft Teams",
+        "en": "Microsoft Teams integration"
+      },
+      "texte": {
+        "fr": "Un pont natif relie vos utilisateurs Teams à 3CX, pour économiser sur les frais mensuels par utilisateur.",
+        "en": "A native bridge connects your Teams users with 3CX, so you save substantially on per-user monthly fees."
+      }
+    }
+  ],
+  "teams": [
+    {
+      "fr": "Pont 3CX–Teams : les utilisateurs 3CX appellent les utilisateurs Teams, et inversement",
+      "en": "3CX to Teams bridge: 3CX users call Teams users and vice versa"
+    },
+    {
+      "fr": "Les utilisateurs Teams composent leurs appels sortants par 3CX",
+      "en": "Teams users can dial out through 3CX"
+    },
+    {
+      "fr": "Certificat SSL approuvé par Microsoft",
+      "en": "Microsoft-approved SSL certificate"
+    },
+    {
+      "fr": "Scripts de numérotation configurés par nos soins",
+      "en": "Dial scripts configured for you"
+    },
+    {
+      "fr": "Intégration Microsoft 365 configurée et fonctionnelle",
+      "en": "Microsoft 365 integration configured and working"
+    },
+    {
+      "fr": "Prérequis : Microsoft 365 E5 avec Phone System, ou Business Voice",
+      "en": "Requires Microsoft 365 E5 with Phone System, or Business Voice"
+    }
+  ],
+  "fonctions3cx": [
+    {
+      "fr": "Messagerie vocale",
+      "en": "Voicemail"
+    },
+    {
+      "fr": "Renvoi d’appel",
+      "en": "Call forwarding"
+    },
+    {
+      "fr": "Standard automatique",
+      "en": "Auto-attendant"
+    },
+    {
+      "fr": "Conférence",
+      "en": "Conferencing"
+    },
+    {
+      "fr": "Enregistrement des appels",
+      "en": "Call recording"
+    },
+    {
+      "fr": "Files d’attente",
+      "en": "Call queues"
+    },
+    {
+      "fr": "Conférence Web",
+      "en": "Web conferencing"
+    },
+    {
+      "fr": "Intégration CRM",
+      "en": "CRM integration"
+    },
+    {
+      "fr": "Applications iOS et Android",
+      "en": "iOS and Android apps"
+    },
+    {
+      "fr": "Centre d’appels",
+      "en": "Call center features"
+    },
+    {
+      "fr": "Tableaux muraux",
+      "en": "Wallboards"
+    },
+    {
+      "fr": "Reprise après sinistre",
+      "en": "Disaster recovery"
+    },
+    {
+      "fr": "Clavardage en direct et texto",
+      "en": "Live chat and SMS"
+    }
+  ],
+  "usages3cx": [
+    {
+      "titre": {
+        "fr": "PME",
+        "en": "Small and medium businesses"
+      },
+      "texte": {
+        "fr": "Remplacer le système traditionnel par une solution plus riche, facile à gérer et à faire grandir.",
+        "en": "Replace a traditional phone system with a richer solution that is easy to manage and scale."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Plusieurs sites",
+        "en": "Multiple locations"
+      },
+      "texte": {
+        "fr": "Une seule solution de communications unifiées pour relier tous les employés.",
+        "en": "One unified communications solution that connects every employee."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Télétravail",
+        "en": "Remote work"
+      },
+      "texte": {
+        "fr": "Toutes les fonctions du PBX, de la maison ou en déplacement.",
+        "en": "The full range of PBX features, from home or on the road."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Centres d’appels",
+        "en": "Call centers"
+      },
+      "texte": {
+        "fr": "Appels entrants et sortants, files d’attente, tableaux muraux et rapports en temps réel.",
+        "en": "Inbound and outbound calls, queues, wallboards and real-time reporting."
+      }
+    }
+  ],
+  "sipAvantages": [
+    {
+      "titre": {
+        "fr": "Coûts réduits",
+        "en": "Reduced costs"
+      },
+      "texte": {
+        "fr": "Économisez sur vos lignes par rapport aux lignes analogiques traditionnelles, interurbain Canada–États-Unis compris.",
+        "en": "Save on your monthly line costs compared to traditional analog lines, with Canada/U.S. long distance included."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Plus de souplesse",
+        "en": "Increased flexibility"
+      },
+      "texte": {
+        "fr": "Regroupez vos lignes de plusieurs sites, partagez la capacité et recevez une seule facture simple. Ajoutez des lignes au besoin.",
+        "en": "Pool your lines from multiple locations, share the capacity and get one simple monthly bill. Add lines on the fly."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Soutien rapide",
+        "en": "Fast support"
+      },
+      "texte": {
+        "fr": "La solution nous appartient : le soutien est donc rapide et efficace.",
+        "en": "We own our solution, so support is quick and efficient."
+      }
+    }
+  ],
+  "sipCaracteristiques": [
+    {
+      "fr": "Serveurs SIP dédiés dans des centres de données sécurisés",
+      "en": "Dedicated SIP trunk servers in secured data centers"
+    },
+    {
+      "fr": "Appels locaux illimités",
+      "en": "Unlimited local calling"
+    },
+    {
+      "fr": "Interurbain illimité au Canada et aux États-Unis (personne à personne)",
+      "en": "Unlimited person-to-person long distance to Canada and the U.S."
+    },
+    {
+      "fr": "Tarifs réduits pour l’international",
+      "en": "Reduced international long-distance rates"
+    },
+    {
+      "fr": "Sélection directe à l’arrivée (SDA)",
+      "en": "Direct Inward Dial (DID)"
+    }
+  ],
+  "appareils": [
+    {
+      "marque": "Yealink",
+      "type": {
+        "fr": "Téléphones IP",
+        "en": "IP phones"
+      },
+      "image": "site/yealink-t46u",
+      "alt": {
+        "fr": "Téléphone IP Yealink sur un bureau",
+        "en": "Yealink IP phone on a desk"
+      },
+      "url": "https://www.yealink.com/en/product-list/ip-phone"
+    },
+    {
+      "marque": "Grandstream",
+      "type": {
+        "fr": "Téléphones IP",
+        "en": "IP phones"
+      },
+      "image": "site/grandstream-gxp1630",
+      "alt": {
+        "fr": "Téléphone IP Grandstream GXP1630",
+        "en": "Grandstream GXP1630 IP phone"
+      },
+      "url": "https://www.grandstream.com/products/ip-voice-telephony",
+      "detoure": true
+    },
+    {
+      "marque": "Fanvil",
+      "type": {
+        "fr": "Téléphones IP",
+        "en": "IP phones"
+      },
+      "url": "https://www.fanvil.com/products/p1/index.html"
+    },
+    {
+      "marque": "Plantronics / Poly",
+      "type": {
+        "fr": "Casques",
+        "en": "Headsets"
+      },
+      "url": "https://www.poly.com/us/en/products/headsets"
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Puis-je garder mon système téléphonique actuel ?",
+        "en": "Can I keep my current phone system?"
+      },
+      "r": {
+        "fr": "Oui. Avec les lignes SIP, vous gardez votre système et profitez des économies de la téléphonie IP : notre équipe évalue l’ajout de cartes de lignes IP ou installe une passerelle chez vous.",
+        "en": "Yes. With SIP trunking you keep your system and get the savings of IP telephony: our team assesses adding IP trunk line cards or installs a gateway at your location."
+      }
+    },
+    {
+      "q": {
+        "fr": "Mes employés à distance peuvent-ils répondre aux appels ?",
+        "en": "Can remote staff answer calls?"
+      },
+      "r": {
+        "fr": "Oui. Voxfon inclut les postes à distance, et 3CX offre des applications iOS et Android ainsi qu’un softphone pour travailler de partout.",
+        "en": "Yes. Voxfon includes remote extensions, and 3CX offers iOS and Android apps plus a softphone to work from anywhere."
+      }
+    },
+    {
+      "q": {
+        "fr": "Est-ce compatible avec Microsoft Teams ?",
+        "en": "Does it work with Microsoft Teams?"
+      },
+      "r": {
+        "fr": "3CX s’intègre nativement à Teams : vos utilisateurs Teams appellent les utilisateurs 3CX et inversement, et peuvent composer leurs appels sortants par 3CX. Il faut Microsoft 365 E5 avec Phone System, ou Business Voice.",
+        "en": "3CX integrates natively with Teams: your Teams users call 3CX users and vice versa, and can dial out through 3CX. It requires Microsoft 365 E5 with Phone System, or Business Voice."
+      }
+    },
+    {
+      "q": {
+        "fr": "Quels téléphones et casques puis-je utiliser ?",
+        "en": "Which phones and headsets can I use?"
+      },
+      "r": {
+        "fr": "Nous proposons des téléphones Yealink, Grandstream et Fanvil, et des casques Plantronics/Poly. Avec 3CX, vous pouvez aussi choisir vos propres téléphones IP.",
+        "en": "We offer Yealink, Grandstream and Fanvil phones, and Plantronics/Poly headsets. With 3CX, you can also choose your own IP phones."
+      }
+    },
+    {
+      "q": {
+        "fr": "Et le 9-1-1 ?",
+        "en": "What about 9-1-1?"
+      },
+      "r": {
+        "fr": "Voxfon inclut le service E911. Les limites du 9-1-1 en téléphonie IP seront présentées dans l’avis 9-1-1, que BV Communications doit compléter.",
+        "en": "Voxfon includes E911 service. The limitations of 9-1-1 on VoIP will be set out in the 9-1-1 notice, to be completed by BV Communications."
+      }
+    }
+  ]
+}

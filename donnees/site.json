@@ -1,0 +1,68 @@
+{
+  "nom": "BV Communications",
+  "adresse": "https://bvcomm-maquette.vercel.app",
+  "siteActuel": "www.bvcomm.com",
+  "version": 1,
+  "langues": [
+    "fr",
+    "en"
+  ],
+  "navigation": [
+    {
+      "page": "telephonie"
+    },
+    {
+      "page": "accueil",
+      "ancre": "internet",
+      "texte": "commun.nav.internet"
+    },
+    {
+      "page": "accueil",
+      "ancre": "cablage",
+      "texte": "commun.nav.cablage"
+    },
+    {
+      "page": "accueil",
+      "ancre": "lignes",
+      "texte": "commun.nav.lignes"
+    },
+    {
+      "page": "accueil",
+      "ancre": "estimateur",
+      "texte": "commun.nav.estimateur"
+    }
+  ],
+  "legal": [
+    "mentions-legales",
+    "conditions",
+    "confidentialite",
+    "plaintes",
+    "avis-911"
+  ],
+  "actionEntete": {
+    "page": "evaluation"
+  },
+  "couleurs": {
+    "fond": "#f2f0eb",
+    "texte": "#0e1720",
+    "voile": "#0e1720",
+    "ouverture": "#0e1720",
+    "menu": "#0e1720",
+    "theme": "#f2f0eb"
+  },
+  "contact": {
+    "telephone": "514 800-8080",
+    "telephoneLien": "+15148008080",
+    "sansFrais": "1 877 990-2919",
+    "sansFraisLien": "+18779902919",
+    "email": "info@bvcomm.com",
+    "support": "support@bvcomm.com",
+    "carte": "https://www.google.com/maps/search/?api=1&query=359+avenue+Sainte-Croix+Saint-Laurent+QC+H4N+2L3"
+  },
+  "fondation": 1994,
+  "polices": [
+    "/assets/polices/instrument-sans.woff2"
+  ],
+  "imagePartage": "grok/accueil-ouverture-1168.webp",
+  "curseur": true
+}
